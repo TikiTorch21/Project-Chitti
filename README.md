@@ -8,9 +8,11 @@ This goal of this project is to build a RAG tool using Streamlit that allows use
 
 <u>What does the Streamlit UI include specifically?</u>
 	So far, it includes a:
+	<pre>
 	- File upload section
 	- Chat window
 	- Export answer
+	</pre>
 
 What are some <u>non-functional features?</u>
 1. Peformance
