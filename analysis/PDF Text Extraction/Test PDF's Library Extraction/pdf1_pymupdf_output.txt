@@ -3,4 +3,3 @@ This is PDF 1 that will be my initial test that the first Python Library will ex
 Hope this works.
 The point of this test is to see what Python PDF Parsing library will for our use case.
 That’s it.
-

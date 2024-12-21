@@ -1,0 +1,3 @@
+Hi, mynameisPrateek.ThisisPDF1that will bemyinitial test that thefirst PythonLibrarywill extract.Hopethisworks.
+Thepoint of thistest istoseewhat PythonPDFParsinglibrarywill forourusecase.
+That’sit.
