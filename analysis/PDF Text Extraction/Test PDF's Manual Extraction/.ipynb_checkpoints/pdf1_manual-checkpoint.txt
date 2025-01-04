@@ -1,7 +1,0 @@
-Hi, my name is Prateek. 
-This is PDF1 that will be my initial test that the first python library will extract. 
-Hope this works. 
-
-The point of this test is to see what Python PDF Parsing Library will for our use case. 
-
-That's it.
