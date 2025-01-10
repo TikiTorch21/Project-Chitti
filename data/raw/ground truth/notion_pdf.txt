@@ -1,0 +1,46 @@
+<Page 1>
+What is GenAI?                          You give the AI some data, and using
+                                        that data, that AI gives you whatever 
+                                        you ask it for. Main thing to know is 
+                                        that itʼs a field.
+
+What is CHATGPT?                        A revolution that almost transformed 
+                                        the way we interact with computers. 
+                                        What are some of it's capabilities?
+                                        -Web browsing
+                                        - Advanced data analysis
+                                        - Image processing
+                                        - Voice interaction
+
+What are the differences between        
+ChapGPT, GPTs, and LLMS?                - Large language models that 
+                                        basically understand and generate 
+                                        natural language.
+                                        - GPT's are a type of LLM.
+                                        - ChatGPT is the application built on 
+                                        GPT's
+
+What is Natural Language
+Processing?                             It's a field of the idea of computers 
+                                        being able to understand language. 
+                                        Divided into 3 main categories:
+                                        1. Things like machine translation
+                                        2. Things like human senses
+                                        3. Things like text-to-speech and 
+                                        automatic speech recognition
+
+What is next word prediction?           Given a sequence of words, find the 
+                                        next words. Essentially chooses the 
+                                        next word in a sentence just by 
+                                        filtering words with the highest 
+                                        probability of occurring, and 
+                                        choosing the top result.
+
+<Page 2>
+What is N-Gram language?                First early rendition of language 
+                                        models in the pre-deep learning era 
+                                        Problems?
+                                        1. Seed text might not exist in the 
+                                        training data
+                                        2. Exact phrasing might not exist. 
+                                        Talked about Neural networks..(don't need to know for class)
