@@ -63,7 +63,4 @@ def pdfminersix_txt_extraction(file_path: Path) -> dict[str, str]:
     for page_num in range(pages_count):
         text = extract_text(test_path, page_numbers=[page_num])
         pdf_dict[f'{str(test_path).split('/')[-1]} ~ {page_num}'] = text
-    return pdf_dict
-
-def pdf_dataframe(pdf_dict1: dict, pdf_dict2: dict, pdfdict3: dict) -> DataFrame:
-    pass
+    return pdf_dict   
