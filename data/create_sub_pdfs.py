@@ -1,3 +1,4 @@
+from pathlib import Path
 import pymupdf  # PyMuPDF library
 
 
@@ -75,3 +76,11 @@ def is_sequential(pages):
         bool: True if the pages are sequential, False otherwise.
     """
     return all(pages[i] + 1 == pages[i + 1] for i in range(len(pages) - 1))
+
+for n in range(1, 6):
+    if n == 1:
+        start, end = n, n+20
+    else:
+        start, end = end, end+20
+    print(list(range(start, end)))
+    create_pdf_from_selected_pages(Path.home() / 'Downloads/Matplotlib.pdf', Path.cwd() / f'data/matplotlib_{start}-{end}_pdf.pdf', list(range(start, end)))
