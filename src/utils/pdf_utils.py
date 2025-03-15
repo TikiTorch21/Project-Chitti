@@ -1,6 +1,83 @@
+#from thefuzz import fuzz
 from pathlib import Path
-import pymupdf  # PyMuPDF library
+from pypdf import PdfReader
+from pdfminer.high_level import extract_text
+from pdfminer.pdfdocument import PDFDocument
+from pdfminer.pdfparser import PDFParser
+from pdfminer.pdftypes import resolve1
+import pymupdf
+import pandas as pd
+import numpy as np 
 
+def pypdf_txt_extraction(file_path: Path):
+    """
+    Helper function to extract text from a pdf using pypdf page-wise.
+
+    Args:
+        file_path: Path of the pdf file
+
+    Returns:
+        dict: key: page number, value: page text
+    """
+    pdf_dict = {}
+    file = PdfReader(file_path)
+    time_list = []
+
+    for page_num in range(len(file.pages)):
+        start = time.time()
+        extracted_txt = file.pages[page_num].extract_text()
+        if extracted_txt:  # Avoiding None values
+            pdf_dict[page_num] = extracted_txt
+        end = time.time()
+        time_list.append((page_num, end-start))
+    return pdf_dict, time_list
+
+def pymupdf_txt_extraction(file_path: Path) -> dict[str, str]:
+    """
+    Helper function to extract text from a pdf using pymupdf page-wise.
+
+    Args:
+        file_path: Path of the pdf file
+
+    Returns:
+        dict: key: page number, value: page text
+    """
+    file = pymupdf.open(file_path)
+    pdf_dict = {}
+    time_list = []
+    for page_num in range(file.page_count):
+        start = time.time()
+        text = file[page_num].get_text()
+        end = time.time()
+        pdf_dict[f'{str(file_path).split('/')[-1]} ~ {page_num}'] = text
+        time_list.append(end-start)
+    return pdf_dict, time_list
+
+def pdfminersix_txt_extraction(file_path: Path) -> dict[str, str]:
+    """
+    Helper function to extract text from a pdf using pdfminer.six page-wise.
+
+    Args:
+        file_path: Path of the pdf file
+
+    Returns:
+        dict: key: page number, value: page text
+    """
+    pdf_dict = {}
+    time_list = []
+    with open(file_path, 'rb') as f:
+        parser = PDFParser(f)
+        doc = PDFDocument(parser)
+        parser.set_document(doc)
+        pages = resolve1(doc.catalog['Pages'])
+        pages_count = pages.get('Count', 0)
+    for page_num in range(pages_count):
+        start = time.time()
+        text = extract_text(file_path, page_numbers=[page_num])
+        end = time.time()
+        pdf_dict[f'{str(file_path).split('/')[-1]} ~ {page_num}'] = text
+        time_list.append(end-start)
+    return pdf_dict, time_list
 
 def create_pdf_from_selected_pages(input_pdf_path, output_pdf_path, selected_pages):
     """
@@ -76,11 +153,3 @@ def is_sequential(pages):
         bool: True if the pages are sequential, False otherwise.
     """
     return all(pages[i] + 1 == pages[i + 1] for i in range(len(pages) - 1))
-
-for n in range(1, 6):
-    if n == 1:
-        start, end = n, n+20
-    else:
-        start, end = end, end+20
-    print(list(range(start, end)))
-    create_pdf_from_selected_pages(Path.home() / 'Downloads/Matplotlib.pdf', Path.cwd() / f'data/matplotlib_{start}-{end}_pdf.pdf', list(range(start, end)))
