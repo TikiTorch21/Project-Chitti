@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 from pprint import pprint
 
-from utils.pdf_utils import pymupdf_extract_pdf_text
+from utils.pdf_utils import pypdf_extract_pdf_text
 
 def text_extract(pdf_dir):
     """
@@ -18,7 +18,7 @@ def text_extract(pdf_dir):
     """
 
     all_pdf_text = [
-        pymupdf_extract_pdf_text(pdf) for pdf in pdf_dir
+        pypdf_extract_pdf_text(pdf) for pdf in pdf_dir
     ]
 
     
@@ -39,4 +39,4 @@ PROJECT_PATH = Path('/Users/prateekM/Downloads/Coding/Classes/Projects/Project C
 PDF_PATH = (PROJECT_PATH / 'data' / 'raw' / 'test pdfs').glob('*.pdf')
 
 pdf_df = text_extract(PDF_PATH)
-pdf_df.to_csv(PROJECT_PATH / 'data' / 'text extractions' / 'pymupdf' / 'pymupdf_txt_extractions.csv', index=None)
+pdf_df.to_csv(PROJECT_PATH / 'data' / 'text extractions' / 'pypdf' / 'pypdf_txt_extractions.csv', index=None)
