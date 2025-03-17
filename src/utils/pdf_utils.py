@@ -129,3 +129,26 @@ def pypdf_extract_pdf_text(pdf):
         for each page in the PDF
     """
     return extract_pdf_text(pdf, pypdf_extract_page_text)
+
+def pdfminer_extract_page_text(pdf):
+    """
+    Function to extract text from a PDF using pdfminer
+    
+    Parameters
+    ----------
+    pdf : str
+        Path to a PDF file
+    
+    Returns
+    -------
+    list
+        A list of dictionaries, each containing the extracted text and extraction time 
+        for each page in the PDF
+    """
+    pass
+
+
+
+
+
+
