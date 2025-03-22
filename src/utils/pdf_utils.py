@@ -2,7 +2,7 @@
 import pymupdf
 import time
 from pypdf import PdfReader
-
+from pathlib import Path
 
 def extract_pdf_text(file_path, extraction_func):
     
@@ -145,9 +145,37 @@ def pdfminer_extract_page_text(pdf):
         A list of dictionaries, each containing the extracted text and extraction time 
         for each page in the PDF
     """
-    pass
+    page_by_page = []
 
+    with open(file_path, 'rb') as f:
+        parser = PDFParser(f)
+        doc = PDFDocument(parser)
+        parser.set_document(doc)
+        pages = resolve1(doc.catalog['Pages'])
+        pages_count = pages.get('Count', 0)
 
+    for page in range(pages_count):
+        start_time = time.time()
+        try: 
+            page_text = extract_text(file_path, page_numbers=[page])
+        except NameError as e: 
+            page_text = "Page cannot be read"
+        extraction_time = time.time() - start_time
+        page_by_page.append({'text': page_text, 'extraction_time': extraction_time})
+
+    return page_by_page
+
+def pdfminer_extract_pdf_text(pdf):
+    """
+    Helper function to extract text from a pdf using pdfminer.six page-wise.
+
+    Args:
+        file_path: Path of the pdf file
+
+    Returns:
+        dict: key: page number, value: page text
+    """
+    return extract_pdf_text(pdf, pypdf_extract_page_text)
 
 
 
