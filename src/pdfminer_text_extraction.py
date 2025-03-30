@@ -32,7 +32,7 @@ def text_extract(pdf_dir):
         flat_texts,
         columns = ['path', 'pageNumber', 'pdfId', 'pageContent', 'extractionTimeSeconds']
     )
-
+    df.columns = [col+'_pdfminer' for col in df.columns]
     return df
 
 PROJECT_PATH = Path('/Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti')

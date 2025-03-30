@@ -1,4 +1,4 @@
-path,pageNumber,pdfId,pageContent,extractionTimeSeconds
+path_pymupdf,pageNumber_pymupdf,pdfId_pymupdf,pageContent_pymupdf,extractionTimeSeconds_pymupdf
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,0,matplotlib_41-61_pdf.pdf ~ 0,"Matplotlib, Release 2.0.2
 0
 10
@@ -15,7 +15,7 @@ path,pageNumber,pdfId,pageContent,extractionTimeSeconds
 In [21]: imgplot = plt.imshow(img, interpolation=""bicubic"")
 3.1. Introductory
 33
-",0.014984846115112305
+",0.013120889663696289
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,1,matplotlib_41-61_pdf.pdf ~ 1,"Matplotlib, Release 2.0.2
 0
 10
@@ -44,7 +44,7 @@ ax = plt.subplot2grid((2, 2), (0, 0))
 is identical to
 34
 Chapter 3. Tutorials
-",0.004535198211669922
+",0.0030930042266845703
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,2,matplotlib_41-61_pdf.pdf ~ 2,"Matplotlib, Release 2.0.2
 ax = plt.subplot(2, 2, 1)
 Note that, unlike Matplotlib’s subplot, the index starts from 0 in GridSpec.
@@ -69,7 +69,7 @@ You can create GridSpec explicitly and use them to create a subplot.
 For example,
 3.1. Introductory
 35
-",0.0018019676208496094
+",0.0016489028930664062
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,3,matplotlib_41-61_pdf.pdf ~ 3,"Matplotlib, Release 2.0.2
 ax = plt.subplot2grid((2, 2), (0, 0))
 is equal to
@@ -95,7 +95,7 @@ ax5
 GridSpec
 36
 Chapter 3. Tutorials
-",0.0016341209411621094
+",0.001644134521484375
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,4,matplotlib_41-61_pdf.pdf ~ 4,"Matplotlib, Release 2.0.2
 Adjust GridSpec layout
 When a GridSpec is explicitly used, you can adjust the layout parameters of subplots that are created from
@@ -125,7 +125,7 @@ ax6
 GridSpec w/ different subplotpars
 3.1. Introductory
 37
-",0.0023429393768310547
+",0.0025238990783691406
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,5,matplotlib_41-61_pdf.pdf ~ 5,"Matplotlib, Release 2.0.2
 GridSpec using SubplotSpec
 You can create GridSpec from the SubplotSpec, in which case its layout parameters are set to that of the
@@ -145,7 +145,7 @@ Here’s a more sophisticated example of nested GridSpec where we put a box arou
 4x4 grid, by hiding appropriate spines in each of the inner 3x3 grids.
 38
 Chapter 3. Tutorials
-",0.001435995101928711
+",0.001699209213256836
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,6,matplotlib_41-61_pdf.pdf ~ 6,"Matplotlib, Release 2.0.2
 GridSpec with Varying Cell Sizes
 By default, GridSpec creates cells of equal sizes. You can adjust relative heights and widths of rows and
@@ -158,7 +158,7 @@ ax1 = plt.subplot(gs[0])
 ax2 = plt.subplot(gs[1])
 3.1. Introductory
 39
-",0.0053119659423828125
+",0.0056879520416259766
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,7,matplotlib_41-61_pdf.pdf ~ 7,"Matplotlib, Release 2.0.2
 ax3 = plt.subplot(gs[2])
 ax4 = plt.subplot(gs[3])
@@ -182,7 +182,7 @@ ax.set_xlabel('x-label', fontsize=fontsize)
 ax.set_ylabel('y-label', fontsize=fontsize)
 40
 Chapter 3. Tutorials
-",0.0013821125030517578
+",0.0012459754943847656
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,8,matplotlib_41-61_pdf.pdf ~ 8,"Matplotlib, Release 2.0.2
 ax.set_title('Title', fontsize=fontsize)
 plt.close('all')
@@ -203,7 +203,7 @@ command tight_layout() that does this automatically for you.
 plt.tight_layout()
 3.1. Introductory
 41
-",0.0009531974792480469
+",0.0008368492126464844
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,9,matplotlib_41-61_pdf.pdf ~ 9,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -223,7 +223,7 @@ example_plot(ax3)
 example_plot(ax4)
 42
 Chapter 3. Tutorials
-",0.0006589889526367188
+",0.0006117820739746094
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,10,matplotlib_41-61_pdf.pdf ~ 10,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -265,7 +265,7 @@ tight_layout() will also adjust spacing between subplots to minimize the overlap
 plt.tight_layout()
 3.1. Introductory
 43
-",0.0007231235504150391
+",0.000698089599609375
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,11,matplotlib_41-61_pdf.pdf ~ 11,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -308,7 +308,7 @@ around the ﬁgure border and between subplots. The pads are speciﬁed in fract
 plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
 44
 Chapter 3. Tutorials
-",0.000843048095703125
+",0.0008070468902587891
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,12,matplotlib_41-61_pdf.pdf ~ 12,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -359,7 +359,7 @@ example_plot(ax3)
 plt.tight_layout()
 3.1. Introductory
 45
-",0.0010042190551757812
+",0.0009610652923583984
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,13,matplotlib_41-61_pdf.pdf ~ 13,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -403,7 +403,7 @@ example_plot(ax4)
 plt.tight_layout()
 46
 Chapter 3. Tutorials
-",0.0010159015655517578
+",0.0010061264038085938
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,14,matplotlib_41-61_pdf.pdf ~ 14,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -450,7 +450,7 @@ im = ax.imshow(arr, interpolation=""none"")
 plt.tight_layout()
 3.1. Introductory
 47
-",0.0008959770202636719
+",0.0008759498596191406
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,15,matplotlib_41-61_pdf.pdf ~ 15,"Matplotlib, Release 2.0.2
 0
 2
@@ -480,7 +480,7 @@ ax1 = fig.add_subplot(gs1[0])
 ax2 = fig.add_subplot(gs1[1])
 48
 Chapter 3. Tutorials
-",0.0011119842529296875
+",0.0011680126190185547
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,16,matplotlib_41-61_pdf.pdf ~ 16,"Matplotlib, Release 2.0.2
 example_plot(ax1)
 example_plot(ax2)
@@ -508,7 +508,7 @@ inside. The coordinates must be in normalized ﬁgure coordinates and the defaul
 gs1.tight_layout(fig, rect=[0, 0, 0.5, 1])
 3.1. Introductory
 49
-",0.0008268356323242188
+",0.0010328292846679688
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,17,matplotlib_41-61_pdf.pdf ~ 17,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -539,7 +539,7 @@ ax.set_xlabel(""x-label"", fontsize=12)
 gs2.tight_layout(fig, rect=[0.5, 0, 1, 1], h_pad=0.5)
 50
 Chapter 3. Tutorials
-",0.0007500648498535156
+",0.0007851123809814453
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,18,matplotlib_41-61_pdf.pdf ~ 18,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -600,7 +600,7 @@ None, 1 - (gs2.top-top)],
 h_pad=0.5)
 3.1. Introductory
 51
-",0.0015671253204345703
+",0.001489877700805664
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_41-61_pdf.pdf,19,matplotlib_41-61_pdf.pdf ~ 19,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -656,7 +656,7 @@ ax.title.set_visible(False)
 plt.tight_layout()
 52
 Chapter 3. Tutorials
-",0.0015490055084228516
+",0.0010051727294921875
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,0,matplotlib_61-81_pdf.pdf ~ 0,"Matplotlib, Release 2.0.2
 1.0
 1.5
@@ -686,7 +686,7 @@ plt.colorbar(im, use_gridspec=True)
 plt.tight_layout()
 3.1. Introductory
 53
-",0.005052804946899414
+",0.003103971481323242
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,1,matplotlib_61-81_pdf.pdf ~ 1,"Matplotlib, Release 2.0.2
 0
 2
@@ -715,7 +715,7 @@ plt.colorbar(im, cax=cax)
 plt.tight_layout()
 54
 Chapter 3. Tutorials
-",0.0011792182922363281
+",0.0009982585906982422
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,2,matplotlib_61-81_pdf.pdf ~ 2,"Matplotlib, Release 2.0.2
 0
 2
@@ -753,7 +753,7 @@ Figures directly and connect them yourselves – but since we are focusing here 
 let pyplot handle some of those details for us:
 3.2. Intermediate
 55
-",0.002138853073120117
+",0.001931905746459961
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,3,matplotlib_61-81_pdf.pdf ~ 3,"Matplotlib, Release 2.0.2
 import matplotlib.pyplot as plt
 fig = plt.figure()
@@ -797,7 +797,7 @@ instance contains an XAxis and a YAxis instance, which handle the layout and dra
 labels and axis labels.
 56
 Chapter 3. Tutorials
-",0.0029420852661132812
+",0.002763032913208008
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,4,matplotlib_61-81_pdf.pdf ~ 4,"Matplotlib, Release 2.0.2
 Try creating the ﬁgure below.
 0.0
@@ -838,7 +838,7 @@ ber variables Figure.patch and Axes.patch (“Patch” is a name inherited from 
 following properties
 3.2. Intermediate
 57
-",0.007050037384033203
+",0.0015020370483398438
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,5,matplotlib_61-81_pdf.pdf ~ 5,"Matplotlib, Release 2.0.2
 Property
 Description
@@ -902,7 +902,7 @@ linewidth or lw = 1.0
 picker = None
 58
 Chapter 3. Tutorials
-",0.003116130828857422
+",0.0022461414337158203
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,6,matplotlib_61-81_pdf.pdf ~ 6,"Matplotlib, Release 2.0.2
 transform = <Affine object at 0x134cca84>
 verts = ((0, 0), (0, 1), (1, 1), (1, 0))
@@ -942,7 +942,7 @@ You are free however, to iterate over the list of axes or index into it to get a
 to customize. Here is an example which turns all the axes grids on:
 3.2. Intermediate
 59
-",0.0027437210083007812
+",0.0026922225952148438
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,7,matplotlib_61-81_pdf.pdf ~ 7,"Matplotlib, Release 2.0.2
 for ax in fig.axes:
 ax.grid(True)
@@ -961,7 +961,7 @@ In [195]: fig.canvas.draw()
 Here is a summary of the Artists the ﬁgure contains
 60
 Chapter 3. Tutorials
-",0.0021920204162597656
+",0.0009601116180419922
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,8,matplotlib_61-81_pdf.pdf ~ 8,"Matplotlib, Release 2.0.2
 Figure attribute
 Description
@@ -1010,7 +1010,7 @@ what you are doing, because the Axes needs to do a few things when it creates an
 set). It also inspects the data contained in the Artist to update the data structures controlling auto-scaling,
 3.2. Intermediate
 61
-",0.002843141555786133
+",0.0025482177734375
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,9,matplotlib_61-81_pdf.pdf ~ 9,"Matplotlib, Release 2.0.2
 so that the view limits can be adjusted to contain the plotted data. You can, nonetheless, create objects
 yourself and add them directly to the Axes using helper methods like add_line() and add_patch().
@@ -1052,7 +1052,7 @@ In [273]: print ax.get_xlim()
 In [274]: ax.figure.canvas.draw()
 62
 Chapter 3. Tutorials
-",0.0017137527465820312
+",0.0014553070068359375
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,10,matplotlib_61-81_pdf.pdf ~ 10,"Matplotlib, Release 2.0.2
 There are many, many Axes helper methods for creating primitive Artists and adding them to their respec-
 tive containers. The table below summarizes a small sampling of them, the kinds of Artist they create,
@@ -1130,7 +1130,7 @@ placed and how they are represented as strings.
 Each Axis object contains a label attribute (this is what pylab modiﬁes in calls to xlabel() and
 3.2. Intermediate
 63
-",0.003564119338989258
+",0.0026662349700927734
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,11,matplotlib_61-81_pdf.pdf ~ 11,"Matplotlib, Release 2.0.2
 ylabel()) as well as a list of major and minor ticks. The ticks are XTick and YTick instances, which
 contain the actual line and text primitives that render the ticks and ticklabels. Because the ticks are dynam-
@@ -1202,7 +1202,7 @@ Turn the grid on or oﬀfor the major or minor ticks
 Here is an example, not recommended for its beauty, which customizes the axes and tick properties
 64
 Chapter 3. Tutorials
-",0.002969026565551758
+",0.002846956253051758
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,12,matplotlib_61-81_pdf.pdf ~ 12,"Matplotlib, Release 2.0.2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1226,7 +1226,7 @@ line.set_markeredgewidth(3)
 plt.show()
 3.2. Intermediate
 65
-",0.0007710456848144531
+",0.0009710788726806641
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,13,matplotlib_61-81_pdf.pdf ~ 13,"Matplotlib, Release 2.0.2
 0.0
 0.2
@@ -1272,7 +1272,7 @@ Here is an example which sets the formatter for the right side ticks with dollar
 on the right side of the yaxis
 66
 Chapter 3. Tutorials
-",0.0015120506286621094
+",0.0014290809631347656
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,14,matplotlib_61-81_pdf.pdf ~ 14,"Matplotlib, Release 2.0.2
 import numpy as np
 import matplotlib.pyplot as plt
@@ -1304,7 +1304,7 @@ $80.00
 $100.0
 3.2. Intermediate
 67
-",0.001033782958984375
+",0.0009779930114746094
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,15,matplotlib_61-81_pdf.pdf ~ 15,"Matplotlib, Release 2.0.2
 3.2.2 Legend guide
 This legend guide is an extension of the documentation available at legend() - please ensure you are
@@ -1344,7 +1344,7 @@ which can. Legend handles don’t have to exists on the Figure or Axes in order 
 Suppose we wanted to create a legend which has an entry for some data which is represented by a red color:
 68
 Chapter 3. Tutorials
-",0.0027108192443847656
+",0.002595663070678711
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,16,matplotlib_61-81_pdf.pdf ~ 16,"Matplotlib, Release 2.0.2
 import matplotlib.patches as mpatches
 import matplotlib.pyplot as plt
@@ -1374,7 +1374,7 @@ plt.legend(handles=[blue_line])
 plt.show()
 3.2. Intermediate
 69
-",0.0010669231414794922
+",0.000993967056274414
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,17,matplotlib_61-81_pdf.pdf ~ 17,"Matplotlib, Release 2.0.2
 0.0
 0.2
@@ -1408,7 +1408,7 @@ plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc=3,
 ncol=2, mode=""expand"", borderaxespad=0.)
 70
 Chapter 3. Tutorials
-",0.0013670921325683594
+",0.001252889633178711
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,18,matplotlib_61-81_pdf.pdf ~ 18,"Matplotlib, Release 2.0.2
 plt.subplot(223)
 plt.plot([1,2,3], label=""test1"")
@@ -1454,7 +1454,7 @@ line2, = plt.plot([3,2,1], label=""Line 2"", linewidth=4)
 first_legend = plt.legend(handles=[line1], loc=1)
 3.2. Intermediate
 71
-",0.0016598701477050781
+",0.0014958381652832031
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_61-81_pdf.pdf,19,matplotlib_61-81_pdf.pdf ~ 19,"Matplotlib, Release 2.0.2
 # Add the legend manually to the current Axes.
 ax = plt.gca().add_artist(first_legend)
@@ -1491,14 +1491,14 @@ The choice of handler subclass is determined by the following rules:
 For completeness, this logic is mostly implemented in get_legend_handler().
 72
 Chapter 3. Tutorials
-",0.0013089179992675781
+",0.0011668205261230469
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,0,latex_pdf.pdf ~ 0,"Sample PDF Document
 Robert Maron
 Grzegorz Grudzi´nski
 February 20, 1999
-",0.023529052734375
+",0.023530960083007812
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,1,latex_pdf.pdf ~ 1,"2
-",0.0005261898040771484
+",0.0005590915679931641
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,2,latex_pdf.pdf ~ 2,"Contents
 1
 Template
@@ -1544,10 +1544,10 @@ pdfLATEX
 Examples . . . . . . . . . . . . . . . . . . . . . . . . . .
 7
 3
-",0.003371000289916992
+",0.003386974334716797
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,3,latex_pdf.pdf ~ 3,"4
 CONTENTS
-",0.0004899501800537109
+",0.0004646778106689453
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,4,latex_pdf.pdf ~ 4,"Chapter 1
 Template
 1.1
@@ -1571,7 +1571,7 @@ some of them in the LATEXsearch path — if you know how to do this);
 3. to see or print the result use acroread (unfortunately some versions of
 acroread may produce PostScript which is too complex), or
 5
-",0.0024309158325195312
+",0.0024483203887939453
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,5,latex_pdf.pdf ~ 5,"6
 CHAPTER 1. TEMPLATE
 4. run ghostscript: “gv file.pdf” to display or:
@@ -1605,7 +1605,7 @@ do it (if you have enough spare time). But you must check spelling!
 You can use the ispell package for this, from within emacs, or from the
 command line:
 ispell -t document_chapter1.tex
-",0.0027189254760742188
+",0.002666950225830078
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,6,latex_pdf.pdf ~ 6,"1.3. LATEX AND PDFLATEX CAPABILITIES
 7
 1.3
@@ -1642,7 +1642,7 @@ package manuals:
 Examples
 References
 MIMUW
-",0.0019991397857666016
+",0.0018663406372070312
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,7,latex_pdf.pdf ~ 7,"8
 CHAPTER 1. TEMPLATE
 Hyperlinks
@@ -1670,7 +1670,7 @@ way.
 • $ & % # _ { }
 • \
 • ˜ ˆ
-",0.0007109642028808594
+",0.000640869140625
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,8,latex_pdf.pdf ~ 8,"1.3. LATEX AND PDFLATEX CAPABILITIES
 9
 Math
@@ -1705,7 +1705,7 @@ tiny
 – footnotesize
 – small
 – normalsize
-",0.0027170181274414062
+",0.003290891647338867
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/latex_pdf.pdf,9,latex_pdf.pdf ~ 9,"10
 CHAPTER 1. TEMPLATE
 – large
@@ -1713,7 +1713,7 @@ CHAPTER 1. TEMPLATE
 – LARGE
 – huge
 – Huge
-",0.0009191036224365234
+",0.0012969970703125
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/basketball_pdf.pdf,0,basketball_pdf.pdf ~ 0,"The Global Game: Basketball's Unifying
 Power in the Modern Era
 From Peach Baskets to Global Phenomenon
@@ -1727,7 +1727,7 @@ Urban Renaissance Through Basketball
 The Future Game
 Conclusion: More Than Just a Game
 1
-",0.0030188560485839844
+",0.002295970916748047
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/basketball_pdf.pdf,1,basketball_pdf.pdf ~ 1,"From Peach Baskets to Global Phenomenon
 The story begins in Springfield, Massachusetts, 1891. Dr. James Naismith's simple invention
 of nailing peach baskets to a gymnasium wall has evolved into something extraordinary.
@@ -1757,7 +1757,7 @@ basketball is experiencing unprecedented growth."" This growth manifests in incr
 viewership, engagement, and participation across demographics, creating new role models
 for aspiring female athletes worldwide.
 2
-",0.004034996032714844
+",0.002699136734008789
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/basketball_pdf.pdf,2,basketball_pdf.pdf ~ 2,"The Economic Slam Dunk
 Basketball's economic impact extends far beyond ticket sales and broadcasting rights. The
 NBA's revenue reached $10 billion in the 2022-24 season, with international markets playing
@@ -1779,7 +1779,7 @@ athletic skills but on building character, leadership, and global understanding.
 Brown, director of international youth programs, explains, ""We're building confidence,
 leadership skills, and global understanding through sport.""
 3
-",0.001646280288696289
+",0.0014789104461669922
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/basketball_pdf.pdf,3,basketball_pdf.pdf ~ 3,"Urban Renaissance Through Basketball
 The sport's impact on urban development deserves special attention. Basketball courts have
 become essential components of urban planning worldwide, serving as community hubs that
@@ -1799,7 +1799,7 @@ its power to inspire, unite, and transform lives remains constant. In gymnasiums
 playgrounds, and arenas across the world, basketball continues to write new chapters in its
 remarkable story of global impact and cultural unity
 4
-",0.0014100074768066406
+",0.0012717247009277344
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/notion_pdf.pdf,0,notion_pdf.pdf ~ 0,"Gen AI Introduction - Notes
 1
 Gen AI Introduction - Notes
@@ -1841,7 +1841,7 @@ next word in a sentence just by
 filtering words with the highest 
 probability of occurring, and 
 choosing the top result.
-",0.0029659271240234375
+",0.0026950836181640625
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/notion_pdf.pdf,1,notion_pdf.pdf ~ 1,"Gen AI Introduction - Notes
 2
 First early rendition of language 
@@ -1852,13 +1852,13 @@ training data
 2. Exact phrasing might not exist.
 Talked about Neural networks..(don't 
 need to know for class)
-",0.0004839897155761719
+",0.0003418922424316406
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,0,matplotlib_1-21_pdf.pdf ~ 0,"Matplotlib
 Release 2.0.2
 John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the m
 May 10, 2017
-",0.0012819766998291016
-/Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,1,matplotlib_1-21_pdf.pdf ~ 1,,7.605552673339844e-05
+",0.0007758140563964844
+/Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,1,matplotlib_1-21_pdf.pdf ~ 1,,4.6253204345703125e-05
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,2,matplotlib_1-21_pdf.pdf ~ 2,"CONTENTS
 I
 User’s Guide
@@ -1910,7 +1910,7 @@ The Matplotlib API
 17 animation module
 491
 i
-",0.0014638900756835938
+",0.001196146011352539
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,3,matplotlib_1-21_pdf.pdf ~ 3,"18 artist Module
 535
 19 Axes class
@@ -1966,7 +1966,7 @@ i
 44 projections
 1379
 ii
-",0.0006701946258544922
+",0.0005779266357421875
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,4,matplotlib_1-21_pdf.pdf ~ 4,"45 pyplot
 1387
 46 rcsetup
@@ -2020,7 +2020,7 @@ Matplotlib AxesGrid Toolkit
 67 The Matplotlib AxesGrid Toolkit User’s Guide
 1779
 iii
-",0.0008552074432373047
+",0.0005710124969482422
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,5,matplotlib_1-21_pdf.pdf ~ 5,"68 The Matplotlib AxesGrid Toolkit API
 1795
 69 The Matplotlib axes_grid1 Toolkit API
@@ -2074,7 +2074,7 @@ The Matplotlib Developers’ Guide
 87 Default Color changes
 2019
 iv
-",0.0011479854583740234
+",0.0009877681732177734
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,6,matplotlib_1-21_pdf.pdf ~ 6,"IX
 Matplotlib Examples
 2023
@@ -2131,7 +2131,7 @@ Matplotlib Examples
 113widgets Examples
 3001
 v
-",0.0007801055908203125
+",0.0007832050323486328
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,7,matplotlib_1-21_pdf.pdf ~ 7,"X
 Glossary
 3015
@@ -2142,12 +2142,12 @@ Python Module Index
 Index
 3023
 vi
-",0.00012183189392089844
+",0.00015807151794433594
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,8,matplotlib_1-21_pdf.pdf ~ 8,"Part I
 User’s Guide
 1
-",7.390975952148438e-05
-/Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,9,matplotlib_1-21_pdf.pdf ~ 9,,7.104873657226562e-05
+",0.00011229515075683594
+/Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,9,matplotlib_1-21_pdf.pdf ~ 9,,5.507469177246094e-05
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,10,matplotlib_1-21_pdf.pdf ~ 10,"CHAPTER
 ONE
 INTRODUCTION
@@ -2182,7 +2182,7 @@ The Matplotlib code is conceptually divided into three parts: the pylab interfac
 provided by matplotlib.pylab which allow the user to create plots with code quite similar to MATLAB
 1 MATLAB is a registered trademark of The MathWorks, Inc.
 3
-",0.005610942840576172
+",0.00442814826965332
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,11,matplotlib_1-21_pdf.pdf ~ 11,"Matplotlib, Release 2.0.2
 ﬁgure generating code (Pyplot tutorial). The Matplotlib frontend or Matplotlib API is the set of classes that
 do the heavy lifting, creating and managing ﬁgures, text, lines, plots and so on (Artist tutorial). This is an
@@ -2199,7 +2199,7 @@ from the Python shell in Tkinter on Windows™. My primary use is to embed Matpl
 application that runs on Windows, Linux and Macintosh OS X.
 4
 Chapter 1. Introduction
-",0.0016999244689941406
+",0.0011630058288574219
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,12,matplotlib_1-21_pdf.pdf ~ 12,"CHAPTER
 TWO
 INSTALLING
@@ -2226,7 +2226,7 @@ distributions such as WinPython, Python(x,y), Enthought Canopy, or Continuum Ana
 matplotlib and many of its dependencies, plus other useful packages, preinstalled.
 For standard Python installations, install matplotlib using pip:
 5
-",0.001558065414428711
+",0.0014500617980957031
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,13,matplotlib_1-21_pdf.pdf ~ 13,"Matplotlib, Release 2.0.2
 python -m pip install -U pip setuptools
 python -m pip install matplotlib
@@ -2269,7 +2269,7 @@ example, which default backend to use, whether some of the optional libraries th
 installed, and so on. This ﬁle will be particularly useful to those packaging matplotlib.
 6
 Chapter 2. Installing
-",0.002824068069458008
+",0.0026390552520751953
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,14,matplotlib_1-21_pdf.pdf ~ 14,"Matplotlib, Release 2.0.2
 If you have installed prerequisites to nonstandard places and need to inform matplotlib where they are,
 edit setupext.py and add the base dirs to the basedir dictionary entry for your sys.platform. e.g., if
@@ -2305,7 +2305,7 @@ See What is a backend? for more details on the optional matplotlib backends and 
 provide.
 2.2. Installing from source
 7
-",0.0028429031372070312
+",0.002039194107055664
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,15,matplotlib_1-21_pdf.pdf ~ 15,"Matplotlib, Release 2.0.2
 tk 8.3 or later, not 8.6.0 or 8.6.1 The TCL/Tk widgets library used by the TkAgg backend.
 Versions 8.6.0 and 8.6.1 are known to have issues that may result in segfaults when closing multiple
@@ -2338,7 +2338,7 @@ This does not build matplotlib, but it does get the install the build dependenci
 from source easier.
 8
 Chapter 2. Installing
-",0.001977682113647461
+",0.0018203258514404297
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,16,matplotlib_1-21_pdf.pdf ~ 16,"Matplotlib, Release 2.0.2
 2.2.3 Building on OSX
 The build situation on OSX is complicated by the various places one can get the libpng and freetype re-
@@ -2353,11 +2353,11 @@ Since there is no canonical Windows package manager, the methods for building fr
 from source code are documented as a build script at matplotlib-winbuild.
 2.2. Installing from source
 9
-",0.0008339881896972656
+",0.000982046127319336
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,17,matplotlib_1-21_pdf.pdf ~ 17,"Matplotlib, Release 2.0.2
 10
 Chapter 2. Installing
-",9.584426879882812e-05
+",0.00011801719665527344
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,18,matplotlib_1-21_pdf.pdf ~ 18,"CHAPTER
 THREE
 TUTORIALS
@@ -2375,7 +2375,7 @@ plt.plot([1,2,3,4])
 plt.ylabel('some numbers')
 plt.show()
 11
-",0.0011801719665527344
+",0.0011200904846191406
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_1-21_pdf.pdf,19,matplotlib_1-21_pdf.pdf ~ 19,"Matplotlib, Release 2.0.2
 0.0
 0.5
@@ -2409,7 +2409,7 @@ plt.axis([0, 6, 0, 20])
 plt.show()
 12
 Chapter 3. Tutorials
-",0.0015001296997070312
+",0.0014421939849853516
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/chess_pdf.pdf,0,chess_pdf.pdf ~ 0,"Author: Prateek 
  
  
@@ -2427,7 +2427,7 @@ Chess in the Modern Era: From Grandmasters to Computers ........................
  
  
  
-",0.04719209671020508
+",0.039620161056518555
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/chess_pdf.pdf,1,chess_pdf.pdf ~ 1,"Author: Prateek 
  
  
@@ -2460,7 +2460,7 @@ During the 18th century, the chess world shifted its focus to Western Europe. Ci
 and Paris became hubs of chess activity, with matches played in bustling coffee houses. This 
 period saw chess transition from a pastime of the nobility to a game enjoyed by a broader 
 audience. 
-",0.005041837692260742
+",0.004620075225830078
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/chess_pdf.pdf,2,chess_pdf.pdf ~ 2,"Author: Prateek 
  
  
@@ -2490,7 +2490,7 @@ adds depth to every move you make on the board. So next time you sit down for a 
 remember you're not just playing chess – you're participating in a centuries-old tradition of 
 strategy, skill, and intellectual combat. 
  
-",0.00304412841796875
+",0.0028100013732910156
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/sleep_pdf.pdf,0,sleep_pdf.pdf ~ 0," 
 Sleep Deprivation: Your Body's Silent 
 Alarm
@@ -2517,7 +2517,7 @@ Bottom Line: Sleep is Not a Luxury .............................................
  
  
  
-",0.0030760765075683594
+",0.003010988235473633
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/sleep_pdf.pdf,1,sleep_pdf.pdf ~ 1," 
  
  
@@ -2547,7 +2547,7 @@ the world.
 • Stress feels overwhelming: Your ability to handle pressure decreases. 
 • You might feel sad or anxious more often: Sleep deprivation can worsen mood 
 disorders. 
-",0.004930019378662109
+",0.004815816879272461
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/sleep_pdf.pdf,2,sleep_pdf.pdf ~ 2,"Imagine snapping at your friend because they're chewing too loudly, or bursting into tears 
 because you can't find your keys. These are examples of how lack of sleep can affect your 
 emotions. 
@@ -2577,7 +2577,7 @@ family ties.
 • Less enjoyment of activities: Your favorite hobbies might not seem as fun when 
 you're exhausted. 
 • Social withdrawal: You might skip social events because you're too tired. 
-",0.0016858577728271484
+",0.0016520023345947266
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/sleep_pdf.pdf,3,sleep_pdf.pdf ~ 3,"Imagine missing your best friend's birthday party because you're too exhausted, or getting 
 into an argument with your partner over something trivial because you're irritable from lack 
 of sleep. 
@@ -2611,7 +2611,7 @@ stretches.
 calming until you feel sleepy. 
 Remember, these changes might take some time to show effect. Be patient and consistent, 
 and you should start seeing improvements in your sleep quality. 
-",0.0017979145050048828
+",0.002276182174682617
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/sleep_pdf.pdf,4,sleep_pdf.pdf ~ 4,"Bottom Line: Sleep is Not a Luxury 
 In our busy world, it's easy to think of sleep as something we can cut back on to make more 
 time for work, socializing, or entertainment. But the truth is, sleep is not a luxury - it's a 
@@ -2627,7 +2627,7 @@ So, the next time you're tempted to stay up late binge-watching your favorite sh
 scrolling through social media, remember: your body needs that sleep. Treat it right, and it 
 will thank you with better health, clearer thinking, and a happier mood. Sweet dreams! 
  
-",0.0008280277252197266
+",0.0010061264038085938
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,0,matplotlib_81-101_pdf.pdf ~ 0,"Matplotlib, Release 2.0.2
 All of this ﬂexibility means that we have the necessary hooks to implement custom handlers for our own
 type of legend key.
@@ -2669,7 +2669,7 @@ one another for each item in the given tuple. The following example demonstrates
 keys on top of one another:
 3.2. Intermediate
 73
-",0.0039539337158203125
+",0.004105806350708008
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,1,matplotlib_81-101_pdf.pdf ~ 1,"Matplotlib, Release 2.0.2
 import matplotlib.pyplot as plt
 from numpy.random import randn
@@ -2703,7 +2703,7 @@ class AnyObject(object):
 pass
 74
 Chapter 3. Tutorials
-",0.0015361309051513672
+",0.0015151500701904297
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,2,matplotlib_81-101_pdf.pdf ~ 2,"Matplotlib, Release 2.0.2
 class AnyObjectHandler(object):
 def legend_artist(self, legend, orig_handle, fontsize, handlebox):
@@ -2740,7 +2740,7 @@ from matplotlib.legend_handler import HandlerPatch
 import matplotlib.pyplot as plt
 3.2. Intermediate
 75
-",0.0017728805541992188
+",0.0018019676208496094
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,3,matplotlib_81-101_pdf.pdf ~ 3,"Matplotlib, Release 2.0.2
 import matplotlib.patches as mpatches
 class HandlerEllipse(HandlerPatch):
@@ -2774,7 +2774,7 @@ Known examples of using legend
 Here is a non-exhaustive list of the examples available involving legend being used in various ways:
 76
 Chapter 3. Tutorials
-",0.0014209747314453125
+",0.0014350414276123047
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,4,matplotlib_81-101_pdf.pdf ~ 4,"Matplotlib, Release 2.0.2
 • lines_bars_and_markers example code: scatter_with_legend.py
 • api example code: legend_demo.py
@@ -2825,7 +2825,7 @@ useful when processing events from the user interface, which typically occur in 
 to know where the mouse click or key-press occurred in your data coordinate system.
 3.3. Advanced
 77
-",0.003292083740234375
+",0.0035049915313720703
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,5,matplotlib_81-101_pdf.pdf ~ 5,"Matplotlib, Release 2.0.2
 Data coordinates
 Let’s start with the most commonly used coordinate, the data coordinate system. Whenever you add data to
@@ -2861,7 +2861,7 @@ You can use the ax.transData instance to transform from your data to your displa
 either a single point or a sequence of points as shown below:
 78
 Chapter 3. Tutorials
-",0.001631021499633789
+",0.0013723373413085938
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,6,matplotlib_81-101_pdf.pdf ~ 6,"Matplotlib, Release 2.0.2
 In [14]: type(ax.transData)
 Out[14]: <class 'matplotlib.transforms.CompositeGenericTransform'>
@@ -2908,7 +2908,7 @@ data = (5.0, 0.0)
 display = (281.9  
 3.3. Advanced
 79
-",0.0024738311767578125
+",0.0019881725311279297
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,7,matplotlib_81-101_pdf.pdf ~ 7,"Matplotlib, Release 2.0.2
 Note: If you run the source code in the example above in a GUI backend, you may also ﬁnd that the two
 arrows for the data and display annotations do not point to exactly the same point. This is because the
@@ -2953,7 +2953,7 @@ fontsize=16, fontweight='bold', va='top')
 plt.show()
 80
 Chapter 3. Tutorials
-",0.0031440258026123047
+",0.0024111270904541016
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,8,matplotlib_81-101_pdf.pdf ~ 8,"Matplotlib, Release 2.0.2
 0.00
 0.25
@@ -3024,7 +3024,7 @@ ax.add_patch(circ)
 plt.show()
 3.3. Advanced
 81
-",0.0025322437286376953
+",0.0016100406646728516
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,9,matplotlib_81-101_pdf.pdf ~ 9,"Matplotlib, Release 2.0.2
 0
 2
@@ -3058,7 +3058,7 @@ ax.set_title(r'$\sigma=1 \/ \dots \/ \sigma=2$', fontsize=16)
 # the x coords of this transformation are data, and the
 82
 Chapter 3. Tutorials
-",0.013338088989257812
+",0.011366128921508789
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,10,matplotlib_81-101_pdf.pdf ~ 10,"Matplotlib, Release 2.0.2
 # y coord are axes
 trans = transforms.blended_transform_factory(
@@ -3096,7 +3096,7 @@ be replaced by get_xaxis_transform:
 trans = ax.get_xaxis_transform()
 3.3. Advanced
 83
-",0.0071201324462890625
+",0.0014851093292236328
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,11,matplotlib_81-101_pdf.pdf ~ 11,"Matplotlib, Release 2.0.2
 Using offset transforms to create a shadow effect
 One use of transformations is to create a new transformation that is oﬀset from another transformation, e.g.,
@@ -3142,7 +3142,7 @@ shadow_transform = ax.transData + offset
 # use the zorder to make sure we are below the line
 84
 Chapter 3. Tutorials
-",0.003641843795776367
+",0.002553224563598633
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,12,matplotlib_81-101_pdf.pdf ~ 12,"Matplotlib, Release 2.0.2
 ax.plot(x, y, lw=3, color='gray',
 transform=shadow_transform,
@@ -3182,7 +3182,7 @@ Here is how the ax.transData instance is deﬁned in the basic separable axis Ax
 self.transData = self.transScale + (self.transLimits + self.transAxes)
 3.3. Advanced
 85
-",0.00215911865234375
+",0.001850128173828125
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,13,matplotlib_81-101_pdf.pdf ~ 13,"Matplotlib, Release 2.0.2
 We’ve been introduced to the transAxes instance above in Axes coordinates, which maps the (0,0), (1,1)
 corners of the axes or subplot bounding box to display space, so let’s look at these other two pieces.
@@ -3228,7 +3228,7 @@ in the matplotlib.projections package, and the best way to learn more is to open
 packages and see how to make your own, since matplotlib supports extensible axes and projections. Michael
 86
 Chapter 3. Tutorials
-",0.003178119659423828
+",0.0024099349975585938
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,14,matplotlib_81-101_pdf.pdf ~ 14,"Matplotlib, Release 2.0.2
 Droettboom has provided a nice tutorial example of creating a hammer projection axes; see api example
 code: custom_projection_example.py.
@@ -3263,7 +3263,7 @@ ax.set_ylim(-2,2)
 plt.show()
 3.3. Advanced
 87
-",0.0022461414337158203
+",0.0012187957763671875
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,15,matplotlib_81-101_pdf.pdf ~ 15,"Matplotlib, Release 2.0.2
 2.0
 1.5
@@ -3319,7 +3319,7 @@ import matplotlib.pyplot as plt
 from matplotlib.path import Path
 88
 Chapter 3. Tutorials
-",0.0021750926971435547
+",0.0018877983093261719
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,16,matplotlib_81-101_pdf.pdf ~ 16,"Matplotlib, Release 2.0.2
 import matplotlib.patches as patches
 verts = [
@@ -3350,7 +3350,7 @@ ax.set_ylim(-0.1, 1.1)
 plt.show()
 3.3. Advanced
 89
-",0.0009441375732421875
+",0.000720977783203125
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,17,matplotlib_81-101_pdf.pdf ~ 17,"Matplotlib, Release 2.0.2
 0.0
 0.2
@@ -3387,7 +3387,7 @@ We’ll now extract the corners of the rectangles. Each of the left, bottom, etc
 where n is the array of counts for each histogram bar:
 90
 Chapter 3. Tutorials
-",0.0018031597137451172
+",0.001528024673461914
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,18,matplotlib_81-101_pdf.pdf ~ 18,"Matplotlib, Release 2.0.2
 # get the corners of the rectangles for the histogram
 left = np.array(bins[:-1])
@@ -3419,7 +3419,7 @@ ax.add_patch(patch)
 Here is the result
 3.3. Advanced
 91
-",0.0013310909271240234
+",0.0012192726135253906
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_81-101_pdf.pdf,19,matplotlib_81-101_pdf.pdf ~ 19,"Matplotlib, Release 2.0.2
 3
 2
@@ -3454,7 +3454,7 @@ text.set_path_effects([path_effects.Normal()])
 plt.show()
 92
 Chapter 3. Tutorials
-",0.0017542839050292969
+",0.0011761188507080078
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/genai_pdf.pdf,0,genai_pdf.pdf ~ 0," 
  
  
@@ -3479,7 +3479,7 @@ Quick Pro Tips _________________________________________________________________
 Want to Get Started? ____________________________________________________________ 3 
  
  
-",0.04477095603942871
+",0.040592193603515625
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/genai_pdf.pdf,1,genai_pdf.pdf ~ 1,"Author: Prateek Mannem 
  
  
@@ -3515,7 +3515,7 @@ Problem Solving
 Cool Things to Know 
 🌟 Generative AI learns by: 
 • Studying massive amounts of data 
-",0.0034737586975097656
+",0.003246307373046875
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/genai_pdf.pdf,2,genai_pdf.pdf ~ 2,"Author: Prateek Mannem 
  
  
@@ -3550,7 +3550,7 @@ Quick Pro Tips
 • Experiment and have fun! 
 Want to Get Started? 
 Try free tools like: 
-",0.0025320053100585938
+",0.0023212432861328125
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/genai_pdf.pdf,3,genai_pdf.pdf ~ 3,"Author: Prateek Mannem 
  
  
@@ -3564,7 +3564,7 @@ Try free tools like:
  
 Remember: The more you play and experiment, the more you'll understand how incredible 
 this technology can be! 🤖 Welcome to the Future of Creativity! 🚀 
-",0.00037288665771484375
+",0.0003800392150878906
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,0,matplotlib_21-41_pdf.pdf ~ 0,"Matplotlib, Release 2.0.2
 0
 1
@@ -3596,7 +3596,7 @@ plt.plot(t, t, 'r--', t, t**2, 'bs', t, t**3, 'g^')
 plt.show()
 3.1. Introductory
 13
-",0.0032570362091064453
+",0.004221916198730469
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,1,matplotlib_21-41_pdf.pdf ~ 1,"Matplotlib, Release 2.0.2
 0
 1
@@ -3629,7 +3629,7 @@ lines = plt.plot(x1, y1, x2, y2)
 plt.setp(lines, color='r', linewidth=2.0)
 14
 Chapter 3. Tutorials
-",0.0018270015716552734
+",0.0018162727355957031
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,2,matplotlib_21-41_pdf.pdf ~ 2,"Matplotlib, Release 2.0.2
 # or MATLAB style string value pairs
 plt.setp(lines, 'color', 'r', 'linewidth', 2.0)
@@ -3708,7 +3708,7 @@ animated: [True | False]
 antialiased or aa: [True | False]
 3.1. Introductory
 15
-",0.0029287338256835938
+",0.003448963165283203
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,3,matplotlib_21-41_pdf.pdf ~ 3,"Matplotlib, Release 2.0.2
 ...snip
 Working with multiple ﬁgures and axes
@@ -3731,7 +3731,7 @@ plt.plot(t2, np.cos(2*np.pi*t2), 'r--')
 plt.show()
 16
 Chapter 3. Tutorials
-",0.0008962154388427734
+",0.0009591579437255859
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,4,matplotlib_21-41_pdf.pdf ~ 4,"Matplotlib, Release 2.0.2
 0
 1
@@ -3782,7 +3782,7 @@ plt.figure(1)
 # figure 1 current; subplot(212) still current
 3.1. Introductory
 17
-",0.0028960704803466797
+",0.0029180049896240234
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,5,matplotlib_21-41_pdf.pdf ~ 5,"Matplotlib, Release 2.0.2
 plt.subplot(211)
 # make subplot(211) in figure1 current
@@ -3815,7 +3815,7 @@ plt.grid(True)
 plt.show()
 18
 Chapter 3. Tutorials
-",0.0017080307006835938
+",0.001544952392578125
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,6,matplotlib_21-41_pdf.pdf ~ 6,"Matplotlib, Release 2.0.2
 40
 60
@@ -3852,7 +3852,7 @@ can also use LaTeX to format your text and incorporate the output directly into 
 postscript – see Text rendering With LaTeX.
 3.1. Introductory
 19
-",0.002131938934326172
+",0.0021021366119384766
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,7,matplotlib_21-41_pdf.pdf ~ 7,"Matplotlib, Release 2.0.2
 Annotating text
 The uses of the basic text() command above place text at an arbitrary position on the Axes. A common use
@@ -3890,7 +3890,7 @@ local max
 In this basic example, both the xy (arrow tip) and xytext locations (text location) are in data coordinates.
 20
 Chapter 3. Tutorials
-",0.0015988349914550781
+",0.0015740394592285156
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,8,matplotlib_21-41_pdf.pdf ~ 8,"Matplotlib, Release 2.0.2
 There are a variety of other coordinate systems one can choose – see Basic annotation and Advanced Anno-
 tation for details. More examples can be found in pylab_examples example code: annotation_demo.py.
@@ -3933,7 +3933,7 @@ plt.grid(True)
 # logit
 3.1. Introductory
 21
-",0.0014660358428955078
+",0.0014331340789794922
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,9,matplotlib_21-41_pdf.pdf ~ 9,"Matplotlib, Release 2.0.2
 plt.subplot(224)
 plt.plot(x, y)
@@ -4002,7 +4002,7 @@ details.
 3.1.2 Image tutorial
 22
 Chapter 3. Tutorials
-",0.004654884338378906
+",0.003991127014160156
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,10,matplotlib_21-41_pdf.pdf ~ 10,"Matplotlib, Release 2.0.2
 Startup commands
 First, let’s start IPython. It is a most excellent enhancement to the standard Python prompt, and it ties in
@@ -4033,7 +4033,7 @@ The image used in this example is a PNG ﬁle, but keep that Pillow requirement 
 Here’s the image we’re going to play with:
 3.1. Introductory
 23
-",0.002615213394165039
+",0.0022308826446533203
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,11,matplotlib_21-41_pdf.pdf ~ 11,"Matplotlib, Release 2.0.2
 It’s a 24-bit RGB PNG image (8 bits for each of R, G, B). Depending on where you get your data, the other
 kinds of image that you’ll most likely encounter are RGBA images, which allow for transparency, or single-
@@ -4077,7 +4077,7 @@ array([[[ 0.40784314,
 0.44705883],
 24
 Chapter 3. Tutorials
-",0.0008859634399414062
+",0.0008158683776855469
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,12,matplotlib_21-41_pdf.pdf ~ 12,"Matplotlib, Release 2.0.2
 [ 0.44705883,
 0.44705883,
@@ -4117,7 +4117,7 @@ In [6]: imgplot = plt.imshow(img)
 350
 3.1. Introductory
 25
-",0.002357006072998047
+",0.0020401477813720703
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,13,matplotlib_21-41_pdf.pdf ~ 13,"Matplotlib, Release 2.0.2
 You can also plot any numpy array.
 Applying pseudocolor schemes to image plots
@@ -4149,7 +4149,7 @@ default is called viridis. There are plenty of others to choose from.
 In [9]: plt.imshow(lum_img, cmap=""hot"")
 26
 Chapter 3. Tutorials
-",0.0013818740844726562
+",0.0013141632080078125
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,14,matplotlib_21-41_pdf.pdf ~ 14,"Matplotlib, Release 2.0.2
 0
 100
@@ -4170,7 +4170,7 @@ In [10]: imgplot = plt.imshow(lum_img)
 In [11]: imgplot.set_cmap('nipy_spectral')
 3.1. Introductory
 27
-",0.0005102157592773438
+",0.0004658699035644531
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,15,matplotlib_21-41_pdf.pdf ~ 15,"Matplotlib, Release 2.0.2
 0
 100
@@ -4197,7 +4197,7 @@ In [12]: imgplot = plt.imshow(lum_img)
 In [13]: plt.colorbar()
 28
 Chapter 3. Tutorials
-",0.0009810924530029297
+",0.0012621879577636719
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,16,matplotlib_21-41_pdf.pdf ~ 16,"Matplotlib, Release 2.0.2
 0
 100
@@ -4231,7 +4231,7 @@ regions is the histogram. To create a histogram of our image data, we use the hi
 In [14]: plt.hist(lum_img.ravel(), bins=256, range=(0.0, 1.0), fc='k', ec='k')
 3.1. Introductory
 29
-",0.001035928726196289
+",0.0010538101196289062
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,17,matplotlib_21-41_pdf.pdf ~ 17,"Matplotlib, Release 2.0.2
 0.0
 0.2
@@ -4254,7 +4254,7 @@ cells.
 In [15]: imgplot = plt.imshow(lum_img, clim=(0.0, 0.7))
 30
 Chapter 3. Tutorials
-",0.0015342235565185547
+",0.0015196800231933594
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,18,matplotlib_21-41_pdf.pdf ~ 18,"Matplotlib, Release 2.0.2
 0
 200
@@ -4296,7 +4296,7 @@ In [18]: img.thumbnail((64, 64), Image.ANTIALIAS) # resizes image in-place
 In [19]: imgplot = plt.imshow(img)
 3.1. Introductory
 31
-",0.0015101432800292969
+",0.0014319419860839844
 /Users/prateekM/Downloads/Coding/Classes/Projects/Project Chitti/data/raw/test pdfs/matplotlib_21-41_pdf.pdf,19,matplotlib_21-41_pdf.pdf ~ 19,"Matplotlib, Release 2.0.2
 0
 10
@@ -4315,4 +4315,4 @@ Let’s try some others:
 In [20]: imgplot = plt.imshow(img, interpolation=""nearest"")
 32
 Chapter 3. Tutorials
-",0.000492095947265625
+",0.0004811286926269531
