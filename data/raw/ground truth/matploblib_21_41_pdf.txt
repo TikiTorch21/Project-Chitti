@@ -1,3 +1,4 @@
+<Page 1>
 See the plot() documentation for a complete list of line styles and format strings. The axis() command in the example above takes a list of [xmin, xmax, ymin, ymax] and specifies the viewport of the axes.
 If matplotlib were limited to working with lists, it would be fairly useless for numeric processing. Generally, you will use numpy arrays. In fact, all sequences are converted to numpy arrays internally. The example below illustrates a plotting several lines with different format styles in one command using arrays.
 Matplotlib, Release 2.0.2
@@ -12,6 +13,7 @@ t = np.arange(0., 5., 0.2)
 plt.plot(t, t, 'r--', t, t**2, 'bs', t, t**3, 'g^') plt.show()
   3.1. Introductory 13
 
+<Page 2>
 Matplotlib, Release 2.0.2
      100
  80
@@ -33,7 +35,7 @@ line, = plt.plot(x, y, '-') line.set_antialiased(False) # turn off antialising
 plt.setp(lines, color='r', linewidth=2.0)
   14
 Chapter3. Tutorials
-
+<Page 3>
     # or MATLAB style string value pairs
 plt.setp(lines, 'color', 'r', 'linewidth', 2.0)
  Here are the available Line2D properties.
@@ -105,6 +107,7 @@ animated: [True | False] antialiased or aa: [True | False]
   3.1. Introductory
 15
 
+<Page 4>
 Matplotlib, Release 2.0.2
    ...snip
 Working with multiple figures and axes
@@ -121,6 +124,7 @@ plt.plot(t1, f(t1), 'bo', t2, f(t2), 'k')
 plt.subplot(212)
 plt.plot(t2, np.cos(2*np.pi*t2), 'r--') plt.show()
   16 Chapter3. Tutorials
+<Page 5>
 
 The figure() command here is optional because figure(1) will be created by default, just as a subplot(111) will be created by default if you don’t manually specify any axes. The subplot() com- mand specifies numrows, numcols, fignum where fignum ranges from 1 to numrows*numcols. The commas in the subplot command are optional if numrows*numcols<10. So subplot(211) is identical to subplot(2, 1, 1). You can create an arbitrary number of subplots and axes. If you want to place an axes manually, i.e., not on a rectangular grid, use the axes() command, which allows you to specify the location as axes([left, bottom, width, height]) where all values are in fractional (0 to 1) co- ordinates. See pylab_examples example code: axes_demo.py for an example of placing axes manually and pylab_examples example code: subplots_demo.py for an example with lots of subplots.
 You can create multiple figures by using multiple figure() calls with an increasing figure number. Of course, each figure can contain as many axes and subplots as your heart desires:
@@ -131,6 +135,7 @@ Matplotlib, Release 2.0.2
        012345
     import matplotlib.pyplot as plt
 plt.figure(1)
+<Page 6>
 plt.subplot(211)
 plt.plot([1, 2, 3])
 plt.subplot(212)
@@ -164,6 +169,7 @@ plt.text(60, .025, r'$\mu=100,\ \sigma=15$') plt.axis([40, 160, 0, 0.03])
 plt.grid(True)
 plt.show()
   18 Chapter3. Tutorials
+<Page 7>
 
 All of the text() commands return an matplotlib.text.Text instance. Just as with with lines above, you can customize the properties by passing keyword arguments into the text functions or using setp():
 t = plt.xlabel('my data', fontsize=14, color='red')
@@ -180,6 +186,7 @@ Histogram of IQ
         Probability
              3.1. Introductory 19
 
+<Page 8>
 Matplotlib, Release 2.0.2
  Annotating text
 The uses of the basic text() command above place text at an arbitrary position on the Axes. A common use for text is to annotate some feature of the plot, and the annotate() method provides helper functionality to make annotations easy. In an annotation, there are two points to consider: the location being annotated represented by the argument xy and the location of the text xytext. Both of these arguments are (x,y) tuples.
@@ -197,6 +204,7 @@ plt.show()
    local max
    In this basic example, both the xy (arrow tip) and xytext locations (text location) are in data coordinates. 20 Chapter3. Tutorials
  
+<Page 9> 
 Matplotlib, Release 2.0.2
  There are a variety of other coordinate systems one can choose – see Basic annotation and Advanced Anno- tation for details. More examples can be found in pylab_examples example code: annotation_demo.py.
 Logarithmic and other nonlinear axes
@@ -225,6 +233,7 @@ plt.grid(True)
 # logit
   3.1. Introductory 21
 
+<Page 10>
 Matplotlib, Release 2.0.2
      plt.subplot(224) plt.plot(x, y) plt.yscale('logit') plt.title('logit') plt.grid(True)
 # Format the minor tick labels of the y-axis into empty strings with
@@ -253,6 +262,7 @@ It is also possible to add your own scale, see Developer’s guide for creating 
 3.1.2 Image tutorial
  22 Chapter3. Tutorials
 
+<Page 11>
 Startup commands
 First, let’s start IPython. It is a most excellent enhancement to the standard Python prompt, and it ties in especially well with Matplotlib. Start IPython either at a shell, or the IPython Notebook now.
 With IPython started, we now need to connect to a GUI event loop. This tells IPython where (and how) to display plots. To connect to a GUI loop, execute the %matplotlib magic at your IPython prompt. There’s more detail on exactly what this does at IPython’s documentation on GUI event loops.
@@ -269,6 +279,7 @@ In [3]: import matplotlib.image as mpimg
 In [4]: import numpy as np
   3.1. Introductory 23
 
+<Page 12>
 Matplotlib, Release 2.0.2
   It’s a 24-bit RGB PNG image (8 bits for each of R, G, B). Depending on where you get your data, the other kinds of image that you’ll most likely encounter are RGBA images, which allow for transparency, or single- channel grayscale (luminosity) images. You can right click on it and choose “Save image as” to download it to your computer for the rest of this tutorial.
 And here we go...
@@ -289,6 +300,7 @@ array([[[ 0.40784314, 0.40784314, 0.40784314],
         [ 0.44705883,  0.44705883,  0.44705883],
   24 Chapter3. Tutorials
 
+<Page 13>
 Matplotlib, Release 2.0.2
      [ 0.44705883,  0.44705883,  0.44705883],
 [ 0.44313726,  0.44313726,  0.44313726]]], dtype=float32)
@@ -310,6 +322,7 @@ In [6]: imgplot = plt.imshow(img)
 400 500
  3.1. Introductory 25
 
+<Page 14>
 Matplotlib, Release 2.0.2
  You can also plot any numpy array.
 Applying pseudocolor schemes to image plots
@@ -320,6 +333,7 @@ This is array slicing. You can read more in the Numpy tutorial.
 In [8]: plt.imshow(lum_img)
 Now, with a luminosity (2D, no color) image, the default colormap (aka lookup table, LUT), is applied. The default is called viridis. There are plenty of others to choose from.
 In [9]: plt.imshow(lum_img, cmap="hot")
+<Page 15>
          0
  50
 100
@@ -350,6 +364,7 @@ Matplotlib, Release 2.0.2
 In [11]: imgplot.set_cmap('nipy_spectral')
   3.1. Introductory 27
 
+<Page 16>
 Matplotlib, Release 2.0.2
     0
  50
@@ -369,6 +384,7 @@ It’s helpful to have an idea of what value a color represents. We can do that 
      In [12]: imgplot = plt.imshow(lum_img) In [13]: plt.colorbar()
   28 Chapter3. Tutorials
 
+<Page 17>
 Matplotlib, Release 2.0.2
      0
  50
@@ -388,6 +404,7 @@ Sometimes you want to enhance the contrast in your image, or expand the contrast
 In [14]: plt.hist(lum_img.ravel(), bins=256, range=(0.0, 1.0), fc='k', ec='k')
     3.1. Introductory 29
 
+<Page 18>
 Matplotlib, Release 2.0.2
       8000
 6000
@@ -400,7 +417,7 @@ Matplotlib, Release 2.0.2
  Most often, the “interesting” part of the image is around the peak, and you can get extra contrast by clipping the regions above and/or below the peak. In our histogram, it looks like there’s not much useful information in the high end (not many white things in the image). Let’s adjust the upper limit, so that we effectively “zoom in on” part of the histogram. We do this by passing the clim argument to imshow. You could also do this by calling the set_clim() method of the image plot object, but make sure that you do so in the same cell as your plot command when working with the IPython Notebook - it will not change plots from earlier cells.
 In [15]: imgplot = plt.imshow(lum_img, clim=(0.0, 0.7))
     30 Chapter3. Tutorials
-
+<Page 19>
 Array Interpolation schemes
 Interpolation calculates what the color or value of a pixel “should” be, according to different mathematical schemes. One common place that this happens is when you resize an image. The number of pixels change, but you want the same information. Since pixels are discrete, there’s missing space. Interpolation is how you fill that space. This is why your images sometimes come out looking pixelated when you blow them up. The effect is more pronounced when the difference between the original image and the expanded image is greater. Let’s take our image and shrink it. We’re effectively discarding pixels, only keeping a select few. Now when we plot it, that data gets blown up to the size on your screen. The old pixels aren’t there anymore, and the computer has to draw in pixels to fill that space.
 We’ll use the Pillow library that we used to load the image also to resize the image.
@@ -415,7 +432,8 @@ Before
 In [17]: img = Image.open('../_static/stinkbug.png')
 In [18]: img.thumbnail((64, 64), Image.ANTIALIAS) # resizes image in-place In [19]: imgplot = plt.imshow(img)
   3.1. Introductory 31
-
+  
+<Page 20>
 Matplotlib, Release 2.0.2
   0
 10

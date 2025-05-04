@@ -1,4 +1,4 @@
-<Page1> 
+<Page 1> 
 Generative AI: Your New Digital Creative CompanionConnected wire-frame lines and dots 
 ​​ 
 
@@ -58,6 +58,7 @@ Cool Things to Know
 🌟 Generative AI learns by: 
 
     Studying massive amounts of data 
+<Page 3>    
     Recognizing patterns 
     Creating new content based on what it's learned 
 🚀 It's NOT just copying - it's CREATING something original! 
@@ -89,7 +90,7 @@ Understand it's a tool, not a replacement for human creativity
 Experiment and have fun! 
 Want to Get Started? 
 Try free tools like: 
-
+<Page 4>
 ChatGPT 
 DALL-E 
 Midjourney 

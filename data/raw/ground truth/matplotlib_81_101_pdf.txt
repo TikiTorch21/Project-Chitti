@@ -1,3 +1,4 @@
+<Page 1>
 All of this flexibility means that we have the necessary hooks to implement custom handlers for our own type of legend key.
 The simplest example of using custom handlers is to instantiate one of the existing HandlerBase subclasses. For the sake of simplicity, let’s choose matplotlib.legend_handler.HandlerLine2D which accepts a numpoints argument (note numpoints is a keyword on the legend() function for convenience). We can then pass the mapping of instance to Handler as a keyword to legend.
 Matplotlib, Release 2.0.2
@@ -12,6 +13,7 @@ As you can see, “Line 1” now has 4 marker points, where “Line 2” has 2 (
 Along with handlers for complex plot types such as errorbars, stem plots and histograms, the default handler_map has a special tuple handler (HandlerTuple) which simply plots the handles on top of one another for each item in the given tuple. The following example demonstrates combining two legend keys on top of one another:
  3.2. Intermediate 73
 
+<Page 2>
 Matplotlib, Release 2.0.2
      import matplotlib.pyplot as plt from numpy.random import randn
 z = randn(10)
@@ -26,6 +28,7 @@ Implementing a custom legend handler
 A custom handler can be implemented to turn any handle into a legend key (handles don’t necessarily need to be matplotlib artists). The handler must implement a “legend_artist” method which returns a single artist for the legend to use. Signature details about the “legend_artist” are documented at legend_artist().
     import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+<Page 3>
 class AnyObject(object): pass
   74 Chapter3. Tutorials
 
@@ -54,6 +57,7 @@ plt.legend([AnyObject()], ['My first handler'], handler_map={AnyObject: AnyObjec
      from matplotlib.legend_handler import HandlerPatch import matplotlib.pyplot as plt
   3.2. Intermediate 75
 
+<Page 4>
 Matplotlib, Release 2.0.2
      import matplotlib.patches as mpatches
 class HandlerEllipse(HandlerPatch):
@@ -87,7 +91,9 @@ Matplotlib, Release 2.0.2
  • lines_bars_and_markers example code: scatter_with_legend.py • api example code: legend_demo.py
 • pylab_examples example code: contourf_hatching.py
 • pylab_examples example code: figlegend_demo.py
-• pylab_examples example code: scatter_symbol.py 3.3 Advanced
+• pylab_examples example code: scatter_symbol.py 
+<Page 5>
+3.3 Advanced
 3.3.1 Transformations Tutorial
 Like any graphics packages, matplotlib is built on top of a transformation framework to easily move be- tween coordinate systems, the userland data coordinate system, the axes coordinate system, the figure coordinate system, and the display coordinate system. In 95% of your plotting, you won’t need to think about this, as it happens under the hood, but as you push the limits of custom figure generation, it helps to have an understanding of these objects so you can reuse the existing transformations matplotlib makes available to you, or create your own (see matplotlib.transforms). The table below summarizes the ex- isting coordinate systems, the transformation object you should use to work in that coordinate system, and the description of that system. In the Transformation Object column, ax is a Axes instance, and fig is a Figure instance.
    Co- ordi- nate
@@ -108,6 +114,7 @@ This is the pixel coordinate system of the display; (0,0) is the bottom left of 
       All of the transformation objects in the table above take inputs in their coordinate system, and transform the input to the display coordinate system. That is why the display coordinate system has None for the Transformation Object column – it already is in display coordinates. The transformations also know how to invert themselves, to go from display back to the native coordinate system. This is particularly useful when processing events from the user interface, which typically occur in display space, and you want to know where the mouse click or key-press occurred in your data coordinate system.
  3.3. Advanced 77
 
+<Page 6>
 Matplotlib, Release 2.0.2
  Data coordinates
 Let’s start with the most commonly used coordinate, the data coordinate system. Whenever you add data to the axes, matplotlib updates the datalimits, most commonly updated with the set_xlim() and set_ylim() methods. For example, in the figure below, the data limits stretch from 0 to 10 on the x-axis, and -1 to 1 on the y-axis.
@@ -126,6 +133,7 @@ plt.show()
      You can use the ax.transData instance to transform from your data to your display coordinate system, either a single point or a sequence of points as shown below:
  78 Chapter3. Tutorials
 
+<Page 7>
 Matplotlib, Release 2.0.2
      In [14]: type(ax.transData)
 Out[14]: <class 'matplotlib.transforms.CompositeGenericTransform'>
@@ -147,6 +155,7 @@ display
  3.3. Advanced
 79
 
+<Page 8>
 Matplotlib, Release 2.0.2
   Note: If you run the source code in the example above in a GUI backend, you may also find that the two arrows for the data and display annotations do not point to exactly the same point. This is because the display point was computed before the figure was displayed, and the GUI backend may slightly resize the figure when it is created. The effect is more pronounced if you resize the figure yourself. This is one good reason why you rarely want to work in display space, but you can connect to the 'on_draw' Event to update figure coordinates on figure draws; see Event handling and picking.
 When you change the x or y limits of your axes, the data limits are updated so the transformation yields a new display point. Note that when we just change the ylim, only the y-display coordinate is altered, and when we change the xlim too, both are altered. More on this later when we talk about the Bbox.
@@ -166,6 +175,7 @@ for i, label in enumerate(('A', 'B', 'C', 'D')):
 fontsize=16, fontweight='bold', va='top') plt.show()
   80 Chapter3. Tutorials
 
+<Page 9>
 You can also make lines or patches in the axes coordinate system, but this is less useful in my experience than using ax.transAxes for placing text. Nonetheless, here is a silly example which plots some random dots in data space, and overlays a semi-transparent Circle centered in the middle of the axes with a radius one quarter of the axes – if your axes does not preserve aspect ratio (see set_aspect()), this will look like an ellipse. Use the pan/zoom tool to move around, or manually change the data xlim and ylim, and you will see the data move, but the circle will remain fixed because it is not in data coordinates and will always remain at the center of the axes.
 Matplotlib, Release 2.0.2
   1.0 1.0 0.8 0.8 0.6 0.6 0.4 0.4 0.2 0.2
@@ -190,6 +200,7 @@ ax.add_patch(circ)
 plt.show()
   3.3. Advanced 81
 
+<Page 10>
 Matplotlib, Release 2.0.2
      10 8 6 4 2 0
   0 2 4 6 8 10
@@ -206,6 +217,7 @@ ax.hist(x, 30)
 ax.set_title(r'$\sigma=1 \/ \dots \/ \sigma=2$', fontsize=16) # the x coords of this transformation are data, and the
   82 Chapter3. Tutorials
 
+<Page 11>
 Matplotlib, Release 2.0.2
      # y coord are axes
 trans = transforms.blended_transform_factory(
@@ -229,6 +241,7 @@ transform=trans, color='yellow', alpha=0.5)
 trans = ax.get_xaxis_transform()
      3.3. Advanced 83
 
+<Page 12>
 Matplotlib, Release 2.0.2
  Using offset transforms to create a shadow effect
 One use of transformations is to create a new transformation that is offset from another transformation, e.g., to place one object shifted a bit relative to another object. Typically you want the shift to be in some physical dimension, like points or inches rather than in data coordinates, so that the shift effect is constant at different zoom levels and dpi settings.
@@ -258,6 +271,7 @@ shadow_transform = ax.transData + offset
 # use the zorder to make sure we are below the line
   84 Chapter3. Tutorials
 
+<Page 13>
 Matplotlib, Release 2.0.2
      ax.plot(x, y, lw=3, color='gray', transform=shadow_transform, zorder=0.5*line.get_zorder())
 ax.set_title('creating a shadow effect with an offset transform') plt.show()
@@ -269,6 +283,7 @@ The ax.transData transform we have been working with in this tutorial is a compo
 Here is how the ax.transData instance is defined in the basic separable axis Axes class: self.transData = self.transScale + (self.transLimits + self.transAxes)
     3.3. Advanced 85
 
+<Page 14>
 Matplotlib, Release 2.0.2
  We’ve been introduced to the transAxes instance above in Axes coordinates, which maps the (0,0), (1,1) corners of the axes or subplot bounding box to display space, so let’s look at these other two pieces.
 self.transLimits is the transformation that takes you from data to axes coordinates; i.e., it maps your view xlim and ylim to the unit space of the axes (and transAxes then takes that unit space to display space). We can see this in action here
@@ -292,6 +307,7 @@ transProjection handles the projection from the space, e.g., latitude and longit
     (self.transProjectionAffine + self.transAxes)
   86 Chapter3. Tutorials
 
+<Page 15>
 Matplotlib, Release 2.0.2
  Droettboom has provided a nice tutorial example of creating a hammer projection axes; see api example code: custom_projection_example.py.
 3.3.2 Path Tutorial
@@ -316,6 +332,7 @@ ax.set_ylim(-2,2)
 plt.show()
   3.3. Advanced 87
 
+<Page 16>
 Matplotlib, Release 2.0.2
   2.0 1.5 1.0 0.5 0.0 0.5 1.0 1.5 2.0
 2.0 1.5 1.0
@@ -345,6 +362,7 @@ LY1 (point itself is ignored)
     import matplotlib.pyplot as plt from matplotlib.path import Path
   88 Chapter3. Tutorials
 
+<Page 17>
 Matplotlib, Release 2.0.2
      import matplotlib.patches as patches
 verts = [
@@ -367,6 +385,7 @@ ax.set_ylim(-0.1, 1.1)
 plt.show()
   3.3. Advanced 89
 
+<Page 18>
 Matplotlib, Release 2.0.2
      P1
  P0
@@ -385,6 +404,7 @@ data = np.random.randn(1000)
 n, bins = np.histogram(data, 100)
   90 Chapter3. Tutorials
 
+<Page 19>
 Matplotlib, Release 2.0.2
      # get the corners of the rectangles for the histogram
 left = np.array(bins[:-1])
@@ -412,6 +432,7 @@ patch = patches.PathPatch(barpath, facecolor='green',
 edgecolor='yellow', alpha=0.5) ax.add_patch(patch)
   3.3. Advanced 91
 
+<Page 20>
 Matplotlib, Release 2.0.2
       35
 30

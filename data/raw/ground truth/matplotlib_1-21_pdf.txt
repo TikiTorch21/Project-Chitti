@@ -1,9 +1,11 @@
+<Page 1>
  John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the m
 Matplotlib
 Release 2.0.2
 May 10, 2017
-a
+<Page 2>
 
+<Page 3>
 CONTENTS
 I User’s Guide 1
 1 Introduction 3
@@ -25,31 +27,33 @@ II The Matplotlib API 423
 16 afm (Adobe Font Metrics interface) 487
 17 animation module 491
  i
-
+<Page 4>
 18 artist Module 535 19 Axes class 555 20 axis and tick API 793 21 backends 913 22 cbook 953 23 cm (colormap) 971 24 collections 975 25 colorbar 1145 26 colors 1151 27 container 1165 28 dates 1167 29 dviread 1181 30 figure 1185 31 finance 1207 32 font_manager 1219 33 gridspec 1227 34 image 1231 35 legend and legend_handler 1237 36 lines 1245 37 markers 1255 38 mathtext 1259 39 mlab 1279 40 offsetbox 1313 41 patches 1325 42 path 1367 43 patheffects 1375 44 projections 1379
  ii
-
+<Page 5>
 45 pyplot 1387 46 rcsetup 1593 47 sankey 1597 48 scale 1605 49 spines 1615 50 style 1619 51 text 1621 52 ticker 1635 53 tight_layout 1647 54 Working with transformations 1649 55 triangular grids 1671 56 type1font 1683 57 units 1685 58 widgets 1687
 III The Matplotlib FAQ 1703 59 Installation 1705 60 Usage 1713 61 How-To 1725 62 Troubleshooting 1741 63 Environment Variables 1745 64 Working with Matplotlib in Virtual environments 1747 65 Working with Matplotlib on OSX 1749
 IV Matplotlib AxesGrid Toolkit 1753 66 Overview of AxesGrid toolkit 1757 67 The Matplotlib AxesGrid Toolkit User’s Guide 1779
  iii
-
+<Page 6>
 68 The Matplotlib AxesGrid Toolkit API 1795 69 The Matplotlib axes_grid1 Toolkit API 1805
 V mplot3d 1823 70 Matplotlib mplot3d toolkit 1825
 VI Toolkits 1879 71 Mapping Toolkits 1883 72 General Toolkits 1885 73 High-Level Plotting 1889
 VII External Resources 1893 74 Books, Chapters and Articles 1895 75 Videos 1897 76 Tutorials 1899
 VIII The Matplotlib Developers’ Guide 1901 77 Contributing 1903 78 Developer’s tips for testing 1911 79 Developer’s tips for documenting matplotlib 1917 80 Developer’s guide for creating scales and transformations 1929 81 Developer’s tips for writing code for Python 2 and 3 1933 82 Working with Matplotlib source code 1937 83 Reviewers guideline 1957 84 Release Guide 1959 85 Matplotlib Enhancement Proposals 1965 86 Licenses 2017 87 DefaultColorchanges 2019
  iv
-
+<Page 7>
 IX Matplotlib Examples 2023 88 animation Examples 2025 89 api Examples 2029 90 axes_grid Examples 2123 91 color Examples 2175 92 event_handling Examples 2187 93 frontpage Examples 2221 94 images_contours_and_fields Examples 2225 95 lines_bars_and_markers Examples 2237 96 misc Examples 2251 97 mplot3d Examples 2275 98 pie_and_polar_charts Examples 2323 99 pylab_examples Examples 2329 100pyplots Examples 2769 101scales Examples 2791 102shapes_and_collections Examples 2793 103showcase Examples 2799 104specialty_plots Examples 2817 105statistics Examples 2825 106style_sheets Examples 2857 107subplots_axes_and_figures Examples 2873 108tests Examples 2877 109text_labels_and_annotations Examples 2889 110ticks_and_spines Examples 2895 111units Examples 2909 112user_interfaces Examples 2935 113widgets Examples 3001
  v
-
+<Page 8>
 X Glossary 3015 Bibliography 3019 Python Module Index 3021 Index 3023
  vi
-
+<Page 9>
 Part I User’s Guide
  1
+<Page 10>
 
+<Page 11>
  CHAPTER ONE
 INTRODUCTION
 Matplotlib is a library for making 2D plots of arrays in Python. Although it has its origins in emulating the MATLAB®1 graphics commands, it is independent of MATLAB, and can be used in a Pythonic, object oriented way. Although Matplotlib is written primarily in pure Python, it makes heavy use of NumPy and other extension code to provide good performance even for large arrays.
@@ -65,12 +69,13 @@ Finding no package that suited me just right, I did what any self-respecting Pyt
 The Matplotlib code is conceptually divided into three parts: the pylab interface is the set of functions provided by matplotlib.pylab which allow the user to create plots with code quite similar to MATLAB
 1 MATLAB is a registered trademark of The MathWorks, Inc.
    3
-
+<Page 12>
 Matplotlib, Release 2.0.2
  figure generating code (Pyplot tutorial). The Matplotlib frontend or Matplotlib API is the set of classes that do the heavy lifting, creating and managing figures, text, lines, plots and so on (Artist tutorial). This is an abstract interface that knows nothing about output. The backends are device-dependent drawing devices, aka renderers, that transform the frontend representation to hardcopy or a display device (What is a backend?). Example backends: PS creates PostScript® hardcopy, SVG creates Scalable Vector Graphics hardcopy, Agg creates PNG output using the high quality Anti-Grain Geometry library that ships with Matplotlib, GTK embeds Matplotlib in a Gtk+ application, GTKAgg uses the Anti-Grain renderer to create a figure and embed it in a Gtk+ application, and so on for PDF, WxWidgets, Tkinter, etc.
 Matplotlib is used by many people in many different contexts. Some people want to automatically generate PostScript files to send to a printer or publishers. Others deploy Matplotlib on a web application server to generate PNG output for inclusion in dynamically-generated web pages. Some use Matplotlib interactively from the Python shell in Tkinter on WindowsTM. My primary use is to embed Matplotlib in a Gtk+ EEG application that runs on Windows, Linux and Macintosh OS X.
  4 Chapter1. Introduction
 
+<Page 13>
  CHAPTER TWO
 INSTALLING
 There are many different ways to install matplotlib, and the best way depends on what operating system you are using, what you already have installed, and how you want to use it. To avoid wading through all the details (and potential complications) on this page, there are several convenient options.
@@ -86,7 +91,7 @@ If you are on Mac OSX you can probably install matplotlib binaries using the sta
 If you don’t already have Python installed, we recommend using one of the scipy-stack compatible Python distributions such as WinPython, Python(x,y), Enthought Canopy, or Continuum Anaconda, which have matplotlib and many of its dependencies, plus other useful packages, preinstalled.
 For standard Python installations, install matplotlib using pip:
   5
-
+<Page 14>
 Matplotlib, Release 2.0.2
      python -m pip install -U pip setuptools
 python -m pip install matplotlib
@@ -107,7 +112,7 @@ export PKG_CONFIG=x86_64-pc-linux-gnu-pkg-config
 python setup.py build
 python setup.py install
   6 Chapter2. Installing
-
+<Page 15>
 If you have installed prerequisites to nonstandard places and need to inform matplotlib where they are, edit setupext.py and add the base dirs to the basedir dictionary entry for your sys.platform. e.g., if the header to some required library is in /some/path/include/someheader.h, put /some/path in the basedir list for your platform.
 2.2.1 Build requirements
 These are external packages which you will need to install before installing matplotlib. If you are building on OSX, see Building on OSX. If you are building on Windows, see Building on Windows. If you are installing dependencies with a package manager on Linux, you may need to install the development packages (look for a “-dev” postfix) in addition to the libraries themselves.
@@ -130,6 +135,7 @@ These are optional packages which you may want to install to use matplotlib with
 Matplotlib, Release 2.0.2
   2.2. Installingfromsource 7
 
+<Page 16>
 Matplotlib, Release 2.0.2
  tk 8.3 or later, not 8.6.0 or 8.6.1 The TCL/Tk widgets library used by the TkAgg backend.
 Versions 8.6.0 and 8.6.1 are known to have issues that may result in segfaults when closing multiple
@@ -154,6 +160,7 @@ This does not build matplotlib, but it does get the install the build dependenci
 from source easier.
        8 Chapter2. Installing
 
+<Page 17>
 2.2.3 Building on OSX
 The build situation on OSX is complicated by the various places one can get the libpng and freetype re- quirements (darwinports, fink, /usr/X11R6) and the different architectures (e.g., x86, ppc, universal) and the different OSX version (e.g., 10.4 and 10.5). We recommend that you build the way we do for the OSX release: get the source from the tarball or the git repository and follow the instruction in README.osx.
 2.2.4 Building on Windows
@@ -162,16 +169,18 @@ Since there is no canonical Windows package manager, the methods for building fr
 Matplotlib, Release 2.0.2
   2.2. Installingfromsource 9
 
+<Page 19>
 Matplotlib, Release 2.0.2
   10 Chapter2. Installing
 
  matplotlib.pyplot is a collection of command style functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc. In matplotlib.pyplot various states are preserved across function calls, so that it keeps track of things like the current figure and plotting area, and the plotting functions are directed to the current axes (please note that “axes” here and in most places in the documentation refers to the axes part of a figure and not the strict mathematical term for more than one axis).
+<Page 20>
 CHAPTER THREE
 TUTORIALS
  3.1 Introductory 3.1.1 Pyplot tutorial
     import matplotlib.pyplot as plt plt.plot([1,2,3,4]) plt.ylabel('some numbers') plt.show()
   11
-
+<Page 21>
 Matplotlib, Release 2.0.2
        4.0 3.5 3.0 2.5 2.0 1.5 1.0
 0.0 0.5

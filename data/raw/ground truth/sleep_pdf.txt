@@ -1,4 +1,4 @@
- 
+<Page 1>
 Sleep Deprivation: Your Body's Silent AlarmAlarm clocks with mouths 
  What Happens When You Don't Sleep Enough? ......................................................... 2 
 Your Brain Goes Fuzzy .......................................................................................... 2 
@@ -87,6 +87,7 @@ emotions can become like a roller coaster:
     the world. 
     Stress feels overwhelming: Your ability to handle pressure decreases. 
     You might feel sad or anxious more often: Sleep deprivation can worsen mood disorders. 
+<Page 3>
 Imagine snapping at your friend because they're chewing too loudly, or bursting into tears 
 because you can't find your keys. These are examples of how lack of sleep can affect your 
 emotions. 
@@ -121,6 +122,7 @@ In Your Personal Life
     Less enjoyment of activities: Your favorite hobbies might not seem as fun when 
     you're exhausted. 
     Social withdrawal: You might skip social events because you're too tired. 
+<Page 4>
 Imagine missing your best friend's birthday party because you're too exhausted, or getting 
 into an argument with your partner over something trivial because you're irritable from lack 
 of sleep. 
@@ -157,7 +159,7 @@ The good news is that you can improve your sleep with some simple changes. Here 
     calming until you feel sleepy. 
 Remember, these changes might take some time to show effect. Be patient and consistent, 
 and you should start seeing improvements in your sleep quality. 
-
+<Page 5>
 Bottom Line: Sleep is Not a Luxury 
 In our busy world, it's easy to think of sleep as something we can cut back on to make more 
 time for work, socializing, or entertainment. But the truth is, sleep is not a luxury - it's a 
