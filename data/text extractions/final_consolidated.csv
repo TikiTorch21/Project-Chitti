@@ -1,4 +1,4 @@
-Unnamed: 0,pageNumber_pypdf,pdfId_pypdf,pageContent_pypdf,extractionTimeSeconds_pypdf,pageContent_pymupdf,extractionTimeSeconds_pymupdf,pageContent_pdfminer,extractionTimeSeconds_pdfminer,content_actual,pdfId,text
+Unnamed: 0,pageNumber_pypdf,pdfId_pypdf,pageContent_pypdf,extractionTimeSeconds_pypdf,pageContent_pymupdf,extractionTimeSeconds_pymupdf,pageContent_pdfminer,extractionTimeSeconds_pdfminer,pdfId,text,pypdf_bleu,pypdf_jaccard,pypdf_levenshtein,pymupdf_bleu,pymupdf_jaccard,pymupdf_levenshtein,pdfminer_bleu,pdfminer_jaccard,pdfminer_levenshtein
 1,1.0,matplotlib_41-61_pdf.pdf ~ 1,"Matplotlib, Release 2.0.2
 0 10 20 30 40 50 60
 0
@@ -67,47 +67,7 @@ To use subplot2grid(), you provide geometry of the grid and the location of the 
 a simple single-cell subplot:
 ax = plt.subplot2grid((2, 2), (0, 0))
 is identical to
-34 Chapter 3. Tutorials",0.0072169303894042,"1>
-The Global Game: Basketball's Unifying Power in the Modern Era
-
-
-From Peach Baskets to Global Phenomenon
-The New Face of Professional Basketball
-Numbers That Speak Volumes
-Women Breaking Barriers
-The Economic Slam Dunk
-Technology: The Game Changer
-Youth Development: Planting Seeds for Tomorrow
-Urban Renaissance Through Basketball
-The Future Game
-Conclusion: More Than Just a Game
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-",matplotlib_41-61_pdf.pdf ~ 1,"
+34 Chapter 3. Tutorials",0.0072169303894042,matplotlib_41-61_pdf.pdf ~ 1,"
 Matplotlib, Release 2.0.2
   0
 10
@@ -118,7 +78,7 @@ Matplotlib, Release 2.0.2
   In [21]: imgplot = plt.imshow(img, interpolation=""bicubic"")
   3.1. Introductory 33
 
-"
+",0.08013008157205671,0.0990990990990991,777,0.08013008157205671,0.0990990990990991,779,0.08013008157205671,0.0990990990990991,777
 2,2.0,matplotlib_41-61_pdf.pdf ~ 2,"Matplotlib, Release 2.0.2
 ax = plt.subplot(2, 2, 1)
 Note that, unlike Matplotlib’s subplot, the index starts from 0 in GridSpec.
@@ -185,18 +145,7 @@ subplot2grid
 GridSpec and SubplotSpec
 You can create GridSpec explicitly and use them to create a subplot.
 For example,
-3.1. Introductory 35",0.0063631534576416,"2>
-From Peach Baskets to Global Phenomenon
-The story begins in Springfield, Massachusetts, 1891. Dr. James Naismith's simple invention of nailing peach baskets to a gymnasium wall has evolved into something extraordinary. Today's basketball landscape showcases a sport that has broken free from its American roots, becoming a cultural force that bridges continents and cultures. This transformation reflects not just athletic evolution, but a broader story of global connectivity and shared passion.
-The New Face of Professional Basketball
-The NBA's transformation tells a compelling story of basketball's globalization. Gone are the days when the league was predominantly American. Today's NBA features transcendent international talents like Nikola Jokić, Joel Embiid, and Giannis Antetokounmpo – players who have redefined excellence in the sport. Their success represents more than individual achievement; it symbolizes basketball's power to discover and nurture talent regardless of origin.
-
-Numbers That Speak Volumes
-The statistics paint a vivid picture of basketball's global reach. FIBA's latest reports indicate that over 450 million people actively play basketball worldwide. The NBA's global broadcast reaches 215 countries and territories in 47 languages. In the 2023-24 season, 125 international players from 40 countries graced NBA rosters on opening night. Perhaps most strikingly, China alone boasts 300 million basketball players – a number that exceeds the entire U.S. population.
-Women Breaking Barriers
-The women's game has written its own remarkable chapter in basketball's global story. The WNBA continues to expand its international influence, with stars like Jonquel Jones and Ezi Magbegor leading the charge. As WNBA Commissioner Cathy Engelbert notes, ""Women's basketball is experiencing unprecedented growth."" This growth manifests in increased viewership, engagement, and participation across demographics, creating new role models for aspiring female athletes worldwide.
-
-",matplotlib_41-61_pdf.pdf ~ 2,"
+3.1. Introductory 35",0.0063631534576416,matplotlib_41-61_pdf.pdf ~ 2,"
 Matplotlib, Release 2.0.2
   0
 10
@@ -214,7 +163,7 @@ Basic Example of using subplot2grid
 To use subplot2grid(), you provide geometry of the grid and the location of the subplot in the grid. For a simple single-cell subplot:
 ax = plt.subplot2grid((2, 2), (0, 0)) is identical to
     34 Chapter3. Tutorials
-"
+",0.011704607879945572,0.1773049645390071,671,0.011704607879945572,0.1773049645390071,670,0.011704607879945572,0.1773049645390071,671
 3,3.0,matplotlib_41-61_pdf.pdf ~ 3,"Matplotlib, Release 2.0.2
 ax = plt.subplot2grid((2, 2), (0, 0))
 is equal to
@@ -284,22 +233,7 @@ ax2
 ax3
 ax4 ax5
 GridSpec
-36 Chapter 3. Tutorials",0.0097200870513916,"3>
-The Economic Slam Dunk
-Basketball's economic impact extends far beyond ticket sales and broadcasting rights. The NBA's revenue reached $10 billion in the 2022-24 season, with international markets playing an increasingly vital role. The sport has created economic ecosystems in developing nations through tourism, youth programs, and merchandise sales. Investment in basketball infrastructure worldwide has led to the emergence of prestigious competitions like Europe's EuroLeague and the African Basketball League.
-Technology: The Game Changer
-Modern technology has revolutionized how basketball is played, watched, and analyzed. Advanced analytics have become democratized, allowing teams worldwide to access sophisticated performance metrics. Social media has transformed player discovery, enabling talents from remote regions to gain global visibility. Virtual reality experiences and digital streaming have brought fans closer to the game than ever before, creating new ways to experience and appreciate basketball.
-
-Youth Development: Planting Seeds for Tomorrow
-Basketball's role in youth development extends beyond the court. Programs like Basketball Without Borders and Jr. NBA reach millions of young people annually, focusing not just on athletic skills but on building character, leadership, and global understanding. As Craig Brown, director of international youth programs, explains, ""We're building confidence, leadership skills, and global understanding through sport.""
-Urban Renaissance Through Basketball
-The sport's impact on urban development deserves special attention. Basketball courts have become essential components of urban planning worldwide, serving as community hubs that promote social interaction and youth engagement. From Harlem's Rucker Park to Manila's Tondo district, these spaces transcend their athletic purpose to become centers of community life and cultural exchange.
-
-The Future Game
-Looking ahead, basketball's trajectory suggests continued growth and evolution. The sport's accessibility, adaptability to local cultures, and ability to unite people across backgrounds position it uniquely for future expansion. The rise of 3x3 basketball as an Olympic sport opens new competitive avenues for nations with limited resources, while technological innovations promise to make the game even more engaging and accessible.
-Conclusion: More Than Just a Game
-Basketball's global journey from humble beginnings to worldwide phenomenon demonstrates the sport's unique ability to transcend cultural boundaries. As the game continues to evolve, its power to inspire, unite, and transform lives remains constant. In gymnasiums, playgrounds, and arenas across the world, basketball continues to write new chapters in its remarkable story of global impact and cultural unity
-",matplotlib_41-61_pdf.pdf ~ 3,"
+36 Chapter 3. Tutorials",0.0097200870513916,matplotlib_41-61_pdf.pdf ~ 3,"
 ax = plt.subplot(2, 2, 1)
 Note that, unlike Matplotlib’s subplot, the index starts from 0 in GridSpec.
 To create a subplot that spans multiple cells,
@@ -322,7 +256,7 @@ ax5
 GridSpec and SubplotSpec
 You can create GridSpec explicitly and use them to create a subplot. For example,
  3.1. Introductory 35
-"
+",0.11132878067830311,0.23076923076923078,539,0.11132878067830311,0.23076923076923078,538,0.11132878067830311,0.23076923076923078,539
 4,4.0,matplotlib_41-61_pdf.pdf ~ 4,"Matplotlib, Release 2.0.2
 Adjust GridSpec layout
 When a GridSpec is explicitly used, you can adjust the layout parameters of subplots that are created from
@@ -404,7 +338,7 @@ ax4
 ax5
 ax6
 GridSpec w/ different subplotpars
-3.1. Introductory 37",0.0067741870880126,,matplotlib_41-61_pdf.pdf ~ 4,"
+3.1. Introductory 37",0.0067741870880126,matplotlib_41-61_pdf.pdf ~ 4,"
 Matplotlib, Release 2.0.2
    ax = plt.subplot2grid((2, 2), (0, 0)) is equal to
 A GridSpec instance provides array-like (2d or 1d) indexing that returns the SubplotSpec instance. For a SubplotSpec that spans multiple cells, use slice.
@@ -427,7 +361,7 @@ ax3
 ax5
  36 Chapter3. Tutorials
 
-"
+",0.08959270570503101,0.1926605504587156,474,0.09045014986145108,0.1926605504587156,472,0.08959270570503101,0.1926605504587156,474
 5,5.0,matplotlib_41-61_pdf.pdf ~ 5,"Matplotlib, Release 2.0.2
 GridSpec using SubplotSpec
 You can create GridSpec from the SubplotSpec, in which case its layout parameters are set to that of the
@@ -479,45 +413,7 @@ GirdSpec Inside GridSpec
 A Complex Nested GridSpec using SubplotSpec
 Here’s a more sophisticated example of nested GridSpec where we put a box around each cell of the outer
 4x4 grid, by hiding appropriate spines in each of the inner 3x3 grids.
-38 Chapter 3. Tutorials",0.0049600601196289,"1>
-What is GenAI?                          You give the AI some data, and using
-                                        that data, that AI gives you whatever 
-                                        you ask it for. Main thing to know is 
-                                        that itʼs a field.
-
-What is CHATGPT?                        A revolution that almost transformed 
-                                        the way we interact with computers. 
-                                        What are some of it's capabilities?
-                                        -Web browsing
-                                        - Advanced data analysis
-                                        - Image processing
-                                        - Voice interaction
-
-What are the differences between        
-ChapGPT, GPTs, and LLMS?                - Large language models that 
-                                        basically understand and generate 
-                                        natural language.
-                                        - GPT's are a type of LLM.
-                                        - ChatGPT is the application built on 
-                                        GPT's
-
-What is Natural Language
-Processing?                             It's a field of the idea of computers 
-                                        being able to understand language. 
-                                        Divided into 3 main categories:
-                                        1. Things like machine translation
-                                        2. Things like human senses
-                                        3. Things like text-to-speech and 
-                                        automatic speech recognition
-
-What is next word prediction?           Given a sequence of words, find the 
-                                        next words. Essentially chooses the 
-                                        next word in a sentence just by 
-                                        filtering words with the highest 
-                                        probability of occurring, and 
-                                        choosing the top result.
-
-",matplotlib_41-61_pdf.pdf ~ 5,"
+38 Chapter 3. Tutorials",0.0049600601196289,matplotlib_41-61_pdf.pdf ~ 5,"
 Matplotlib, Release 2.0.2
  Adjust GridSpec layout
 When a GridSpec is explicitly used, you can adjust the layout parameters of subplots that are created from the GridSpec.
@@ -545,7 +441,7 @@ ax6 = plt.subplot(gs2[-1, -1])
    ax3
  3.1. Introductory 37
 
-"
+",0.024863496755309425,0.18487394957983194,596,0.024863496755309425,0.18487394957983194,595,0.024863496755309425,0.18487394957983194,596
 6,6.0,matplotlib_41-61_pdf.pdf ~ 6,"Matplotlib, Release 2.0.2
 GridSpec with Varying Cell Sizes
 By default, GridSpec creates cells of equal sizes. You can adjust relative heights and widths of rows and
@@ -578,14 +474,7 @@ height_ratios=[4, 1]
 )
 ax1 = plt.subplot(gs[0])
 ax2 = plt.subplot(gs[1])
-3.1. Introductory 39",0.089202880859375,"2>
-What is N-Gram language?                First early rendition of language 
-                                        models in the pre-deep learning era 
-                                        Problems?
-                                        1. Seed text might not exist in the 
-                                        training data
-                                        2. Exact phrasing might not exist. 
-                                        Talked about Neural networks..(don't need to know for class)",matplotlib_41-61_pdf.pdf ~ 6,"
+3.1. Introductory 39",0.089202880859375,matplotlib_41-61_pdf.pdf ~ 6,"
 Matplotlib, Release 2.0.2
  GridSpec using SubplotSpec
 You can create GridSpec from the SubplotSpec, in which case its layout parameters are set to that of the location of the given SubplotSpec.
@@ -603,7 +492,7 @@ A Complex Nested GridSpec using SubplotSpec
 Here’s a more sophisticated example of nested GridSpec where we put a box around each cell of the outer 4x4 grid, by hiding appropriate spines in each of the inner 3x3 grids.
  38 Chapter3. Tutorials
 
-"
+",0.03131825665977712,0.10810810810810811,505,0.03131825665977712,0.10810810810810811,504,0.03131825665977712,0.10810810810810811,505
 7,7.0,matplotlib_41-61_pdf.pdf ~ 7,"Matplotlib, Release 2.0.2
 ax3 = plt.subplot(gs[2])
 ax4 = plt.subplot(gs[3])
@@ -665,7 +554,7 @@ ax.plot([1, 2])
 ax.locator_params(nbins=3)
 ax.set_xlabel('x-label', fontsize=fontsize)
 ax.set_ylabel('y-label', fontsize=fontsize)
-40 Chapter 3. Tutorials",0.0062389373779296,,matplotlib_41-61_pdf.pdf ~ 7,"
+40 Chapter 3. Tutorials",0.0062389373779296,matplotlib_41-61_pdf.pdf ~ 7,"
                                                                                        GridSpec with Varying Cell Sizes
 By default, GridSpec creates cells of equal sizes. You can adjust relative heights and widths of rows and columns. Note that absolute values are meaningless, only their relative ratios matter.
 3.1. Introductory 39
@@ -677,7 +566,7 @@ Matplotlib, Release 2.0.2
 ax1 = plt.subplot(gs[0])
 ax2 = plt.subplot(gs[1])
 
-"
+",0.012327664757096702,0.09302325581395349,656,0.012327664757096702,0.09302325581395349,658,0.012327664757096702,0.09302325581395349,656
 8,8.0,matplotlib_41-61_pdf.pdf ~ 8,"Matplotlib, Release 2.0.2
 ax.set_title('Title', fontsize=fontsize)
 plt.close('all')
@@ -730,22 +619,7 @@ To prevent this, the location of axes needs to be adjusted. For subplots, this c
 subplot params (Move the edge of an axes to make room for tick labels ). Matplotlib v1.1 introduces a new
 command tight_layout() that does this automatically for you.
 plt.tight_layout()
-3.1. Introductory 41",0.0043368339538574,"1>
-See the plot() documentation for a complete list of line styles and format strings. The axis() command in the example above takes a list of [xmin, xmax, ymin, ymax] and specifies the viewport of the axes.
-If matplotlib were limited to working with lists, it would be fairly useless for numeric processing. Generally, you will use numpy arrays. In fact, all sequences are converted to numpy arrays internally. The example below illustrates a plotting several lines with different format styles in one command using arrays.
-Matplotlib, Release 2.0.2
-  20.0 17.5 15.0 12.5 10.0
-7.5 5.0 2.5 0.0
-0123456
-        import numpy as np
-import matplotlib.pyplot as plt
-# evenly sampled time at 200ms intervals
-t = np.arange(0., 5., 0.2)
-# red dashes, blue squares and green triangles
-plt.plot(t, t, 'r--', t, t**2, 'bs', t, t**3, 'g^') plt.show()
-  3.1. Introductory 13
-
-",matplotlib_41-61_pdf.pdf ~ 8,"
+3.1. Introductory 41",0.0043368339538574,matplotlib_41-61_pdf.pdf ~ 8,"
 Matplotlib, Release 2.0.2
      ax3 = plt.subplot(gs[2])
 ax4 = plt.subplot(gs[3])
@@ -762,7 +636,7 @@ def example_plot(ax, fontsize=12): ax.plot([1, 2])
 ax.locator_params(nbins=3) ax.set_xlabel('x-label', fontsize=fontsize) ax.set_ylabel('y-label', fontsize=fontsize)
   40 Chapter3. Tutorials
 
-"
+",0.03810642781852366,0.14074074074074075,630,0.03741617147412555,0.13333333333333333,631,0.03810642781852366,0.14074074074074075,630
 9,9.0,matplotlib_41-61_pdf.pdf ~ 9,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0
 x-label
@@ -812,29 +686,7 @@ example_plot(ax1)
 example_plot(ax2)
 example_plot(ax3)
 example_plot(ax4)
-42 Chapter 3. Tutorials",0.0031092166900634,"2>
-Matplotlib, Release 2.0.2
-     100
- 80
- 60
- 40
- 20
-  0
-  012345
-Controlling line properties
-Lines have many attributes that you can set: linewidth, dash style, antialiased, etc; see matplotlib.lines. Line2D. There are several ways to set line properties
-• Use keyword args:
-plt.plot(x, y, linewidth=2.0)
-• Use the setter methods of a Line2D instance. plot returns a list of Line2D objects; e.g., line1, line2 = plot(x1, y1, x2, y2). In the code below we will suppose that we have only one line so that the list returned is of length 1. We use tuple unpacking with line, to get the first element of that list:
-       •
-Use the setp() command. The example below uses a MATLAB-style command to set multiple properties on a list of lines. setp works transparently with a list of objects or a single object. You can either use python keyword arguments or MATLAB-style string/value pairs:
-line, = plt.plot(x, y, '-') line.set_antialiased(False) # turn off antialising
-     lines = plt.plot(x1, y1, x2, y2)
-# use keyword args
-plt.setp(lines, color='r', linewidth=2.0)
-  14
-Chapter3. Tutorials
-",matplotlib_41-61_pdf.pdf ~ 9,"
+42 Chapter 3. Tutorials",0.0031092166900634,matplotlib_41-61_pdf.pdf ~ 9,"
 To prevent this, the location of axes needs to be adjusted. For subplots, this can be done by adjusting the subplot params (Move the edge of an axes to make room for tick labels). Matplotlib v1.1 introduces a new command tight_layout() that does this automatically for you.
 3.1. Introductory 41
 Matplotlib, Release 2.0.2
@@ -850,7 +702,7 @@ fig, ax = plt.subplots() example_plot(ax, fontsize=24)
 y-label
   plt.tight_layout()
 
-"
+",0.05284798912749087,0.19318181818181818,395,0.05284798912749087,0.19318181818181818,395,0.05284798912749087,0.19318181818181818,395
 10,10.0,matplotlib_41-61_pdf.pdf ~ 10,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0
 x-label
@@ -946,79 +798,7 @@ x-label
 Title
 tight_layout() will also adjust spacing between subplots to minimize the overlaps.
 plt.tight_layout()
-3.1. Introductory 43",0.0044031143188476,"3>
-    # or MATLAB style string value pairs
-plt.setp(lines, 'color', 'r', 'linewidth', 2.0)
- Here are the available Line2D properties.
-Property
-alpha
-animated
-antialiased or aa clip_box
-clip_on
-clip_path
-color or c
-contains
-dash_capstyle dash_joinstyle
-dashes
-data
-figure
-label
-linestyle or ls
-linewidth or lw
-lod
-marker
-markeredgecolor or mec markeredgewidth or mew markerfacecolor or mfc markersize or ms markevery
-picker
-pickradius
-solid_capstyle solid_joinstyle
-transform
-visible
-xdata
-ydata
-zorder
-To get a list of settable line properties, call
-Value Type
-float
-[True | False]
-[True | False]
-a matplotlib.transform.Bbox instance
-[True | False]
-a Path instance and a Transform instance, a Patch any matplotlib color
-the hit testing function
-['butt' | 'round' | 'projecting']
-['miter' | 'round' | 'bevel']
-sequence of on/off ink in points
-(np.array xdata, np.array ydata)
-a matplotlib.figure.Figure instance
-any string
-[ '-' | '--' | '-.' | ':' | 'steps' | ...]
-float value in points
-[True | False]
-[ '+' | ',' | '.' | '1' | '2' | '3' | '4' ]
-any matplotlib color
-float value in points
-any matplotlib color
-float
-[ None | integer | (startind, stride) ]
-used in interactive line selection
-the line pick selection radius
-['butt' | 'round' | 'projecting']
-['miter' | 'round' | 'bevel']
-a matplotlib.transforms.Transform instance
-[True | False]
-np.array
-np.array
-any number
-the setp() function with a line or lines as argument
-Matplotlib, Release 2.0.2
-                                       In [69]: lines = plt.plot([1, 2, 3])
-In [70]: plt.setp(lines)
-alpha: float
-animated: [True | False] antialiased or aa: [True | False]
-  3.1. Introductory
-15
-
-",matplotlib_41-61_pdf.pdf ~ 10,"
+3.1. Introductory 43",0.0044031143188476,matplotlib_41-61_pdf.pdf ~ 10,"
 Matplotlib, Release 2.0.2
 When you have multiple subplots, often you see labels of different axes overlapping each other.
 42 Chapter3. Tutorials
@@ -1035,7 +815,7 @@ example_plot(ax2)
 example_plot(ax3)
 example_plot(ax4)
   
-"
+",0.07217661658783725,0.15789473684210525,266,0.06978423773483027,0.19642857142857142,270,0.07217661658783725,0.15789473684210525,266
 11,11.0,matplotlib_41-61_pdf.pdf ~ 11,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0
 x-label
@@ -1134,24 +914,7 @@ Title
 tight_layout() can take keyword arguments of pad, w_pad and h_pad. These control the extra padding
 around the ﬁgure border and between subplots. The pads are speciﬁed in fraction of fontsize.
 plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
-44 Chapter 3. Tutorials",0.0049159526824951,"4>
-Matplotlib, Release 2.0.2
-   ...snip
-Working with multiple figures and axes
-MATLAB, and pyplot, have the concept of the current figure and the current axes. All plotting com- mands apply to the current axes. The function gca() returns the current axes (a matplotlib.axes.Axes instance), and gcf() returns the current figure (matplotlib.figure.Figure instance). Normally, you don’t have to worry about this, because it is all taken care of behind the scenes. Below is a script to create two subplots.
-     import numpy as np
-import matplotlib.pyplot as plt
-def f(t):
-return np.exp(-t) * np.cos(2*np.pi*t)
-t1 = np.arange(0.0, 5.0, 0.1)
-t2 = np.arange(0.0, 5.0, 0.02)
-plt.figure(1)
-plt.subplot(211)
-plt.plot(t1, f(t1), 'bo', t2, f(t2), 'k')
-plt.subplot(212)
-plt.plot(t2, np.cos(2*np.pi*t2), 'r--') plt.show()
-  16 Chapter3. Tutorials
-",matplotlib_41-61_pdf.pdf ~ 11,"  
+44 Chapter 3. Tutorials",0.0049159526824951,matplotlib_41-61_pdf.pdf ~ 11,"  
 Matplotlib, Release 2.0.2
   2.0
 1.5
@@ -1182,7 +945,7 @@ x-label
 tight_layout() will also adjust spacing between subplots to minimize the overlaps. plt.tight_layout()
     3.1. Introductory 43
 
-"
+",0.09763852705722964,0.20689655172413793,280,0.09740717488142714,0.24561403508771928,277,0.09763852705722964,0.20689655172413793,280
 12,12.0,matplotlib_41-61_pdf.pdf ~ 12,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0
 x-label
@@ -1305,18 +1068,7 @@ example_plot(ax1)
 example_plot(ax2)
 example_plot(ax3)
 plt.tight_layout()
-3.1. Introductory 45",0.0054762363433837,"5>
-
-The figure() command here is optional because figure(1) will be created by default, just as a subplot(111) will be created by default if you don’t manually specify any axes. The subplot() com- mand specifies numrows, numcols, fignum where fignum ranges from 1 to numrows*numcols. The commas in the subplot command are optional if numrows*numcols<10. So subplot(211) is identical to subplot(2, 1, 1). You can create an arbitrary number of subplots and axes. If you want to place an axes manually, i.e., not on a rectangular grid, use the axes() command, which allows you to specify the location as axes([left, bottom, width, height]) where all values are in fractional (0 to 1) co- ordinates. See pylab_examples example code: axes_demo.py for an example of placing axes manually and pylab_examples example code: subplots_demo.py for an example with lots of subplots.
-You can create multiple figures by using multiple figure() calls with an increasing figure number. Of course, each figure can contain as many axes and subplots as your heart desires:
-Matplotlib, Release 2.0.2
-     1.0 0.5 0.0 0.5
-012345 1.0
-0.5 0.0 0.5 1.0
-       012345
-    import matplotlib.pyplot as plt
-plt.figure(1)
-",matplotlib_41-61_pdf.pdf ~ 12,"
+3.1. Introductory 45",0.0054762363433837,matplotlib_41-61_pdf.pdf ~ 12,"
 Matplotlib, Release 2.0.2
   2.0
 1.5
@@ -1347,7 +1099,7 @@ y-label y-label
 tight_layout() can take keyword arguments of pad, w_pad and h_pad. These control the extra padding around the figure border and between subplots. The pads are specified in fraction of fontsize.
 plt.tight_layout(pad=0.4, w_pad=0.5, h_pad=1.0)
     44 Chapter3. Tutorials
-"
+",0.03971072732949669,0.16279069767441862,399,0.040358386668164034,0.19047619047619047,396,0.03971072732949669,0.16279069767441862,399
 13,13.0,matplotlib_41-61_pdf.pdf ~ 13,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0
 x-label
@@ -1455,41 +1207,7 @@ example_plot(ax2)
 example_plot(ax3)
 example_plot(ax4)
 plt.tight_layout()
-46 Chapter 3. Tutorials",0.0064740180969238,"6>
-plt.subplot(211)
-plt.plot([1, 2, 3])
-plt.subplot(212)
-plt.plot([4, 5, 6])
-plt.figure(2)
-plt.plot([4, 5, 6])
-plt.figure(1)
-# the first figure
-# the first subplot in the first figure
-# the second subplot in the first figure
-# a second figure
-# creates a subplot(111) by default
-# figure 1 current; subplot(212) still current
-  3.1. Introductory 17
-
-Matplotlib, Release 2.0.2
-     plt.subplot(211) # make subplot(211) in figure1 current plt.title('Easy as 1, 2, 3') # subplot 211 title
- You can clear the current figure with clf() and the current axes with cla(). If you find it annoying that states (specifically the current image, figure and axes) are being maintained for you behind the scenes, don’t despair: this is just a thin stateful wrapper around an object oriented API, which you can use instead (see Artist tutorial)
-If you are making lots of figures, you need to be aware of one more thing: the memory required for a figure is not completely released until the figure is explicitly closed with close(). Deleting all references to the figure, and/or using the window manager to kill the window in which the figure appears on the screen, is not enough, because pyplot maintains internal references until close() is called.
-Working with text
-The text() command can be used to add text in an arbitrary location, and the xlabel(), ylabel() and title() are used to add text in the indicated locations (see Text introduction for a more detailed example)
-    import numpy as np
-import matplotlib.pyplot as plt
-# Fixing random state for reproducibility
-np.random.seed(19680801)
-mu, sigma = 100, 15
-x = mu + sigma * np.random.randn(10000) # the histogram of the data
-n, bins, patches = plt.hist(x, 50, normed=1, facecolor='g', alpha=0.75)
-plt.xlabel('Smarts') plt.ylabel('Probability') plt.title('Histogram of IQ')
-plt.text(60, .025, r'$\mu=100,\ \sigma=15$') plt.axis([40, 160, 0, 0.03])
-plt.grid(True)
-plt.show()
-  18 Chapter3. Tutorials
-",matplotlib_41-61_pdf.pdf ~ 13,"
+46 Chapter 3. Tutorials",0.0064740180969238,matplotlib_41-61_pdf.pdf ~ 13,"
 tight_layout() will work even if the sizes of subplots are different as far as their grid specification is compatible. In the example below, ax1 and ax2 are subplots of a 2x2 grid, while ax3 is of a 1x2 grid.
 3.1. Introductory 45
 
@@ -1529,7 +1247,7 @@ example_plot(ax2)
 example_plot(ax3)
 plt.tight_layout()
   
-"
+",0.16415623362747284,0.2808988764044944,509,0.1697237045037487,0.3068181818181818,516,0.16415623362747284,0.2808988764044944,509
 14,14.0,matplotlib_41-61_pdf.pdf ~ 14,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0
 x-label
@@ -1640,24 +1358,7 @@ fig = plt.figure(figsize=(5,4))
 ax = plt.subplot(111)
 im = ax.imshow(arr, interpolation=""none"")
 plt.tight_layout()
-3.1. Introductory 47",0.0048441886901855,"7>
-
-All of the text() commands return an matplotlib.text.Text instance. Just as with with lines above, you can customize the properties by passing keyword arguments into the text functions or using setp():
-t = plt.xlabel('my data', fontsize=14, color='red')
-These properties are covered in more detail in Text properties and layout.
-Using mathematical expressions in text
-matplotlib accepts TeX equation expressions in any text expression. For example to write the expression σi = 15 in the title, you can write a TeX expression surrounded by dollar signs:
-plt.title(r'$\sigma_i=15$')
-The r preceding the title string is important – it signifies that the string is a raw string and not to treat backslashes as python escapes. matplotlib has a built-in TeX expression parser and layout engine, and ships its own math fonts – for details see Writing mathematical expressions. Thus you can use mathematical text across platforms without requiring a TeX installation. For those who have LaTeX and dvipng installed, you can also use LaTeX to format your text and incorporate the output directly into your display figures or saved postscript – see Text rendering With LaTeX.
-Matplotlib, Release 2.0.2
-  0.030 0.025 0.020 0.015 0.010 0.005 0.000
-Histogram of IQ
-40 60 80 100 120 140 160 Smarts
-   = 100, = 15
-        Probability
-             3.1. Introductory 19
-
-",matplotlib_41-61_pdf.pdf ~ 14,"  
+3.1. Introductory 47",0.0048441886901855,matplotlib_41-61_pdf.pdf ~ 14,"  
 Matplotlib, Release 2.0.2
   2.0 1.5 1.0
 2.0 1.5 1.0
@@ -1688,7 +1389,7 @@ example_plot(ax4)
 plt.tight_layout()
   46 Chapter3. Tutorials
 
-"
+",0.09362435894455486,0.17647058823529413,450,0.09887012523322565,0.20238095238095238,459,0.09362435894455486,0.17647058823529413,450
 15,15.0,matplotlib_41-61_pdf.pdf ~ 15,"Matplotlib, Release 2.0.2
 0 2 4 6 8
 0
@@ -1764,25 +1465,7 @@ import matplotlib.gridspec as gridspec
 gs1 = gridspec.GridSpec(2, 1)
 ax1 = fig.add_subplot(gs1[0])
 ax2 = fig.add_subplot(gs1[1])
-48 Chapter 3. Tutorials",0.0057411193847656,"8>
-Matplotlib, Release 2.0.2
- Annotating text
-The uses of the basic text() command above place text at an arbitrary position on the Axes. A common use for text is to annotate some feature of the plot, and the annotate() method provides helper functionality to make annotations easy. In an annotation, there are two points to consider: the location being annotated represented by the argument xy and the location of the text xytext. Both of these arguments are (x,y) tuples.
-    import numpy as np
-import matplotlib.pyplot as plt
-ax = plt.subplot(111)
-t = np.arange(0.0, 5.0, 0.01)
-s = np.cos(2*np.pi*t)
-line, = plt.plot(t, s, lw=2)
-plt.annotate('local max', xy=(2, 1), xytext=(3, 1.5), arrowprops=dict(facecolor='black', shrink=0.05), )
-plt.ylim(-2,2)
-plt.show()
-  2.0 1.5 1.0 0.5 0.0 0.5 1.0 1.5 2.0
-012345
-   local max
-   In this basic example, both the xy (arrow tip) and xytext locations (text location) are in data coordinates. 20 Chapter3. Tutorials
- 
-",matplotlib_41-61_pdf.pdf ~ 15,"
+48 Chapter 3. Tutorials",0.0057411193847656,matplotlib_41-61_pdf.pdf ~ 15,"
 Although not thoroughly tested, it seems to work for subplots with aspect != “auto” (e.g., axes with images).
 Matplotlib, Release 2.0.2
   2.0 1.5 1.0
@@ -1817,7 +1500,7 @@ im = ax.imshow(arr, interpolation=""none"")
 plt.tight_layout()
   3.1. Introductory 47
 
-"
+",0.0123426428868291,0.07042253521126761,689,0.0123426428868291,0.07042253521126761,689,0.0123426428868291,0.07042253521126761,689
 16,16.0,matplotlib_41-61_pdf.pdf ~ 16,"Matplotlib, Release 2.0.2
 example_plot(ax1)
 example_plot(ax2)
@@ -1883,36 +1566,7 @@ Title
 You may provide an optional rect parameter, which speciﬁes the bounding box that the subplots will be ﬁt
 inside. The coordinates must be in normalized ﬁgure coordinates and the default is (0, 0, 1, 1).
 gs1.tight_layout(fig, rect=[0, 0, 0.5, 1])
-3.1. Introductory 49",0.0036470890045166,"9> 
-Matplotlib, Release 2.0.2
- There are a variety of other coordinate systems one can choose – see Basic annotation and Advanced Anno- tation for details. More examples can be found in pylab_examples example code: annotation_demo.py.
-Logarithmic and other nonlinear axes
-matplotlib.pyplot supports not only linear axis scales, but also logarithmic and logit scales. This is commonly used if data spans many orders of magnitude. Changing the scale of an axis is easy:
-plt.xscale(‘log’)
-An example of four plots with the same data and different scales for the y axis is shown below.
-    import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.ticker import NullFormatter # useful for `logit` scale # Fixing random state for reproducibility
-np.random.seed(19680801)
-# make up some data in the interval ]0, 1[
-y = np.random.normal(loc=0.5, scale=0.4, size=1000)
-y = y[(y > 0) & (y < 1)]
-y.sort()
-x = np.arange(len(y))
-# plot with various axes scales
-plt.figure(1)
-# linear
-plt.subplot(221) plt.plot(x, y) plt.yscale('linear') plt.title('linear') plt.grid(True)
-# log
-plt.subplot(222) plt.plot(x, y) plt.yscale('log') plt.title('log') plt.grid(True)
-# symmetric log
-plt.subplot(223)
-plt.plot(x, y - y.mean()) plt.yscale('symlog', linthreshy=0.01) plt.title('symlog')
-plt.grid(True)
-# logit
-  3.1. Introductory 21
-
-",matplotlib_41-61_pdf.pdf ~ 16,"
+3.1. Introductory 49",0.0036470890045166,matplotlib_41-61_pdf.pdf ~ 16,"
 Matplotlib, Release 2.0.2
       0
 2
@@ -1933,7 +1587,7 @@ ax1 = fig.add_subplot(gs1[0])
 ax2 = fig.add_subplot(gs1[1])
   48 Chapter3. Tutorials
 
-"
+",0.006635861423392433,0.059602649006622516,684,0.006866684104433796,0.05921052631578947,685,0.006635861423392433,0.059602649006622516,684
 17,17.0,matplotlib_41-61_pdf.pdf ~ 17,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0
 x-label
@@ -2008,36 +1662,7 @@ ax.set_title("""")
 ax.set_xlabel("""")
 ax.set_xlabel(""x-label"", fontsize=12)
 gs2.tight_layout(fig, rect=[0.5, 0, 1, 1], h_pad=0.5)
-50 Chapter 3. Tutorials",0.0042319297790527,"10>
-Matplotlib, Release 2.0.2
-     plt.subplot(224) plt.plot(x, y) plt.yscale('logit') plt.title('logit') plt.grid(True)
-# Format the minor tick labels of the y-axis into empty strings with
-# `NullFormatter`, to avoid cumbering the axis with too many labels. plt.gca().yaxis.set_minor_formatter(NullFormatter())
-# Adjust the subplot layout, because the logit one may take more space
-# than usual, due to y-tick labels like ""1 - 10^{-3}"" plt.subplots_adjust(top=0.92, bottom=0.08, left=0.10, right=0.95, hspace=0.25,
-plt.show()
-wspace=0.35)
-    1.0 0.8 0.6 0.4 0.2 0.0
-10 1 10 2
-0
-10 2 10 1 100
-0
-250 500 750 symlog
-100 10 1 10 2
-1 103 0.99 0.90 0.50 0.10 0.01
-0
-250 500 750 logit
-linear
-log
-                                   0
-250 500 750
-0
-250 500 750
-It is also possible to add your own scale, see Developer’s guide for creating scales and transformations for details.
-3.1.2 Image tutorial
- 22 Chapter3. Tutorials
-
-",matplotlib_41-61_pdf.pdf ~ 17,"
+50 Chapter 3. Tutorials",0.0042319297790527,matplotlib_41-61_pdf.pdf ~ 17,"
 Matplotlib, Release 2.0.2
      example_plot(ax1)
 example_plot(ax2)
@@ -2055,7 +1680,7 @@ You may provide an optional rect parameter, which specifies the bounding box tha
 gs1.tight_layout(fig, rect=[0, 0, 0.5, 1])
     3.1. Introductory 49
 
-"
+",0.03896842023349961,0.15294117647058825,328,0.040885255539127745,0.17857142857142858,331,0.03896842023349961,0.15294117647058825,328
 18,18.0,matplotlib_41-61_pdf.pdf ~ 18,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0
 x-label
@@ -2202,24 +1827,7 @@ gs1.tight_layout(fig, rect=[None, 0 + (bottom-gs1.bottom),
 gs2.tight_layout(fig, rect=[0.5, 0 + (bottom-gs2.bottom),
 None, 1 - (gs2.top-top)],
 h_pad=0.5)
-3.1. Introductory 51",0.0072252750396728,"11>
-Startup commands
-First, let’s start IPython. It is a most excellent enhancement to the standard Python prompt, and it ties in especially well with Matplotlib. Start IPython either at a shell, or the IPython Notebook now.
-With IPython started, we now need to connect to a GUI event loop. This tells IPython where (and how) to display plots. To connect to a GUI loop, execute the %matplotlib magic at your IPython prompt. There’s more detail on exactly what this does at IPython’s documentation on GUI event loops.
-If you’re using IPython Notebook, the same commands are available, but people commonly use a specific argument to the %matplotlib magic:
-In [1]: %matplotlib inline
-This turns on inline plotting, where plot graphics will appear in your notebook. This has important implica- tions for interactivity. For inline plotting, commands in cells below the cell that outputs a plot will not affect the plot. For example, changing the color map is not possible from cells below the cell that creates a plot. However, for other backends, such as qt4, that open a separate window, cells below those that create the plot will change the plot - it is a live object in memory.
-This tutorial will use matplotlib’s imperative-style plotting interface, pyplot. This interface maintains global state, and is very useful for quickly and easily experimenting with various plot settings. The alternative is the object-oriented interface, which is also very powerful, and generally more suitable for large application development. If you’d like to learn about the object-oriented interface, a great place to start is our FAQ on usage. For now, let’s get on with the imperative-style approach:
-Importing image data into Numpy arrays
-Loading image data is supported by the Pillow library. Natively, matplotlib only supports PNG images. The commands shown below fall back on Pillow if the native read fails.
-The image used in this example is a PNG file, but keep that Pillow requirement in mind for your own data. Here’s the image we’re going to play with:
-Matplotlib, Release 2.0.2
-        In [2]: import matplotlib.pyplot as plt
-In [3]: import matplotlib.image as mpimg
-In [4]: import numpy as np
-  3.1. Introductory 23
-
-",matplotlib_41-61_pdf.pdf ~ 18,"
+3.1. Introductory 51",0.0072252750396728,matplotlib_41-61_pdf.pdf ~ 18,"
 Matplotlib, Release 2.0.2
   2.0
 1.5
@@ -2242,7 +1850,7 @@ ax.set_xlabel(""x-label"", fontsize=12)
 gs2.tight_layout(fig, rect=[0.5, 0, 1, 1], h_pad=0.5)
   50 Chapter3. Tutorials
 
-"
+",0.01658088384257298,0.1328125,840,0.016758494169282424,0.15079365079365079,843,0.01658088384257298,0.1328125,840
 19,19.0,matplotlib_41-61_pdf.pdf ~ 19,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0
 x-label
@@ -2374,28 +1982,7 @@ for ax in grid:
 example_plot(ax)
 ax.title.set_visible(False)
 plt.tight_layout()
-52 Chapter 3. Tutorials",0.0067420005798339,"12>
-Matplotlib, Release 2.0.2
-  It’s a 24-bit RGB PNG image (8 bits for each of R, G, B). Depending on where you get your data, the other kinds of image that you’ll most likely encounter are RGBA images, which allow for transparency, or single- channel grayscale (luminosity) images. You can right click on it and choose “Save image as” to download it to your computer for the rest of this tutorial.
-And here we go...
-    In [5]: img=mpimg.imread('stinkbug.png')
-Out[5]:
-array([[[ 0.40784314, 0.40784314, 0.40784314],
-        [ 0.40784314,  0.40784314,  0.40784314],
-        [ 0.40784314,  0.40784314,  0.40784314],
-        ...,
-        [ 0.42745098,  0.42745098,  0.42745098],
-        [ 0.42745098,  0.42745098,  0.42745098],
-        [ 0.42745098,  0.42745098,  0.42745098]],
-       ...,
-       [[ 0.44313726,  0.44313726,  0.44313726],
-        [ 0.4509804 ,  0.4509804 ,  0.4509804 ],
-        [ 0.4509804 ,  0.4509804 ,  0.4509804 ],
-        ...,
-        [ 0.44705883,  0.44705883,  0.44705883],
-  24 Chapter3. Tutorials
-
-",matplotlib_41-61_pdf.pdf ~ 19,"
+52 Chapter 3. Tutorials",0.0067420005798339,matplotlib_41-61_pdf.pdf ~ 19,"
 Matplotlib, Release 2.0.2
   2.0
 1.5
@@ -2436,55 +2023,15 @@ gs2.tight_layout(fig, rect=[0.5, 0 + (bottom-gs2.bottom),
 h_pad=0.5)
   3.1. Introductory 51
 
-"
+",0.01440558211142105,0.12307692307692308,909,0.01671166728525638,0.13953488372093023,907,0.01440558211142105,0.12307692307692308,909
 41,1.0,latex_pdf.pdf ~ 1,2,0.0002338886260986,"2
-",0.0005590915679931,2,0.0002171993255615,"13>
-tight_layout() will work even if the sizes of subplots are different as far as their grid specification is compatible. In the example below, ax1 and ax2 are subplots of a 2x2 grid, while ax3 is of a 1x2 grid.
-3.1. Introductory 45
-
-Matplotlib, Release 2.0.2
- 2.0
-1.5
-1.0
-0.0
-2.0
-1.5
-1.0
-0.0
-0.5 1.0
-x-label Title
-2.0
-1.5
-1.0
-2.0
-1.5
-1.0
-0.0
-0.5 1.0
-x-label Title
-Title
-Title
-0.5 1.0 x-label
-0.0
-0.5 1.0 x-label
-     y-label y-label
-y-label y-label
-    plt.close('all') fig = plt.figure()
-ax1 = plt.subplot(221)
-ax2 = plt.subplot(223)
-ax3 = plt.subplot(122)
-example_plot(ax1)
-example_plot(ax2)
-example_plot(ax3)
-plt.tight_layout()
-  
-",latex_pdf.pdf ~ 1,"
+",0.0005590915679931,2,0.0002171993255615,latex_pdf.pdf ~ 1,"
 6
 Sample PDF Document
 Robert Maron
 Grzegorz Grudzi  ́nski
 February 20, 1999
-"
+",0.0,0.0,76,0.0,0.0,75,0.0,0.0,76
 42,2.0,latex_pdf.pdf ~ 2,"Contents
 1 Template 5
 1.1 How to compile a.texﬁle to a.pdfﬁle. . . . . . . . . . . . .5
@@ -2558,78 +2105,12 @@ Examples . . . . . . . . . . . . . . . . . . . . . . . . . .
 1.3.2 LATEX . . . . . . . . . . . . . . . . . . . . . . . . . . . .7
 1.3.3 pdfLATEX . . . . . . . . . . . . . . . . . . . . . . . . . .7
 1.3.4 Examples . . . . . . . . . . . . . . . . . . . . . . . . . .7
-3",0.0054230690002441,"14>  
-Matplotlib, Release 2.0.2
-  2.0 1.5 1.0
-2.0 1.5 1.0
-0.0 0.5 1.0 x-label
-2.0
-1.5
-1.0
-Title
-0.0 0.5 x-label
-1.0
-0.0
-0.5 1.0 x-label
-Title
-Title
-       y-label
-y-label
-y-label
-It works with subplots created with subplot2grid(). In general, subplots created from the gridspec (Cus- tomizing Location of Subplot Using GridSpec) will work.
-    plt.close('all') fig = plt.figure()
-ax1 = plt.subplot2grid((3, 3), (0, 0))
-ax2 = plt.subplot2grid((3, 3), (0, 1), colspan=2)
-ax3 = plt.subplot2grid((3, 3), (1, 0), colspan=2, rowspan=2)
-ax4 = plt.subplot2grid((3, 3), (1, 2), rowspan=2)
-example_plot(ax1)
-example_plot(ax2)
-example_plot(ax3)
-example_plot(ax4)
-plt.tight_layout()
-  46 Chapter3. Tutorials
-
-",latex_pdf.pdf ~ 2,"
+3",0.0054230690002441,latex_pdf.pdf ~ 2,"
 2
-"
+",0.0,0.0,842,0.0,0.0,865,0.0,0.0,842
 43,3.0,latex_pdf.pdf ~ 3,4 CONTENTS,0.0002980232238769,"4
 CONTENTS
-",0.0004646778106689,4 CONTENTS,0.0003061294555664,"15>
-Although not thoroughly tested, it seems to work for subplots with aspect != “auto” (e.g., axes with images).
-Matplotlib, Release 2.0.2
-  2.0 1.5 1.0
-0.0
-2.0
-1.5
-1.0
-Title
-0.5 1.0 x-label
-2.0 1.5 1.0
-Title
-0.0
-Title
-0.5 x-label
-2.0
-1.5
-1.0
-1.0
-0.0
-0.5 x-label
-1.0
-0.0
-0.5 1.0 x-label
-Title
-        y-label y-label
-y-label
-y-label
-    arr = np.arange(100).reshape((10,10)) plt.close('all')
-fig = plt.figure(figsize=(5,4))
-ax = plt.subplot(111)
-im = ax.imshow(arr, interpolation=""none"")
-plt.tight_layout()
-  3.1. Introductory 47
-
-",latex_pdf.pdf ~ 3,"
+",0.0004646778106689,4 CONTENTS,0.0003061294555664,latex_pdf.pdf ~ 3,"
 Contents
 1 Template 5
 1.1 How to compile a .tex file to a .pdf file . . . . . . . . . . . . . 5
@@ -2645,7 +2126,7 @@ Contents
 1.3.3 pdfLATEX . . . . . . . . . . . . . . . . . . . . . . . . . . 7
 1.3.4 Examples . . . . . . . . . . . . . . . . . . . . . . . . . . 7
 3
-"
+",0.0,0.0,865,0.0,0.0,864,0.0,0.0,865
 44,4.0,latex_pdf.pdf ~ 4,"Chapter 1
 Template
 1.1 How to compile a.texﬁle to a.pdfﬁle
@@ -2707,30 +2188,9 @@ some of them in the LATEXsearch path — if you know how to do this);
 (three — to prepare valid table of contents);
 3. to see or print the result useacroread(unfortunately some versions of
 acroreadmay produce PostScript which is too complex), or
-5",0.0036702156066894,"16>
-Matplotlib, Release 2.0.2
-      0
-2
-4
-6
-8
- 02468
-Caveats
-• tight_layout() only considers ticklabels, axis labels, and titles. Thus, other artists may be clipped and also may overlap.
-• It assumes that the extra space needed for ticklabels, axis labels, and titles is independent of original location of axes. This is often true, but there are rare cases where it is not.
-• pad=0 clips some of the texts by a few pixels. This may be a bug or a limitation of the current algorithm and it is not clear why it happens. Meanwhile, use of pad at least larger than 0.3 is recom- mended.
-Use with GridSpec
-GridSpec has its own tight_layout() method (the pyplot api tight_layout() also works).
-    plt.close('all') fig = plt.figure()
-import matplotlib.gridspec as gridspec
-gs1 = gridspec.GridSpec(2, 1)
-ax1 = fig.add_subplot(gs1[0])
-ax2 = fig.add_subplot(gs1[1])
-  48 Chapter3. Tutorials
-
-",latex_pdf.pdf ~ 4,"
+5",0.0036702156066894,latex_pdf.pdf ~ 4,"
 4 CONTENTS
-"
+",0.0,0.0,836,0.0,0.0,864,0.0,0.0,836
 45,5.0,latex_pdf.pdf ~ 5,"6 CHAPTER 1. TEMPLATE
 4. runghostscript: “gv file.pdf” to display or:
 “gs -dNOPAUSE -sDEVICE=pswrite -q -dBATCH -sOutputFile=ﬁle.ps ﬁle.pdf”
@@ -2818,25 +2278,7 @@ You may also want to check grammar, style and so on. Actually you should
 do it (if you have enough spare time). But youmust check spelling!
 You can use theispellpackage for this, from withinemacs, or from the
 command line:
-ispell -t document_chapter1.tex",0.0038237571716308,"17>
-Matplotlib, Release 2.0.2
-     example_plot(ax1)
-example_plot(ax2)
-gs1.tight_layout(fig)
-  2.0 1.5 1.0
-2.0 1.5 1.0
-0.0
-Title
-0.5 1.0 x-label
-Title
-0.5 1.0 x-label
-0.0
-          y-label y-label
-You may provide an optional rect parameter, which specifies the bounding box that the subplots will be fit inside. The coordinates must be in normalized figure coordinates and the default is (0, 0, 1, 1).
-gs1.tight_layout(fig, rect=[0, 0, 0.5, 1])
-    3.1. Introductory 49
-
-",latex_pdf.pdf ~ 5,"
+ispell -t document_chapter1.tex",0.0038237571716308,latex_pdf.pdf ~ 5,"
 Chapter 1
 Template
 1.1 How to compile a .tex file to a .pdf file
@@ -2857,7 +2299,7 @@ some of them in the LATEXsearch path — if you know how to do this);
 3. to see or print the result use acroread (unfortunately some versions of
 acroread may produce PostScript which is too complex), or
 5
-"
+",0.04903700728972376,0.1206896551724138,1037,0.04764929430660564,0.13304721030042918,1045,0.04903700728972376,0.1206896551724138,1037
 46,6.0,latex_pdf.pdf ~ 6,"1.3. LATEX AND PDFL ATEX CAPABILITIES 7
 1.3 LATEX and pdfLATEX capabilities
 1.3.1 Overview
@@ -2952,30 +2394,7 @@ package manuals:
 •doc/latex/graphics/grfguide.dvi.
 1.3.4 Examples
 References
-MIMUW",0.004364013671875,"18>
-Matplotlib, Release 2.0.2
-  2.0
-1.5
-1.0
-2.0
-1.5
-1.0
-0.0
-Title
-0.5 1.0 x-label
-Title
-0.5 1.0 x-label
-0.0
-  y-label y-label
-For example, this can be used for a figure with multiple gridspecs.
-    gs2 = gridspec.GridSpec(3, 1)
-for ss in gs2:
-ax = fig.add_subplot(ss) example_plot(ax) ax.set_title("""") ax.set_xlabel("""")
-ax.set_xlabel(""x-label"", fontsize=12)
-gs2.tight_layout(fig, rect=[0.5, 0, 1, 1], h_pad=0.5)
-  50 Chapter3. Tutorials
-
-",latex_pdf.pdf ~ 6,"
+MIMUW",0.004364013671875,latex_pdf.pdf ~ 6,"
 6 CHAPTER 1. TEMPLATE
 4. run ghostscript: “gv file.pdf” to display or:
 “gs -dNOPAUSE -sDEVICE=pswrite -q -dBATCH -sOutputFile=file.ps file.pdf”
@@ -3004,7 +2423,7 @@ do it (if you have enough spare time). But you must check spelling!
 You can use the ispell package for this, from within emacs, or from the
 command line:
 ispell -t document_chapter1.tex
-"
+",0.002896220876281639,0.09016393442622951,1111,0.004688157151505825,0.112,1107,0.002896220876281639,0.09016393442622951,1111
 47,7.0,latex_pdf.pdf ~ 7,"8 CHAPTER 1. TEMPLATE
 Hyperlinks
 This is a target.
@@ -3082,48 +2501,7 @@ Some characters have some special meaning, thus cannot be entered in the usual
 way.
 •$ & % # _ { }
 •\
-•˜ ˆ",0.0034809112548828,"19>
-Matplotlib, Release 2.0.2
-  2.0
-1.5
-2.0
-1.5
-1.0
-0.0 0.5 x-label
-1.0
-Title
-2.0 1.5
-1.0 2.0
-1.5
-1.0 2.0
-1.5 1.0
-1.0
-0.0 0.5 1.0
-0.0
-0.0
-0.0
-0.5 1.0
-0.5 1.0
-0.5 1.0 x-label
-x-label Title
-     y-label y-label
-y-label y-label y-label
-We may try to match the top and bottom of two grids
-While this should be mostly good enough, adjusting top and bottom may require adjustment of hspace also. To update hspace & vspace, we call tight_layout() again with updated rect argument. Note that the rect argument specifies the area including the ticklabels, etc. Thus, we will increase the bottom (which is 0 for the normal case) by the difference between the bottom from above and the bottom of each gridspec. Same thing for the top.
-    top = min(gs1.top, gs2.top)
-bottom = max(gs1.bottom, gs2.bottom)
-gs1.update(top=top, bottom=bottom)
-gs2.update(top=top, bottom=bottom)
-     top = min(gs1.top, gs2.top)
-bottom = max(gs1.bottom, gs2.bottom)
-gs1.tight_layout(fig, rect=[None, 0 + (bottom-gs1.bottom),
-                            0.5, 1 - (gs1.top-top)])
-gs2.tight_layout(fig, rect=[0.5, 0 + (bottom-gs2.bottom),
-                            None, 1 - (gs2.top-top)],
-h_pad=0.5)
-  3.1. Introductory 51
-
-",latex_pdf.pdf ~ 7,"
+•˜ ˆ",0.0034809112548828,latex_pdf.pdf ~ 7,"
 1.3. LATEX AND PDFLATEX CAPABILITIES 7
 1.3 LATEX and pdfLATEX capabilities
 1.3.1 Overview
@@ -3154,7 +2532,7 @@ package manuals:
 1.3.4 Examples
 References
 MIMUW
-"
+",0.0036025439813157922,0.056074766355140186,986,0.003934569109731639,0.056074766355140186,983,0.0036025439813157922,0.056074766355140186,986
 48,8.0,latex_pdf.pdf ~ 8,"1.3. LATEX AND PDFL ATEX CAPABILITIES 9
 Math
 •12,12n, . . .
@@ -3247,42 +2625,7 @@ Fonts
 – scriptsize
 – footnotesize
 – small
-– normalsize",0.006458044052124,"20>
-Matplotlib, Release 2.0.2
-  2.0
-1.5
-2.0 1.5
-1.0 2.0
-1.5
-1.0 2.0
-1.5 1.0
-Title
-1.0
-0.0 0.5 1.0
-0.0
-0.0
-0.0
-0.5 1.0
-0.5 1.0
-0.5 1.0 x-label
-2.0
-1.5
-1.0
-x-label Title
-0.0 0.5 x-label
-1.0
-     y-label y-label
-y-label y-label y-label
-Use with AxesGrid1
-While limited, the axes_grid1 toolkit is also supported.
-    plt.close('all') fig = plt.figure()
-from mpl_toolkits.axes_grid1 import Grid
-grid = Grid(fig, rect=111, nrows_ncols=(2,2),
-axes_pad=0.25, label_mode='L', )
-for ax in grid: example_plot(ax) ax.title.set_visible(False)
-plt.tight_layout()
-  52 Chapter3. Tutorials
-",latex_pdf.pdf ~ 8,"
+– normalsize",0.006458044052124,latex_pdf.pdf ~ 8,"
 8 CHAPTER 1. TEMPLATE
 Hyperlinks
 This is a target.
@@ -3309,7 +2652,7 @@ way.
 • $ & % # _ { }
 • \
 •  ̃ ˆ
-"
+",0.04795336645403359,0.04081632653061224,511,0.0025382544242827177,0.04516129032258064,505,0.04795336645403359,0.04081632653061224,511
 49,9.0,latex_pdf.pdf ~ 9,"10 CHAPTER 1. TEMPLATE
 – large
 – Large
@@ -3327,7 +2670,7 @@ CHAPTER 1. TEMPLATE
 – Large
 – LARGE
 – huge
-– Huge",0.0011367797851562,,latex_pdf.pdf ~ 9,"
+– Huge",0.0011367797851562,latex_pdf.pdf ~ 9,"
 1.3. LATEX AND PDFLATEX CAPABILITIES 9
 Math
 • 12, 12n, . . .
@@ -3356,7 +2699,7 @@ Fonts
 – footnotesize
 – small
 – normalsize
-"
+",2.783716284734886e-05,0.0136986301369863,395,2.783716284734886e-05,0.0136986301369863,394,2.783716284734886e-05,0.0136986301369863,395
 51,1.0,basketball_pdf.pdf ~ 1,"FromPeachBasketstoGlobalPhenomenon
 ThestorybeginsinSpringfield, Massachusetts, 1891. Dr. JamesNaismith'ssimpleinventionof nailingpeachbasketstoagymnasiumwall hasevolvedintosomethingextraordinary.Today'sbasketball landscapeshowcasesasport that hasbrokenfreefromitsAmericanroots, becomingacultural forcethat bridgescontinentsandcultures. Thistransformationreflectsnot just athleticevolution, but abroaderstoryof global connectivityandsharedpassion.
 TheNewFaceofProfessionalBasketball
@@ -3404,22 +2747,7 @@ Thestatisticspaint avividpictureof basketball'sglobal reach. FIBA'slatest report
 WomenBreakingBarriers
 Thewomen'sgamehaswrittenitsownremarkablechapterinbasketball'sglobal story. TheWNBAcontinuestoexpanditsinternational influence, withstarslikeJonquel JonesandEziMagbegorleadingthecharge. AsWNBACommissionerCathyEngelbert notes, ""Women'sbasketball isexperiencingunprecedentedgrowth.""Thisgrowthmanifestsinincreasedviewership, engagement, andparticipationacrossdemographics, creatingnewrolemodelsforaspiringfemaleathletesworldwide.
 2
-",0.0268669128417968,"2>
-Matplotlib, Release 2.0.2
-     import matplotlib.pyplot as plt from numpy.random import randn
-z = randn(10)
-red_dot, = plt.plot(z, ""ro"", markersize=15)
-# Put a white cross over some of the data.
-white_cross, = plt.plot(z[:5], ""w+"", markeredgewidth=3, markersize=15)
-plt.legend([red_dot, (red_dot, white_cross)], [""Attr A"", ""Attr A+B""])
-  2.0 1.5 1.0 0.5 0.0 0.5 1.0 1.5
-    Attr A Attr A+B
- 02468
-Implementing a custom legend handler
-A custom handler can be implemented to turn any handle into a legend key (handles don’t necessarily need to be matplotlib artists). The handler must implement a “legend_artist” method which returns a single artist for the legend to use. Signature details about the “legend_artist” are documented at legend_artist().
-    import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-",basketball_pdf.pdf ~ 1,"
+",0.0268669128417968,basketball_pdf.pdf ~ 1,"
 The Global Game: Basketball's Unifying Power in the Modern Era
 
 
@@ -3459,7 +2787,7 @@ Conclusion: More Than Just a Game
 
 
 
-"
+",0.0,0.0,1526,0.056001217522415866,0.0970464135021097,1712,0.0,0.0,1526
 52,2.0,basketball_pdf.pdf ~ 2,"TheEconomicSlamDunk
 Basketball'seconomicimpact extendsfarbeyondticket salesandbroadcastingrights. TheNBA'srevenuereached$10billioninthe2022-24season, withinternational marketsplayinganincreasinglyvital role. Thesport hascreatedeconomicecosystemsindevelopingnationsthroughtourism, youthprograms, andmerchandisesales. Investment inbasketballinfrastructureworldwidehasledtotheemergenceof prestigiouscompetitionslikeEurope'sEuroLeagueandtheAfricanBasketball League.
 Technology:TheGameChanger
@@ -3495,36 +2823,7 @@ Moderntechnologyhasrevolutionizedhowbasketball isplayed, watched, andanalyzed.Ad
 YouthDevelopment:PlantingSeedsforTomorrow
 Basketball'sroleinyouthdevelopment extendsbeyondthecourt. ProgramslikeBasketballWithout BordersandJr. NBAreachmillionsof youngpeopleannually, focusingnot just onathleticskillsbut onbuildingcharacter, leadership, andglobal understanding. AsCraigBrown, directorof international youthprograms, explains, ""We'rebuildingconfidence,leadershipskills, andglobal understandingthroughsport.""
 3
-",0.018395185470581,"3>
-class AnyObject(object): pass
-  74 Chapter3. Tutorials
-
-Alternatively, had we wanted to globally accept AnyObject instances without needing to manually set the handler_map keyword all the time, we could have registered the new handler with:
-Whilst the power here is clear, remember that there are already many handlers implemented and what you want to achieve may already be easily possible with existing classes. For example, to produce elliptical legend keys, rather than rectangular ones:
-Matplotlib, Release 2.0.2
-     class AnyObjectHandler(object):
-def legend_artist(self, legend, orig_handle, fontsize, handlebox):
-x0, y0 = handlebox.xdescent, handlebox.ydescent
-width, height = handlebox.width, handlebox.height
-patch = mpatches.Rectangle([x0, y0], width, height, facecolor='red',
-edgecolor='black', hatch='xx', lw=3, transform=handlebox.get_transform())
-handlebox.add_artist(patch) return patch
-plt.legend([AnyObject()], ['My first handler'], handler_map={AnyObject: AnyObjectHandler()})
-  1.0
-0.8
-0.6
-0.4
-0.2
-0.0
-0.0 0.2
-0.4 0.6
-0.8 1.0
-    My first handler
-     from matplotlib.legend import Legend Legend.update_default_handler_map({AnyObject: AnyObjectHandler()})
-     from matplotlib.legend_handler import HandlerPatch import matplotlib.pyplot as plt
-  3.2. Intermediate 75
-
-",basketball_pdf.pdf ~ 2,"
+",0.018395185470581,basketball_pdf.pdf ~ 2,"
 From Peach Baskets to Global Phenomenon
 The story begins in Springfield, Massachusetts, 1891. Dr. James Naismith's simple invention of nailing peach baskets to a gymnasium wall has evolved into something extraordinary. Today's basketball landscape showcases a sport that has broken free from its American roots, becoming a cultural force that bridges continents and cultures. This transformation reflects not just athletic evolution, but a broader story of global connectivity and shared passion.
 The New Face of Professional Basketball
@@ -3535,7 +2834,7 @@ The statistics paint a vivid picture of basketball's global reach. FIBA's latest
 Women Breaking Barriers
 The women's game has written its own remarkable chapter in basketball's global story. The WNBA continues to expand its international influence, with stars like Jonquel Jones and Ezi Magbegor leading the charge. As WNBA Commissioner Cathy Engelbert notes, ""Women's basketball is experiencing unprecedented growth."" This growth manifests in increased viewership, engagement, and participation across demographics, creating new role models for aspiring female athletes worldwide.
 
-"
+",5.6684091482385315e-05,0.007692307692307693,1523,0.004480938760270248,0.10240963855421686,1488,5.6684091482385315e-05,0.007692307692307693,1523
 53,3.0,basketball_pdf.pdf ~ 3,"UrbanRenaissanceThroughBasketball
 Thesport'simpact onurbandevelopment deservesspecial attention. Basketball courtshavebecomeessential componentsof urbanplanningworldwide, servingascommunityhubsthatpromotesocial interactionandyouthengagement. FromHarlem'sRuckerParktoManila'sTondodistrict, thesespacestranscendtheirathleticpurposetobecomecentersofcommunitylifeandcultural exchange.
 TheFutureGame
@@ -3569,42 +2868,7 @@ Lookingahead, basketball'strajectorysuggestscontinuedgrowthandevolution. Thespor
 Conclusion:MoreThanJustaGame
 Basketball'sglobal journeyfromhumblebeginningstoworldwidephenomenondemonstratesthesport'suniqueabilitytotranscendcultural boundaries. Asthegamecontinuestoevolve,itspowertoinspire, unite, andtransformlivesremainsconstant. Ingymnasiums,playgrounds, andarenasacrosstheworld, basketball continuestowritenewchaptersinitsremarkablestoryof global impact andcultural unity
 4
-",0.0177280902862548,"4>
-Matplotlib, Release 2.0.2
-     import matplotlib.patches as mpatches
-class HandlerEllipse(HandlerPatch):
-def create_artists(self, legend, orig_handle,
-                       xdescent, ydescent, width, height, fontsize, trans):
-        center = 0.5 * width - 0.5 * xdescent, 0.5 * height - 0.5 * ydescent
-        p = mpatches.Ellipse(xy=center, width=width + xdescent,
-                             height=height + ydescent)
-        self.update_prop(p, orig_handle, legend)
-p.set_transform(trans) return [p]
-c = mpatches.Circle((0.5, 0.5), 0.25, facecolor=""green"",
-                    edgecolor=""red"", linewidth=3)
-plt.gca().add_patch(c)
-plt.legend([c], [""An ellipse, not a rectangle""],
-           handler_map={mpatches.Circle: HandlerEllipse()})
-  1.0
-0.8
-0.6
-0.4
-0.2
-0.0
-0.0 0.2
-0.4 0.6
-0.8 1.0
-    An ellipse, not a rectangle
-  Known examples of using legend
-Here is a non-exhaustive list of the examples available involving legend being used in various ways:
- 76 Chapter3. Tutorials
-
-Matplotlib, Release 2.0.2
- • lines_bars_and_markers example code: scatter_with_legend.py • api example code: legend_demo.py
-• pylab_examples example code: contourf_hatching.py
-• pylab_examples example code: figlegend_demo.py
-• pylab_examples example code: scatter_symbol.py 
-",basketball_pdf.pdf ~ 3,"
+",0.0177280902862548,basketball_pdf.pdf ~ 3,"
 The Economic Slam Dunk
 Basketball's economic impact extends far beyond ticket sales and broadcasting rights. The NBA's revenue reached $10 billion in the 2022-24 season, with international markets playing an increasingly vital role. The sport has created economic ecosystems in developing nations through tourism, youth programs, and merchandise sales. Investment in basketball infrastructure worldwide has led to the emergence of prestigious competitions like Europe's EuroLeague and the African Basketball League.
 Technology: The Game Changer
@@ -3619,7 +2883,7 @@ The Future Game
 Looking ahead, basketball's trajectory suggests continued growth and evolution. The sport's accessibility, adaptability to local cultures, and ability to unite people across backgrounds position it uniquely for future expansion. The rise of 3x3 basketball as an Olympic sport opens new competitive avenues for nations with limited resources, while technological innovations promise to make the game even more engaging and accessible.
 Conclusion: More Than Just a Game
 Basketball's global journey from humble beginnings to worldwide phenomenon demonstrates the sport's unique ability to transcend cultural boundaries. As the game continues to evolve, its power to inspire, unite, and transform lives remains constant. In gymnasiums, playgrounds, and arenas across the world, basketball continues to write new chapters in its remarkable story of global impact and cultural unity
-"
+",4.919381270169212e-06,0.03389830508474576,1633,0.3410470042838475,0.5227272727272727,1502,4.919381270169212e-06,0.03389830508474576,1633
 55,1.0,notion_pdf.pdf ~ 1,"Gen AI Intr oduction  Not es
 2
 First early rendition of language 
@@ -3648,26 +2912,7 @@ Problems?
 training data
 2. Exact phrasing might not exist.
 Talked about Neural networks..(don't 
-need to know for class)",0.0018157958984375,"6>
-Matplotlib, Release 2.0.2
- Data coordinates
-Let’s start with the most commonly used coordinate, the data coordinate system. Whenever you add data to the axes, matplotlib updates the datalimits, most commonly updated with the set_xlim() and set_ylim() methods. For example, in the figure below, the data limits stretch from 0 to 10 on the x-axis, and -1 to 1 on the y-axis.
-    import numpy as np
-import matplotlib.pyplot as plt
-x = np.arange(0, 10, 0.005)
-y = np.exp(-x/2.) * np.sin(2*np.pi*x)
-fig = plt.figure()
-ax = fig.add_subplot(111)
-ax.plot(x, y)
-ax.set_xlim(0, 10)
-ax.set_ylim(-1, 1)
-plt.show()
-  1.00 0.75 0.50 0.25 0.00 0.25 0.50 0.75 1.00
-0 2 4 6 8 10
-     You can use the ax.transData instance to transform from your data to your display coordinate system, either a single point or a sequence of points as shown below:
- 78 Chapter3. Tutorials
-
-",notion_pdf.pdf ~ 1,"
+need to know for class)",0.0018157958984375,notion_pdf.pdf ~ 1,"
 What is GenAI?                          You give the AI some data, and using
                                         that data, that AI gives you whatever 
                                         you ask it for. Main thing to know is 
@@ -3705,33 +2950,13 @@ What is next word prediction?           Given a sequence of words, find the
                                         probability of occurring, and 
                                         choosing the top result.
 
-"
-57,1.0,matplotlib_1-21_pdf.pdf ~ 1,,5.1975250244140625e-05,,4.6253204345703125e-05,,5.125999450683594e-05,"8>
-Matplotlib, Release 2.0.2
-  Note: If you run the source code in the example above in a GUI backend, you may also find that the two arrows for the data and display annotations do not point to exactly the same point. This is because the display point was computed before the figure was displayed, and the GUI backend may slightly resize the figure when it is created. The effect is more pronounced if you resize the figure yourself. This is one good reason why you rarely want to work in display space, but you can connect to the 'on_draw' Event to update figure coordinates on figure draws; see Event handling and picking.
-When you change the x or y limits of your axes, the data limits are updated so the transformation yields a new display point. Note that when we just change the ylim, only the y-display coordinate is altered, and when we change the xlim too, both are altered. More on this later when we talk about the Bbox.
-     In [54]: ax.transData.transform((5, 0)) Out[54]: array([ 335.175, 247. ])
-In [55]: ax.set_ylim(-1,2) Out[55]: (-1, 2)
-In [56]: ax.transData.transform((5, 0)) Out[56]: array([ 335.175 , 181.13333333])
-In [57]: ax.set_xlim(10,20) Out[57]: (10, 20)
-In [58]: ax.transData.transform((5, 0)) Out[58]: array([-171.675 , 181.13333333])
- Axes coordinates
-After the data coordinate system, axes is probably the second most useful coordinate system. Here the point (0,0) is the bottom left of your axes or subplot, (0.5, 0.5) is the center, and (1.0, 1.0) is the top right. You can also refer to points outside the range, so (-0.1, 1.1) is to the left and above your axes. This coordinate system is extremely useful when placing text in your axes, because you often want a text bubble in a fixed, location, e.g., the upper left of the axes pane, and have that location remain fixed when you pan or zoom. Here is a simple example that creates four panels and labels them ‘A’, ‘B’, ‘C’, ‘D’ as you often see in journals.
-    import numpy as np
-import matplotlib.pyplot as plt
-fig = plt.figure()
-for i, label in enumerate(('A', 'B', 'C', 'D')):
-    ax = fig.add_subplot(2,2,i+1)
-    ax.text(0.05, 0.95, label, transform=ax.transAxes,
-fontsize=16, fontweight='bold', va='top') plt.show()
-  80 Chapter3. Tutorials
-
-",matplotlib_1-21_pdf.pdf ~ 1,"
+",0.0008758456646662953,0.07432432432432433,2002,0.0007808542997826807,0.08275862068965517,2003,0.0008758456646662953,0.07432432432432433,2002
+57,1.0,matplotlib_1-21_pdf.pdf ~ 1,,5.1975250244140625e-05,,4.6253204345703125e-05,,5.125999450683594e-05,matplotlib_1-21_pdf.pdf ~ 1,"
  John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the m
 Matplotlib
 Release 2.0.2
 May 10, 2017
-"
+",0.0,0.0,105,0.0,0.0,105,0.0,0.0,105
 58,2.0,matplotlib_1-21_pdf.pdf ~ 2,"CONTENTS
 I User’s Guide 1
 1 Introduction 3
@@ -3823,34 +3048,9 @@ II The Matplotlib API 423
 15 The top level matplotlib module 483
 16 afm (Adobe Font Metrics interface) 487
 17 animation module 491
-i",0.0027999877929687,"9>
-You can also make lines or patches in the axes coordinate system, but this is less useful in my experience than using ax.transAxes for placing text. Nonetheless, here is a silly example which plots some random dots in data space, and overlays a semi-transparent Circle centered in the middle of the axes with a radius one quarter of the axes – if your axes does not preserve aspect ratio (see set_aspect()), this will look like an ellipse. Use the pan/zoom tool to move around, or manually change the data xlim and ylim, and you will see the data move, but the circle will remain fixed because it is not in data coordinates and will always remain at the center of the axes.
-Matplotlib, Release 2.0.2
-  1.0 1.0 0.8 0.8 0.6 0.6 0.4 0.4 0.2 0.2
-0.0 0.0
-0.00 0.25 0.50 0.75 1.00 0.00 0.25 0.50 0.75 1.00
-1.0 1.0 0.8 0.8 0.6 0.6 0.4 0.4 0.2 0.2
-0.0 0.0
-0.00 0.25 0.50 0.75 1.00 0.00 0.25 0.50 0.75 1.00
-  A
-B
-  C
-D
-    import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-fig = plt.figure()
-ax = fig.add_subplot(111)
-x, y = 10*np.random.rand(2, 1000)
-ax.plot(x, y, 'go') # plot some data in data coordinates
-circ = patches.Circle((0.5, 0.5), 0.25, transform=ax.transAxes, facecolor='yellow', alpha=0.5)
-ax.add_patch(circ)
-plt.show()
-  3.3. Advanced 81
+i",0.0027999877929687,matplotlib_1-21_pdf.pdf ~ 2,"
 
-",matplotlib_1-21_pdf.pdf ~ 2,"
-
-"
+",0.0,0.0,449,0.0,0.0,450,0.0,0.0,449
 59,3.0,matplotlib_1-21_pdf.pdf ~ 3,"18 artist Module 535
 19 Axes class 555
 20 axis and tick API 793
@@ -3960,24 +3160,7 @@ ii
 42 path 1367
 43 pathe ﬀects 1375
 44 projections 1379
-ii",0.0026099681854248,"10>
-Matplotlib, Release 2.0.2
-     10 8 6 4 2 0
-  0 2 4 6 8 10
-Blended transformations
-Drawing in blended coordinate spaces which mix axes with data coordinates is extremely useful, for example to create a horizontal span which highlights some region of the y-data but spans across the x-axis regardless of the data limits, pan or zoom level, etc. In fact these blended lines and spans are so useful, we have built in functions to make them easy to plot (see axhline(), axvline(), axhspan(), axvspan()) but for didactic purposes we will implement the horizontal span here using a blended transformation. This trick only works for separable transformations, like you see in normal Cartesian coordinate systems, but not on inseparable transformations like the PolarTransform.
-    import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-import matplotlib.transforms as transforms
-fig = plt.figure()
-ax = fig.add_subplot(111)
-x = np.random.randn(1000)
-ax.hist(x, 30)
-ax.set_title(r'$\sigma=1 \/ \dots \/ \sigma=2$', fontsize=16) # the x coords of this transformation are data, and the
-  82 Chapter3. Tutorials
-
-",matplotlib_1-21_pdf.pdf ~ 3,"
+ii",0.0026099681854248,matplotlib_1-21_pdf.pdf ~ 3,"
 CONTENTS
 I User’s Guide 1
 1 Introduction 3
@@ -3999,7 +3182,7 @@ II The Matplotlib API 423
 16 afm (Adobe Font Metrics interface) 487
 17 animation module 491
  i
-"
+",0.001965099594635175,0.006097560975609756,393,0.002009515636041994,0.006172839506172839,404,0.001965099594635175,0.006097560975609756,393
 60,4.0,matplotlib_1-21_pdf.pdf ~ 4,"45 pyplot 1387
 46 rcsetup 1593
 47 sankey 1597
@@ -4103,34 +3286,10 @@ III The Matplotlib FAQ 1703
 IV Matplotlib AxesGrid Toolkit 1753
 66 Overview of AxesGrid toolkit 1757
 67 The Matplotlib AxesGrid Toolkit User’s Guide 1779
-iii",0.0019490718841552,"11>
-Matplotlib, Release 2.0.2
-     # y coord are axes
-trans = transforms.blended_transform_factory(
-    ax.transData, ax.transAxes)
-# highlight the 1..2 stddev region with a span.
-# We want x to be in data coordinates and y to
-# span from 0..1 in axes coords
-rect = patches.Rectangle((1,0), width=1, height=1,
-ax.add_patch(rect)
-plt.show()
-transform=trans, color='yellow', alpha=0.5)
-  =1 =2
-     100
- 80
- 60
- 40
- 20
-  0
-32101234
-                 Note: The blended transformations where x is in data coords and y in axes coordinates is so useful that we have helper methods to return the versions mpl uses internally for drawing ticks, ticklabels, etc. The methods are matplotlib.axes.Axes.get_xaxis_transform() and matplotlib.axes.Axes. get_yaxis_transform(). So in the example above, the call to blended_transform_factory() can be replaced by get_xaxis_transform:
-trans = ax.get_xaxis_transform()
-     3.3. Advanced 83
-
-",matplotlib_1-21_pdf.pdf ~ 4,"
+iii",0.0019490718841552,matplotlib_1-21_pdf.pdf ~ 4,"
 18 artist Module 535 19 Axes class 555 20 axis and tick API 793 21 backends 913 22 cbook 953 23 cm (colormap) 971 24 collections 975 25 colorbar 1145 26 colors 1151 27 container 1165 28 dates 1167 29 dviread 1181 30 figure 1185 31 finance 1207 32 font_manager 1219 33 gridspec 1227 34 image 1231 35 legend and legend_handler 1237 36 lines 1245 37 markers 1255 38 mathtext 1259 39 mlab 1279 40 offsetbox 1313 41 patches 1325 42 path 1367 43 patheffects 1375 44 projections 1379
  ii
-"
+",0.0,0.0,466,0.0,0.0,483,0.0,0.0,466
 61,5.0,matplotlib_1-21_pdf.pdf ~ 5,"68 The Matplotlib AxesGrid Toolkit API 1795
 69 The Matplotlib axes_grid1 Toolkit API 1805
 V mplot3d 1823
@@ -4232,42 +3391,12 @@ VIII The Matplotlib Developers’ Guide 1901
 85 Matplotlib Enhancement Proposals 1965
 86 Licenses 2017
 87 Default Color changes 2019
-iv",0.0029680728912353,"12>
-Matplotlib, Release 2.0.2
- Using offset transforms to create a shadow effect
-One use of transformations is to create a new transformation that is offset from another transformation, e.g., to place one object shifted a bit relative to another object. Typically you want the shift to be in some physical dimension, like points or inches rather than in data coordinates, so that the shift effect is constant at different zoom levels and dpi settings.
-One use for an offset is to create a shadow effect, where you draw one object identical to the first just to the right of it, and just below it, adjusting the zorder to make sure the shadow is drawn first and then the object it is shadowing above it. The transforms module has a helper transformation ScaledTranslation. It is instantiated with:
-trans = ScaledTranslation(xt, yt, scale_trans)
-where xt and yt are the translation offsets, and scale_trans is a transformation which scales xt and yt at transformation time before applying the offsets. A typical use case is to use the figure fig. dpi_scale_trans transformation for the scale_trans argument, to first scale xt and yt specified in points to display space before doing the final offset. The dpi and inches offset is a common-enough use case that we have a special helper function to create it in matplotlib.transforms.offset_copy(), which returns a new transform with an added offset. But in the example below, we’ll create the offset transform ourselves. Note the use of the plus operator in:
-showing that can chain transformations using the addition operator. This code says: first apply the data transformation ax.transData and then translate the data by dx and dy points. In typography, a‘point <https://en.wikipedia.org/wiki/Point_%28typography%29>‘_ is 1/72 inches, and by specifying your offsets in points, your figure will look the same regardless of the dpi resolution it is saved in.
-       offset = transforms.ScaledTranslation(dx, dy,
-  fig.dpi_scale_trans)
-shadow_transform = ax.transData + offset
-     import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.patches as patches
-import matplotlib.transforms as transforms
-fig = plt.figure()
-ax = fig.add_subplot(111)
-# make a simple sine wave
-x = np.arange(0., 2., 0.01)
-y = np.sin(2*np.pi*x)
-line, = ax.plot(x, y, lw=3, color='blue')
-# shift the object over 2 points, and down 2 points
-dx, dy = 2/72., -2/72.
-offset = transforms.ScaledTranslation(dx, dy,
-  fig.dpi_scale_trans)
-shadow_transform = ax.transData + offset
-# now plot the same data with our offset transform;
-# use the zorder to make sure we are below the line
-  84 Chapter3. Tutorials
-
-",matplotlib_1-21_pdf.pdf ~ 5,"
+iv",0.0029680728912353,matplotlib_1-21_pdf.pdf ~ 5,"
 45 pyplot 1387 46 rcsetup 1593 47 sankey 1597 48 scale 1605 49 spines 1615 50 style 1619 51 text 1621 52 ticker 1635 53 tight_layout 1647 54 Working with transformations 1649 55 triangular grids 1671 56 type1font 1683 57 units 1685 58 widgets 1687
 III The Matplotlib FAQ 1703 59 Installation 1705 60 Usage 1713 61 How-To 1725 62 Troubleshooting 1741 63 Environment Variables 1745 64 Working with Matplotlib in Virtual environments 1747 65 Working with Matplotlib on OSX 1749
 IV Matplotlib AxesGrid Toolkit 1753 66 Overview of AxesGrid toolkit 1757 67 The Matplotlib AxesGrid Toolkit User’s Guide 1779
  iii
-"
+",0.03282402093642064,0.05,586,0.03282402093642064,0.05,604,0.03282402093642064,0.05,586
 62,6.0,matplotlib_1-21_pdf.pdf ~ 6,"IX Matplotlib Examples 2023
 88 animation Examples 2025
 89 api Examples 2029
@@ -4378,26 +3507,14 @@ v
 111units Examples 2909
 112user_interfaces Examples 2935
 113widgets Examples 3001
-v",0.001889944076538,"13>
-Matplotlib, Release 2.0.2
-     ax.plot(x, y, lw=3, color='gray', transform=shadow_transform, zorder=0.5*line.get_zorder())
-ax.set_title('creating a shadow effect with an offset transform') plt.show()
-  creating a shadow effect with an offset transform 1.00
-0.75 0.50 0.25 0.00 0.25 0.50 0.75 1.00
-     0.00 0.25 0.50 0.75 1.00 1.25 1.50 1.75 2.00
-The transformation pipeline
-The ax.transData transform we have been working with in this tutorial is a composite of three different transformations that comprise the transformation pipeline from data -> display coordinates. Michael Droettboom implemented the transformations framework, taking care to provide a clean API that segre- gated the nonlinear projections and scales that happen in polar and logarithmic plots, from the linear affine transformations that happen when you pan and zoom. There is an efficiency here, because you can pan and zoom in your axes which affects the affine transformation, but you may not need to compute the potentially expensive nonlinear scales or projections on simple navigation events. It is also possible to multiply affine transformation matrices together, and then apply them to coordinates in one step. This is not true of all possible transformations.
-Here is how the ax.transData instance is defined in the basic separable axis Axes class: self.transData = self.transScale + (self.transLimits + self.transAxes)
-    3.3. Advanced 85
-
-",matplotlib_1-21_pdf.pdf ~ 6,"
+v",0.001889944076538,matplotlib_1-21_pdf.pdf ~ 6,"
 68 The Matplotlib AxesGrid Toolkit API 1795 69 The Matplotlib axes_grid1 Toolkit API 1805
 V mplot3d 1823 70 Matplotlib mplot3d toolkit 1825
 VI Toolkits 1879 71 Mapping Toolkits 1883 72 General Toolkits 1885 73 High-Level Plotting 1889
 VII External Resources 1893 74 Books, Chapters and Articles 1895 75 Videos 1897 76 Tutorials 1899
 VIII The Matplotlib Developers’ Guide 1901 77 Contributing 1903 78 Developer’s tips for testing 1911 79 Developer’s tips for documenting matplotlib 1917 80 Developer’s guide for creating scales and transformations 1929 81 Developer’s tips for writing code for Python 2 and 3 1933 82 Working with Matplotlib source code 1937 83 Reviewers guideline 1957 84 Release Guide 1959 85 Matplotlib Enhancement Proposals 1965 86 Licenses 2017 87 DefaultColorchanges 2019
  iv
-"
+",0.0016845129578785122,0.012121212121212121,695,0.0016845129578785122,0.012121212121212121,707,0.0016845129578785122,0.012121212121212121,695
 63,7.0,matplotlib_1-21_pdf.pdf ~ 7,"X Glossary 3015
 Bibliography 3019
 Python Module Index 3021
@@ -4416,34 +3533,10 @@ vi
 Bibliography 3019
 Python Module Index 3021
 Index 3023
-vi",0.0005109310150146,"14>
-Matplotlib, Release 2.0.2
- We’ve been introduced to the transAxes instance above in Axes coordinates, which maps the (0,0), (1,1) corners of the axes or subplot bounding box to display space, so let’s look at these other two pieces.
-self.transLimits is the transformation that takes you from data to axes coordinates; i.e., it maps your view xlim and ylim to the unit space of the axes (and transAxes then takes that unit space to display space). We can see this in action here
-    In [80]: ax = subplot(111) In [81]: ax.set_xlim(0, 10)
-Out[81]: (0, 10)
-In [82]: ax.set_ylim(-1,1)
-Out[82]: (-1, 1)
-In [84]: ax.transLimits.transform((0,-1))
-Out[84]: array([ 0., 0.])
-In [85]: ax.transLimits.transform((10,-1))
-Out[85]: array([ 1., 0.])
-In [86]: ax.transLimits.transform((10,1))
-Out[86]: array([ 1., 1.])
-In [87]: ax.transLimits.transform((5,0)) Out[87]: array([ 0.5, 0.5])
- and we can use this same inverted transformation to go from the unit axes coordinates back to data coor- dinates.
-The final piece is the self.transScale attribute, which is responsible for the optional non-linear scaling of the data, e.g., for logarithmic axes. When an Axes is initially setup, this is just set to the identity trans- form, since the basic matplotlib axes has linear scale, but when you call a logarithmic scaling function like semilogx() or explicitly set the scale to logarithmic with set_xscale(), then the ax.transScale at- tribute is set to handle the nonlinear projection. The scales transforms are properties of the respective xaxis and yaxis Axis instances. For example, when you call ax.set_xscale('log'), the xaxis updates its scale to a matplotlib.scale.LogScale instance.
-For non-separable axes the PolarAxes, there is one more piece to consider, the projection transformation. The transData matplotlib.projections.polar.PolarAxes is similar to that for the typical separable matplotlib Axes, with one additional piece transProjection:
-transProjection handles the projection from the space, e.g., latitude and longitude for map data, or radius and theta for polar data, to a separable Cartesian coordinate system. There are several projection examples in the matplotlib.projections package, and the best way to learn more is to open the source for those packages and see how to make your own, since matplotlib supports extensible axes and projections. Michael
-    In [90]: inv.transform((0.25, 0.25)) Out[90]: array([ 2.5, -0.5])
-     self.transData = self.transScale + self.transProjection + \
-    (self.transProjectionAffine + self.transAxes)
-  86 Chapter3. Tutorials
-
-",matplotlib_1-21_pdf.pdf ~ 7,"
+vi",0.0005109310150146,matplotlib_1-21_pdf.pdf ~ 7,"
 IX Matplotlib Examples 2023 88 animation Examples 2025 89 api Examples 2029 90 axes_grid Examples 2123 91 color Examples 2175 92 event_handling Examples 2187 93 frontpage Examples 2221 94 images_contours_and_fields Examples 2225 95 lines_bars_and_markers Examples 2237 96 misc Examples 2251 97 mplot3d Examples 2275 98 pie_and_polar_charts Examples 2323 99 pylab_examples Examples 2329 100pyplots Examples 2769 101scales Examples 2791 102shapes_and_collections Examples 2793 103showcase Examples 2799 104specialty_plots Examples 2817 105statistics Examples 2825 106style_sheets Examples 2857 107subplots_axes_and_figures Examples 2873 108tests Examples 2877 109text_labels_and_annotations Examples 2889 110ticks_and_spines Examples 2895 111units Examples 2909 112user_interfaces Examples 2935 113widgets Examples 3001
  v
-"
+",0.0,0.0,769,0.0,0.0,774,0.0,0.0,769
 64,8.0,matplotlib_1-21_pdf.pdf ~ 8,"Part I
 User’s Guide
 1",0.000392198562622,"Part I
@@ -4451,69 +3544,14 @@ User’s Guide
 1
 ",0.0001122951507568,"Part I
 User’s Guide
-1",0.0003728866577148,"15>
-Matplotlib, Release 2.0.2
- Droettboom has provided a nice tutorial example of creating a hammer projection axes; see api example code: custom_projection_example.py.
-3.3.2 Path Tutorial
-The object underlying all of the matplotlib.patch objects is the Path , which supports the standard set of moveto, lineto, curveto commands to draw simple and compound outlines consisting of line segments and splines. The Path is instantiated with a (N,2) array of (x,y) vertices, and a N-length array of path codes. For example to draw the unit rectangle from (0,0) to (1,1), we could use this code
-    import matplotlib.pyplot as plt
-from matplotlib.path import Path import matplotlib.patches as patches
-verts = [
-(0., 0.), # left, bottom (0., 1.), # left, top (1., 1.), # right, top (1., 0.), # right, bottom (0., 0.), # ignored
-]
-codes = [Path.MOVETO,
-         Path.LINETO,
-         Path.LINETO,
-         Path.LINETO,
-         Path.CLOSEPOLY,
-         ]
-path = Path(verts, codes)
-fig = plt.figure()
-ax = fig.add_subplot(111)
-patch = patches.PathPatch(path, facecolor='orange', lw=2) ax.add_patch(patch)
-ax.set_xlim(-2,2)
-ax.set_ylim(-2,2)
-plt.show()
-  3.3. Advanced 87
-
-",matplotlib_1-21_pdf.pdf ~ 8,"
+1",0.0003728866577148,matplotlib_1-21_pdf.pdf ~ 8,"
 X Glossary 3015 Bibliography 3019 Python Module Index 3021 Index 3023
  vi
-"
-65,9.0,matplotlib_1-21_pdf.pdf ~ 9,,5.1021575927734375e-05,,5.507469177246094e-05,,4.792213439941406e-05,"16>
-Matplotlib, Release 2.0.2
-  2.0 1.5 1.0 0.5 0.0 0.5 1.0 1.5 2.0
-2.0 1.5 1.0
-0.5 0.0
-0.5 1.0
-1.5 2.0
-     The following path codes are recognized
- Code Vertices
-MOVETO 1 LINETO 1
-Bézier example
-Description
-Pick up the pen and move to the given vertex.
-Draw a line from the current position to the given vertex.
-   STOP
-1 (ignored)
- A marker for the end of the entire path (currently not required and ignored)
-      CURVE3
-2 (1 control point, 1 endpoint)
- Draw a quadratic Bézier curve from the current position, with the given control point, to the given end point.
-   CURVE4
-3 (2 control points, 1 endpoint)
- Draw a cubic Bézier curve from the current position, with the given control points, to the given end point.
-   CLOSEPO
-LY1 (point itself is ignored)
- Draw a line segment to the start point of the current polyline.
-    Some of the path components require multiple vertices to specify them: for example CURVE 3 is a bézier curve with one control point and one end point, and CURVE4 has three vertices for the two control points and the end point. The example below shows a CURVE4 Bézier spline – the bézier curve will be contained in the convex hull of the start point, the two control points, and the end point
-    import matplotlib.pyplot as plt from matplotlib.path import Path
-  88 Chapter3. Tutorials
-
-",matplotlib_1-21_pdf.pdf ~ 9,"
+",0.0,0.0,66,0.0,0.0,65,0.0,0.0,66
+65,9.0,matplotlib_1-21_pdf.pdf ~ 9,,5.1021575927734375e-05,,5.507469177246094e-05,,4.792213439941406e-05,matplotlib_1-21_pdf.pdf ~ 9,"
 Part I User’s Guide
  1
-"
+",0.0,0.0,23,0.0,0.0,23,0.0,0.0,23
 66,10.0,matplotlib_1-21_pdf.pdf ~ 10,"CHAPTER
 ONE
 INTRODUCTION
@@ -4614,32 +3652,9 @@ has been very useful, because the guts of the code base can be redesigned withou
 The Matplotlib code is conceptually divided into three parts: the pylab interface is the set of functions
 provided by matplotlib.pylab which allow the user to create plots with code quite similar to MATLAB
 1 MATLAB is a registered trademark of The MathWorks, Inc.
-3",0.0091259479522705,"17>
-Matplotlib, Release 2.0.2
-     import matplotlib.patches as patches
-verts = [
-(0., 0.), # P0
-(0.2, 1.), # P1 (1., 0.8), # P2 (0.8, 0.), # P3 ]
-codes = [Path.MOVETO,
-         Path.CURVE4,
-         Path.CURVE4,
-         Path.CURVE4,
-         ]
-path = Path(verts, codes)
-fig = plt.figure()
-ax = fig.add_subplot(111)
-patch = patches.PathPatch(path, facecolor='none', lw=2) ax.add_patch(patch)
-xs, ys = zip(*verts)
-ax.plot(xs, ys, 'x--', lw=2, color='black', ms=10)
-ax.text(-0.05, -0.05, 'P0') ax.text(0.15, 1.05, 'P1') ax.text(1.05, 0.85, 'P2') ax.text(0.85, -0.05, 'P3')
-ax.set_xlim(-0.1, 1.1)
-ax.set_ylim(-0.1, 1.1)
-plt.show()
-  3.3. Advanced 89
+3",0.0091259479522705,matplotlib_1-21_pdf.pdf ~ 10,"
 
-",matplotlib_1-21_pdf.pdf ~ 10,"
-
-"
+",0.0,0.0,2716,0.0,0.0,2717,0.0,0.0,2716
 67,11.0,matplotlib_1-21_pdf.pdf ~ 11,"Matplotlib, Release 2.0.2
 ﬁgure generating code (Pyplot tutorial). The Matplotlib frontend or Matplotlib API is the set of classes that
 do the heavy lifting, creating and managing ﬁgures, text, lines, plots and so on ( Artist tutorial). This is an
@@ -4684,26 +3699,7 @@ PostScript ﬁles to send to a printer or publishers. Others deploy Matplotlib o
 generate PNG output for inclusion in dynamically-generated web pages. Some use Matplotlib interactively
 from the Python shell in Tkinter on Windows ™. My primary use is to embed Matplotlib in a Gtk + EEG
 application that runs on Windows, Linux and Macintosh OS X.
-4 Chapter 1. Introduction",0.0034928321838378,"18>
-Matplotlib, Release 2.0.2
-     P1
- P0
-P3
-P2
- 1.0 0.8 0.6 0.4 0.2 0.0
-0.0 0.2
-0.4 0.6
-0.8 1.0
-Compound paths
-All of the simple patch primitives in matplotlib, Rectangle, Circle, Polygon, etc, are implemented with simple path. Plotting functions like hist() and bar(), which create a number of primitives, e.g., a bunch of Rectangles, can usually be implemented more efficiently using a compound path. The reason bar creates a list of rectangles and not a compound path is largely historical: the Path code is comparatively new and bar predates it. While we could change it now, it would break old code, so here we will cover how to create compound paths, replacing the functionality in bar, in case you need to do so in your own code for efficiency reasons, e.g., you are creating an animated bar plot.
-We will make the histogram chart by creating a series of rectangles for each histogram bar: the rectangle width is the bin width and the rectangle height is the number of datapoints in that bin. First we’ll create some random normally distributed data and compute the histogram. Because numpy returns the bin edges and not centers, the length of bins is 1 greater than the length of n in the example below:
-We’ll now extract the corners of the rectangles. Each of the left, bottom, etc, arrays below is len(n), where n is the array of counts for each histogram bar:
-    # histogram our data with numpy
-data = np.random.randn(1000)
-n, bins = np.histogram(data, 100)
-  90 Chapter3. Tutorials
-
-",matplotlib_1-21_pdf.pdf ~ 11,"
+4 Chapter 1. Introduction",0.0034928321838378,matplotlib_1-21_pdf.pdf ~ 11,"
  CHAPTER ONE
 INTRODUCTION
 Matplotlib is a library for making 2D plots of arrays in Python. Although it has its origins in emulating the MATLAB®1 graphics commands, it is independent of MATLAB, and can be used in a Pythonic, object oriented way. Although Matplotlib is written primarily in pure Python, it makes heavy use of NumPy and other extension code to provide good performance even for large arrays.
@@ -4719,7 +3715,7 @@ Finding no package that suited me just right, I did what any self-respecting Pyt
 The Matplotlib code is conceptually divided into three parts: the pylab interface is the set of functions provided by matplotlib.pylab which allow the user to create plots with code quite similar to MATLAB
 1 MATLAB is a registered trademark of The MathWorks, Inc.
    3
-"
+",0.011288092571503608,0.09510869565217392,2063,0.011074278558965749,0.09615384615384616,2067,0.011288092571503608,0.09510869565217392,2063
 68,12.0,matplotlib_1-21_pdf.pdf ~ 12,"CHAPTER
 TWO
 INSTALLING
@@ -4796,41 +3792,13 @@ If you don’t already have Python installed, we recommend using one of the scip
 distributions such as WinPython, Python(x,y), Enthought Canopy, or Continuum Anaconda, which have
 matplotlib and many of its dependencies, plus other useful packages, preinstalled.
 For standard Python installations, install matplotlib using pip:
-5",0.0046150684356689,"19>
-Matplotlib, Release 2.0.2
-     # get the corners of the rectangles for the histogram
-left = np.array(bins[:-1])
-right = np.array(bins[1:])
-bottom = np.zeros(len(left))
-top = bottom + n
- Now we have to construct our compound path, which will consist of a series of MOVETO, LINETO and CLOSEPOLY for each rectangle. For each rectangle, we need 5 vertices: 1 for the MOVETO, 3 for the LINETO, and 1 for the CLOSEPOLY. As indicated in the table above, the vertex for the closepoly is ignored but we still need it to keep the codes aligned with the vertices:
-    nverts = nrects*(1+3+1)
-verts = np.zeros((nverts, 2))
-codes = np.ones(nverts, int) * path.Path.LINETO
-codes[0::5] = path.Path.MOVETO
-codes[4::5] = path.Path.CLOSEPOLY
-verts[0::5,0] = left
-verts[0::5,1] = bottom
-verts[1::5,0] = left
-verts[1::5,1] = top
-verts[2::5,0] = right
-verts[2::5,1] = top
-verts[3::5,0] = right
-verts[3::5,1] = bottom
- All that remains is to create the path, attach it to a PathPatch, and add it to our axes:
-Here is the result
-    barpath = path.Path(verts, codes)
-patch = patches.PathPatch(barpath, facecolor='green',
-edgecolor='yellow', alpha=0.5) ax.add_patch(patch)
-  3.3. Advanced 91
-
-",matplotlib_1-21_pdf.pdf ~ 12,"
+5",0.0046150684356689,matplotlib_1-21_pdf.pdf ~ 12,"
 Matplotlib, Release 2.0.2
  figure generating code (Pyplot tutorial). The Matplotlib frontend or Matplotlib API is the set of classes that do the heavy lifting, creating and managing figures, text, lines, plots and so on (Artist tutorial). This is an abstract interface that knows nothing about output. The backends are device-dependent drawing devices, aka renderers, that transform the frontend representation to hardcopy or a display device (What is a backend?). Example backends: PS creates PostScript® hardcopy, SVG creates Scalable Vector Graphics hardcopy, Agg creates PNG output using the high quality Anti-Grain Geometry library that ships with Matplotlib, GTK embeds Matplotlib in a Gtk+ application, GTKAgg uses the Anti-Grain renderer to create a figure and embed it in a Gtk+ application, and so on for PDF, WxWidgets, Tkinter, etc.
 Matplotlib is used by many people in many different contexts. Some people want to automatically generate PostScript files to send to a printer or publishers. Others deploy Matplotlib on a web application server to generate PNG output for inclusion in dynamically-generated web pages. Some use Matplotlib interactively from the Python shell in Tkinter on WindowsTM. My primary use is to embed Matplotlib in a Gtk+ EEG application that runs on Windows, Linux and Macintosh OS X.
  4 Chapter1. Introduction
 
-"
+",0.004211854055165542,0.06593406593406594,1243,0.004211854055165542,0.06593406593406594,1243,0.004211854055165542,0.06593406593406594,1243
 69,13.0,matplotlib_1-21_pdf.pdf ~ 13,"Matplotlib, Release 2.0.2
 python -m pip install -U pip setuptools
 python -m pip install matplotlib
@@ -4949,29 +3917,7 @@ python setup.py install
 We provide a setup.cfg ﬁle that goes with setup.pywhich you can use to customize the build process. For
 example, which default backend to use, whether some of the optional libraries that matplotlib ships with are
 installed, and so on. This ﬁle will be particularly useful to those packaging matplotlib.
-6 Chapter 2. Installing",0.0081081390380859,"20>
-Matplotlib, Release 2.0.2
-      35
-30
-25
-20
-15
-10
-5 0
-32101234
- 3.3.3 Path effects guide
-Matplotlib’s patheffects module provides functionality to apply a multiple draw stage to any Artist which can be rendered via a Path.
-Artists which can have a path effect applied to them include Patch, Line2D, Collection and even Text. Each artist’s path effects can be controlled via the set_path_effects method (set_path_effects), which takes an iterable of AbstractPathEffect instances.
-The simplest path effect is the Normal effect, which simply draws the artist without any effect:
-    import matplotlib.pyplot as plt
-import matplotlib.patheffects as path_effects
-fig = plt.figure(figsize=(5, 1.5))
-text = fig.text(0.5, 0.5, 'Hello path effects world!\nThis is the normal '
-'path effect.\nPretty dull, huh?', ha='center', va='center', size=20)
-text.set_path_effects([path_effects.Normal()])
-plt.show()
-  92 Chapter3. Tutorials
-",matplotlib_1-21_pdf.pdf ~ 13,"
+6 Chapter 2. Installing",0.0081081390380859,matplotlib_1-21_pdf.pdf ~ 13,"
  CHAPTER TWO
 INSTALLING
 There are many different ways to install matplotlib, and the best way depends on what operating system you are using, what you already have installed, and how you want to use it. To avoid wading through all the details (and potential complications) on this page, there are several convenient options.
@@ -4987,7 +3933,7 @@ If you are on Mac OSX you can probably install matplotlib binaries using the sta
 If you don’t already have Python installed, we recommend using one of the scipy-stack compatible Python distributions such as WinPython, Python(x,y), Enthought Canopy, or Continuum Anaconda, which have matplotlib and many of its dependencies, plus other useful packages, preinstalled.
 For standard Python installations, install matplotlib using pip:
   5
-"
+",0.011941794480581134,0.11813186813186813,2029,0.011827106548301975,0.11813186813186813,2033,0.011941794480581134,0.11813186813186813,2029
 70,14.0,matplotlib_1-21_pdf.pdf ~ 14,"Matplotlib, Release 2.0.2
 If you have installed prerequisites to nonstandard places and need to inform matplotlib where they are,
 edit setupext.py and add the base dirs to the basedir dictionary entry for your sys.platform. e.g., if
@@ -5089,7 +4035,7 @@ Optional GUI framework
 These are optional packages which you may want to install to use matplotlib with a user interface toolkit.
 See What is a backend? for more details on the optional matplotlib backends and the capabilities they
 provide.
-2.2. Installing from source 7",0.0070500373840332,,matplotlib_1-21_pdf.pdf ~ 14,"
+2.2. Installing from source 7",0.0070500373840332,matplotlib_1-21_pdf.pdf ~ 14,"
 Matplotlib, Release 2.0.2
      python -m pip install -U pip setuptools
 python -m pip install matplotlib
@@ -5110,7 +4056,7 @@ export PKG_CONFIG=x86_64-pc-linux-gnu-pkg-config
 python setup.py build
 python setup.py install
   6 Chapter2. Installing
-"
+",0.03376714161119864,0.13691931540342298,2110,0.03393723503512432,0.13793103448275862,2106,0.03376714161119864,0.13691931540342298,2110
 71,15.0,matplotlib_1-21_pdf.pdf ~ 15,"Matplotlib, Release 2.0.2
 tk 8.3 or later, not 8.6.0 or 8.6.1 The TCL/Tk widgets library used by the TkAgg backend.
 Versions 8.6.0 and 8.6.1 are known to have issues that may result in segfaults when closing multiple
@@ -5203,13 +4149,7 @@ yum-builddepand then running:
 su -c ""yum-builddep python-matplotlib""
 This does not build matplotlib, but it does get the install the build dependencies, which will make building
 from source easier.
-8 Chapter 2. Installing",0.0081129074096679,"1>
-6
-Sample PDF Document
-Robert Maron
-Grzegorz Grudzi  ́nski
-February 20, 1999
-",matplotlib_1-21_pdf.pdf ~ 15,"
+8 Chapter 2. Installing",0.0081129074096679,matplotlib_1-21_pdf.pdf ~ 15,"
 If you have installed prerequisites to nonstandard places and need to inform matplotlib where they are, edit setupext.py and add the base dirs to the basedir dictionary entry for your sys.platform. e.g., if the header to some required library is in /some/path/include/someheader.h, put /some/path in the basedir list for your platform.
 2.2.1 Build requirements
 These are external packages which you will need to install before installing matplotlib. If you are building on OSX, see Building on OSX. If you are building on Windows, see Building on Windows. If you are installing dependencies with a package manager on Linux, you may need to install the development packages (look for a “-dev” postfix) in addition to the libraries themselves.
@@ -5232,7 +4172,7 @@ These are optional packages which you may want to install to use matplotlib with
 Matplotlib, Release 2.0.2
   2.2. Installingfromsource 7
 
-"
+",0.01736333470799253,0.15976331360946747,1864,0.01740955257741539,0.15976331360946747,1862,0.01736333470799253,0.15976331360946747,1864
 72,16.0,matplotlib_1-21_pdf.pdf ~ 16,"Matplotlib, Release 2.0.2
 2.2.3 Building on OSX
 The build situation on OSX is complicated by the various places one can get the libpng and freetype re-
@@ -5271,9 +4211,7 @@ The Python shipped from https://www.python.org is compiled with Visual Studio 20
 recommended to be compiled with the same compiler.
 Since there is no canonical Windows package manager, the methods for building freetype, zlib, and libpng
 from source code are documented as a build script at matplotlib-winbuild.
-2.2. Installing from source 9",0.0030610561370849,"2>
-2
-",matplotlib_1-21_pdf.pdf ~ 16,"
+2.2. Installing from source 9",0.0030610561370849,matplotlib_1-21_pdf.pdf ~ 16,"
 Matplotlib, Release 2.0.2
  tk 8.3 or later, not 8.6.0 or 8.6.1 The TCL/Tk widgets library used by the TkAgg backend.
 Versions 8.6.0 and 8.6.1 are known to have issues that may result in segfaults when closing multiple
@@ -5298,29 +4236,13 @@ This does not build matplotlib, but it does get the install the build dependenci
 from source easier.
        8 Chapter2. Installing
 
-"
+",0.006458559786029943,0.10980392156862745,1485,0.006415673727842556,0.11067193675889328,1485,0.006458559786029943,0.10980392156862745,1485
 73,17.0,matplotlib_1-21_pdf.pdf ~ 17,"Matplotlib, Release 2.0.2
 10 Chapter 2. Installing",0.0004060268402099,"Matplotlib, Release 2.0.2
 10
 Chapter 2. Installing
 ",0.0001180171966552,"Matplotlib, Release 2.0.2
-10 Chapter 2. Installing",0.0003426074981689,"3>
-Contents
-1 Template 5
-1.1 How to compile a .tex file to a .pdf file . . . . . . . . . . . . . 5
-1.1.1 Tools . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
-1.1.2 How to use the tools . . . . . . . . . . . . . . . . . . . . 5
-1.2 How to write a document . . . . . . . . . . . . . . . . . . . . . . 6
-1.2.1 The main document . . . . . . . . . . . . . . . . . . . . . 6
-1.2.2 Chapters . . . . . . . . . . . . . . . . . . . . . . . . . . 6
-1.2.3 Spell-checking . . . . . . . . . . . . . . . . . . . . . . . 6
-1.3 LATEX and pdfLATEX capabilities . . . . . . . . . . . . . . . . . . . 7
-1.3.1 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . 7
-1.3.2 LATEX . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
-1.3.3 pdfLATEX . . . . . . . . . . . . . . . . . . . . . . . . . . 7
-1.3.4 Examples . . . . . . . . . . . . . . . . . . . . . . . . . . 7
-3
-",matplotlib_1-21_pdf.pdf ~ 17,"
+10 Chapter 2. Installing",0.0003426074981689,matplotlib_1-21_pdf.pdf ~ 17,"
 2.2.3 Building on OSX
 The build situation on OSX is complicated by the various places one can get the libpng and freetype re- quirements (darwinports, fink, /usr/X11R6) and the different architectures (e.g., x86, ppc, universal) and the different OSX version (e.g., 10.4 and 10.5). We recommend that you build the way we do for the OSX release: get the source from the tarball or the git repository and follow the instruction in README.osx.
 2.2.4 Building on Windows
@@ -5329,7 +4251,7 @@ Since there is no canonical Windows package manager, the methods for building fr
 Matplotlib, Release 2.0.2
   2.2. Installingfromsource 9
 
-"
+",1.902874199296562e-10,0.02857142857142857,914,1.902874199296562e-10,0.02857142857142857,913,1.902874199296562e-10,0.02857142857142857,914
 74,18.0,matplotlib_1-21_pdf.pdf ~ 18,"CHAPTER
 THREE
 TUTORIALS
@@ -5379,14 +4301,12 @@ import matplotlib.pyplot as plt
 plt.plot([1,2,3,4])
 plt.ylabel('some numbers')
 plt.show()
-11",0.0049121379852294,"4>
-4 CONTENTS
-",matplotlib_1-21_pdf.pdf ~ 18,"
+11",0.0049121379852294,matplotlib_1-21_pdf.pdf ~ 18,"
 Matplotlib, Release 2.0.2
   10 Chapter2. Installing
 
  matplotlib.pyplot is a collection of command style functions that make matplotlib work like MATLAB. Each pyplot function makes some change to a figure: e.g., creates a figure, creates a plotting area in a figure, plots some lines in a plotting area, decorates the plot with labels, etc. In matplotlib.pyplot various states are preserved across function calls, so that it keeps track of things like the current figure and plotting area, and the plotting functions are directed to the current axes (please note that “axes” here and in most places in the documentation refers to the axes part of a figure and not the strict mathematical term for more than one axis).
-"
+",0.7210870470780155,0.6767676767676768,167,0.7649896080885014,0.711340206185567,166,0.7210870470780155,0.6767676767676768,167
 75,19.0,matplotlib_1-21_pdf.pdf ~ 19,"Matplotlib, Release 2.0.2
 0.0 0.5 1.0 1.5 2.0 2.5 3.0
 1.0
@@ -5468,34 +4388,13 @@ import matplotlib.pyplot as plt
 plt.plot([1,2,3,4], [1,4,9,16], 'ro')
 plt.axis([0, 6, 0, 20])
 plt.show()
-12 Chapter 3. Tutorials",0.0066769123077392,"5>
-Chapter 1
-Template
-1.1 How to compile a .tex file to a .pdf file
-1.1.1 Tools
-To process the files you (may) need:
-• pdflatex (for example from tetex package ≥0.9-6, which you can
-get from Red Hat 5.2);
-• acroread (a PDF viewer, available from http://www.adobe.com/);
-• ghostscript ≥5.10 (for example from Red Hat Contrib) and ghostview
-or gv (from RedHat Linux);
-• efax package could be useful, if you plan to fax documents.
-1.1.2 How to use the tools
-Follow these steps:
-1. put all source .tex files in one directory, then chdir to the directory (or put
-some of them in the LATEXsearch path — if you know how to do this);
-2. run “pdflatex file.tex” on the main file of the document three times
-(three — to prepare valid table of contents);
-3. to see or print the result use acroread (unfortunately some versions of
-acroread may produce PostScript which is too complex), or
-5
-",matplotlib_1-21_pdf.pdf ~ 19,"
+12 Chapter 3. Tutorials",0.0066769123077392,matplotlib_1-21_pdf.pdf ~ 19,"
 CHAPTER THREE
 TUTORIALS
  3.1 Introductory 3.1.1 Pyplot tutorial
     import matplotlib.pyplot as plt plt.plot([1,2,3,4]) plt.ylabel('some numbers') plt.show()
   11
-"
+",0.011171268004933687,0.03333333333333333,1047,0.011118196347379395,0.033112582781456956,1048,0.011171268004933687,0.03333333333333333,1047
 77,1.0,chess_pdf.pdf ~ 1,"Author: Prateek   
  
   2 
@@ -5586,38 +4485,7 @@ Coffee House Chess: The Game Goes Public
 During the 18th century, the chess world shifted its focus to Western Europe. Cities like London 
 and Paris became hubs of chess activity, with matches played in bustling coffee houses. This 
 period saw chess transition from a pastime of the nobility to a game enjoyed by a broader 
-audience. ",0.0109038352966308,"7>
-1.3. LATEX AND PDFLATEX CAPABILITIES 7
-1.3 LATEX and pdfLATEX capabilities
-1.3.1 Overview
-First you edit your source .tex file. In LATEX you compile it using the latex
-command to a .dvi file (which stands for device-independent). The .dvi file
-can be converted to any device-dependent format you like using an appropriate
-driver, for example dvips.
-When producing .pdf files you should use pdflatex, which produces di-
-rectly .pdf files out of .tex sources. Note that in the .tex file you may need
-to use some PDF specific packages.
-For viewing .tex files use your favourite text editor, for viewing .dvi files
-under X Window System use xdvi command, .ps files can be viewed with gv
-(or ghostview) and .pdf files with acroread, gv or xpdf.
-1.3.2 LATEX
-A lot of examples can be found in this document.
-You should also print
-• doc/latex/general/latex2e.dvi and
-• doc/latex/general/lshort2e.dvi
-from your tetex distribution (usually in
-• /usr/share/texmf or
-• /usr/lib/texmf/texmf).
-1.3.3 pdfLATEX
-Consult doc/pdftex/manual.pdf from your tetex distribution for more
-details. Very useful informations can be found in the hyperref and graphics
-package manuals:
-• doc/latex/hyperref/manual.pdf and
-• doc/latex/graphics/grfguide.dvi.
-1.3.4 Examples
-References
-MIMUW
-",chess_pdf.pdf ~ 1,"
+audience. ",0.0109038352966308,chess_pdf.pdf ~ 1,"
 🏆 Checkmate Through Time: The Global Conquest of Chess 
 
  
@@ -5640,7 +4508,7 @@ Chess in the Modern Era: From Grandmasters to Computers ........................
  
 
  
-"
+",0.06500665675956029,0.1,1644,0.06500665675956029,0.1,1642,0.06500665675956029,0.1,1644
 78,2.0,chess_pdf.pdf ~ 2,"Author: Prateek   
  
   3 
@@ -5722,34 +4590,7 @@ member countries. Whether you're a beginner or a seasoned player, the rich histo
 adds depth to every move you make on the board. So next time you sit down for a game, 
 remember you're not just playing chess – you're participating in a centuries-old tradition of 
 strategy, skill, and intellectual combat. 
- ",0.0096468925476074,"8>
-8 CHAPTER 1. TEMPLATE
-Hyperlinks
-This is a target.
-And this is a link.
-Dashes, etc.
-There are three kinds of horizontal dash:
-• - (use inside words; for example “home-page”, “X-rated”)
-• – (use this one between numbers; for example “pages 2–22”)
-• — (use this one as a sentence separator — like here)
-National characters
-• ó, é, í, . . .
-• è, à, ì, . . .
-• ô, ê, . . .
-• õ, ñ, . . .
-• ö, ë, . . .
-•  ̇z
-•  ̨a,  ̨e
-• ł, ø, ß
-There are other ways to do this, see the documentation for inputenc pack-
-age.
-Reserved characters
-Some characters have some special meaning, thus cannot be entered in the usual
-way.
-• $ & % # _ { }
-• \
-•  ̃ ˆ
-",chess_pdf.pdf ~ 2,"
+ ",0.0096468925476074,chess_pdf.pdf ~ 2,"
 Chess, the game of kings and queens, has captivated minds for centuries. From its 
 humble beginnings in ancient India to its current status as a global phenomenon, 
 chess has evolved into a complex and fascinating pursuit. Let's embark on a journey 
@@ -5781,7 +4622,7 @@ and Paris became hubs of chess activity, with matches played in bustling coffee 
 period saw chess transition from a pastime of the nobility to a game enjoyed by a broader 
 audience. 
 
-"
+",0.01279575382995231,0.1162079510703364,1376,0.01279575382995231,0.1162079510703364,1376,0.01279575382995231,0.1162079510703364,1376
 80,1.0,sleep_pdf.pdf ~ 1," 
  
  
@@ -5867,13 +4708,7 @@ feel very annoying.
 the world. 
 • Stress feels overwhelming: Your ability to handle pressure decreases. 
 • You might feel sad or anxious more often: Sleep deprivation can worsen mood 
-disorders. ",0.0103349685668945,"10>
-10 CHAPTER 1. TEMPLATE
-– large
-– Large
-– LARGE
-– huge
-– Huge",sleep_pdf.pdf ~ 1,"
+disorders. ",0.0103349685668945,sleep_pdf.pdf ~ 1,"
 Sleep Deprivation: Your Body's Silent AlarmAlarm clocks with mouths 
  What Happens When You Don't Sleep Enough? ......................................................... 2 
 Your Brain Goes Fuzzy .......................................................................................... 2 
@@ -5933,7 +4768,7 @@ Bottom Line: Sleep is Not a Luxury .............................................
  
 
  
-"
+",0.04375912057905864,0.0892018779342723,1396,0.04375912057905864,0.0892018779342723,1395,0.04375912057905864,0.0892018779342723,1396
 81,2.0,sleep_pdf.pdf ~ 2,"Imagine snapping at your friend because they're chewing too loudly, or bursting into tears 
 because you can't find your keys. These are examples of how lack of sleep can affect your 
 emotions. 
@@ -6019,30 +4854,7 @@ In Your Personal Life
 family ties. 
 • Less enjoyment of activities: Your favorite hobbies might not seem as fun when 
 you're exhausted. 
-• Social withdrawal: You might skip social events because you're too tired. ",0.0094640254974365,"<Page1> 
-Generative AI: Your New Digital Creative CompanionConnected wire-frame lines and dots 
-​​ 
-
-​ 
-
-​ 
-
-What Exactly is Generative AI?____________________________________1
-How Does It Actually Work?________________________________________2
-Real-World Examples That'll Blow Your Mind________________________________________2
-    Art Creation________________________________________2
-    Writing Help________________________________________2
-    Problem Solving________________________________________2
-Cool Things to Know
-Potential Concerns (Because Nothing's Perfect)________________________________________3
-    The Good________________________________________3
-    he Challenging________________________________________3
-Who's Using This Magic?________________________________________3
-The Future Looks Bright! 🌈________________________________________3
-Quick Pro Tips________________________________________3
-Want to Get Started?________________________________________3
-
-",sleep_pdf.pdf ~ 2,"
+• Social withdrawal: You might skip social events because you're too tired. ",0.0094640254974365,sleep_pdf.pdf ~ 2,"
 Imagine your body as a smartphone. Just like a phone needs charging, your body needs sleep 
 to recharge and function properly. When you don't get enough sleep, everything starts to 
 malfunction. Let's explore what happens when we don't get enough sleep and how it affects 
@@ -6071,7 +4883,7 @@ emotions can become like a roller coaster:
     the world. 
     Stress feels overwhelming: Your ability to handle pressure decreases. 
     You might feel sad or anxious more often: Sleep deprivation can worsen mood disorders. 
-"
+",0.05264413978645508,0.16993464052287582,1265,0.05264413978645508,0.16993464052287582,1264,0.05264413978645508,0.16993464052287582,1265
 82,3.0,sleep_pdf.pdf ~ 3,"Imagine missing your best friend's birthday party because you're too exhausted, or getting 
 into an argument with your partner over something trivial because you're irritable from lack 
 of sleep. 
@@ -6169,44 +4981,7 @@ stretches.
 7. Don't lie in bed awake: If you can't sleep after 20 minutes, get up and do something 
 calming until you feel sleepy. 
 Remember, these changes might take some time to show effect. Be patient and consistent, 
-and you should start seeing improvements in your sleep quality. ",0.0102748870849609,"2>
-What Exactly is Generative AI? 🤖✨ 
-
-Think of Generative AI like a super-smart digital assistant that can create things from scratch. 
-Imagine having a friend who can: 
-
-    Write stories 
-    Draw pictures 
-    Compose music 
-    Write computer code 
-    Solve complex problems 
-All by just understanding what you want! 
-
-How Does It Actually Work? 
-Picture a massive library where an AI has read EVERYTHING. When you ask it to do 
-something, it: 
-
-    Understands your request 
-    Pulls from its enormous ""knowledge bank"" 
-    Creates something totally new 
-    It's like having a genius friend who can instantly combine information in unique ways. 
-
-Real-World Examples That'll Blow Your Mind 
-Art Creation 
-    For example, you can type ""robot playing guitar in a space cafe"" as a prompt 
-    AI instantly generates a unique image matching your description 
-Writing Help 
-    Need a blog post about climate change? 
-    AI can draft a complete, coherent article in minutes 
-Problem Solving 
-    Stuck on a math problem? 
-    AI can break it down, explain steps, and show solutions
-
-Cool Things to Know 
-🌟 Generative AI learns by: 
-
-    Studying massive amounts of data 
-",sleep_pdf.pdf ~ 3,"
+and you should start seeing improvements in your sleep quality. ",0.0102748870849609,sleep_pdf.pdf ~ 3,"
 Imagine snapping at your friend because they're chewing too loudly, or bursting into tears 
 because you can't find your keys. These are examples of how lack of sleep can affect your 
 emotions. 
@@ -6241,7 +5016,7 @@ In Your Personal Life
     Less enjoyment of activities: Your favorite hobbies might not seem as fun when 
     you're exhausted. 
     Social withdrawal: You might skip social events because you're too tired. 
-"
+",0.03413501585693831,0.12466124661246612,1390,0.03413501585693831,0.12466124661246612,1389,0.03413501585693831,0.12466124661246612,1390
 83,4.0,sleep_pdf.pdf ~ 4,"Bottom Line: Sleep is Not a Luxury 
 In our busy world, it's easy to think of sleep as something we can cut back on to make more 
 time for work, socializing, or entertainment. But the truth is, sleep is not a luxury - it's a 
@@ -6285,39 +5060,7 @@ you get enough good quality sleep:
 So, the next time you're tempted to stay up late binge-watching your favorite show or 
 scrolling through social media, remember: your body needs that sleep. Treat it right, and it 
 will thank you with better health, clearer thinking, and a happier mood. Sweet dreams! 
- ",0.0054268836975097,"3>    
-    Recognizing patterns 
-    Creating new content based on what it's learned 
-🚀 It's NOT just copying - it's CREATING something original! 
-
-Potential Concerns (Because Nothing's Perfect) 
-The Good 
-    Incredible productivity 
-    Endless creativity 
-    Solving complex problems quickly 
-The Challenging 
-    Potential misinformation 
-    Copyright questions 
-    Ethical use of technology 
-Who's Using This Magic? 
-    Doctors (diagnosing diseases) 
-    Artists (creating new designs)  
-    Programmers (writing code) 
-    Businesses (solving complex problems) 
-    Researchers (exploring new ideas) 
-
-The Future Looks Bright! 🌈 
-Generative AI isn't about replacing humans - it's about HELPING humans do amazing things 
-faster and more creatively. Think of it like a supercharged creativity and problem-solving 
-partner. 
-
-Quick Pro Tips 
-Be specific in your requests 
-Understand it's a tool, not a replacement for human creativity 
-Experiment and have fun! 
-Want to Get Started? 
-Try free tools like: 
-",sleep_pdf.pdf ~ 4,"
+ ",0.0054268836975097,sleep_pdf.pdf ~ 4,"
 Imagine missing your best friend's birthday party because you're too exhausted, or getting 
 into an argument with your partner over something trivial because you're irritable from lack 
 of sleep. 
@@ -6354,7 +5097,7 @@ The good news is that you can improve your sleep with some simple changes. Here 
     calming until you feel sleepy. 
 Remember, these changes might take some time to show effect. Be patient and consistent, 
 and you should start seeing improvements in your sleep quality. 
-"
+",0.002565369060256051,0.13240418118466898,1476,0.002565369060256051,0.13240418118466898,1475,0.002565369060256051,0.13240418118466898,1476
 105,1.0,genai_pdf.pdf ~ 1,"Author: Prateek Mannem   
  
   2 
@@ -6454,25 +5197,7 @@ Problem Solving
 • AI can break it down, explain steps, and show solutions 
 Cool Things to Know 
 🌟 Generative AI learns by: 
-• Studying massive amounts of data ",0.0103449821472167,"20>
-Matplotlib, Release 2.0.2
-     # Add the legend manually to the current Axes.
-ax = plt.gca().add_artist(first_legend)
-# Create another legend for the second line.
-plt.legend(handles=[line2], loc=4)
-plt.show()
-      Line 1
-  Line 2
- 3.00 2.75 2.50 2.25 2.00 1.75 1.50 1.25 1.00
-0.00 0.25 0.50 0.75 1.00 1.25 1.50 1.75 2.00
-Legend Handlers
-In order to create legend entries, handles are given as an argument to an appropriate HandlerBase subclass. The choice of handler subclass is determined by the following rules:
-1. Update get_legend_handler_map() with the value in the handler_map keyword. 2. Check if the handle is in the newly created handler_map.
-3. Check if the type of handle is in the newly created handler_map.
-4. Check if any of the types in the handle‘s mro is in the newly created handler_map.
-For completeness, this logic is mostly implemented in get_legend_handler().
- 72 Chapter3. Tutorials
-",genai_pdf.pdf ~ 1," 
+• Studying massive amounts of data ",0.0103449821472167,genai_pdf.pdf ~ 1," 
 Generative AI: Your New Digital Creative CompanionConnected wire-frame lines and dots 
 ​​ 
 
@@ -6495,7 +5220,7 @@ The Future Looks Bright! 🌈________________________________________3
 Quick Pro Tips________________________________________3
 Want to Get Started?________________________________________3
 
-"
+",0.055374331349055256,0.11229946524064172,1015,0.055374331349055256,0.11229946524064172,1014,0.055374331349055256,0.11229946524064172,1015
 106,2.0,genai_pdf.pdf ~ 2,"Author: Prateek Mannem   
  
   3 
@@ -6592,7 +5317,7 @@ Quick Pro Tips
 • Understand it's a tool, not a replacement for human creativity 
 • Experiment and have fun! 
 Want to Get Started? 
-Try free tools like: ",0.0087652206420898,,genai_pdf.pdf ~ 2,"
+Try free tools like: ",0.0087652206420898,genai_pdf.pdf ~ 2,"
 What Exactly is Generative AI? 🤖✨ 
 
 Think of Generative AI like a super-smart digital assistant that can create things from scratch. 
@@ -6629,7 +5354,7 @@ Cool Things to Know
 🌟 Generative AI learns by: 
 
     Studying massive amounts of data 
-"
+",0.005680298829202875,0.09871244635193133,888,0.005680298829202875,0.09871244635193133,887,0.005680298829202875,0.09871244635193133,888
 107,3.0,genai_pdf.pdf ~ 3,"Author: Prateek Mannem   
  
   4 
@@ -6663,12 +5388,7 @@ this technology can be! 🤖 Welcome to the Future of Creativity! 🚀
 • Canva AI tools 
  
 Remember: The more you play and experiment, the more you'll understand how incredible 
-this technology can be! 🤖 Welcome to the Future of Creativity! 🚀 ",0.0027759075164794,"1>
- John Hunter, Darren Dale, Eric Firing, Michael Droettboom and the m
-Matplotlib
-Release 2.0.2
-May 10, 2017
-",genai_pdf.pdf ~ 3,"    
+this technology can be! 🤖 Welcome to the Future of Creativity! 🚀 ",0.0027759075164794,genai_pdf.pdf ~ 3,"    
     Recognizing patterns 
     Creating new content based on what it's learned 
 🚀 It's NOT just copying - it's CREATING something original! 
@@ -6700,4 +5420,4 @@ Understand it's a tool, not a replacement for human creativity
 Experiment and have fun! 
 Want to Get Started? 
 Try free tools like: 
-"
+",0.0008181032195367647,0.07407407407407407,858,0.0008181032195367647,0.07407407407407407,859,0.0008181032195367647,0.07407407407407407,858

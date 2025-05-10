@@ -1,25 +1,47 @@
 import numpy as np
 import Levenshtein
 import pandas as pd
+from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
-def levenshtein_distance(text1: str, text2: str) -> int:
-    """
-    Compute the Levenshtein distance between two strings.
 
-    Args:
-        text1 (str): The first string.
-        text2 (str): The second string. 
+from nltk.metrics import edit_distance
 
-    Returns:
-        int: The Levenshtein distance between the two imput strings. 
-    """
-    return Levenshtein.distance(text1, text2)
+def levenshtein_distance(extraction, ground_truth) -> int:
+    # Ensure both extraction and ground_truth are strings, and handle None or non-string types
+    extraction = str(extraction)
+    ground_truth = str(ground_truth)
+    
+    # Calculate the Levenshtein distance
+    return edit_distance(extraction, ground_truth)
 
-def compute_similariy(df: pd.DataFrame, suffixes: list[str], similarity_fun: callable, col_prefix: str) -> pd.DataFrame:
-    for suffix in suffixes:
-        col_name = f'{col_prefix}_{suffix}'
-        df[col_name] = df.apply(
-            lambda x: similarity_fun(x['pageContent_actual'], x['pageContent_{suffix}']), axis=1
-        )
+def bleu_score(extraction, ground_truth) -> float:
+    # Ensure both extraction and ground_truth are strings, and handle None or non-string types
+    extraction = str(extraction)
+    ground_truth = str(ground_truth)
+    
+    reference = [ground_truth.split()]  # Ground truth is a list of words
+    candidate = extraction.split()      # Extracted text is a list of words
+    smoothie = SmoothingFunction().method1  # Smoothing to avoid zero probabilities
+    
+    # Return the BLEU score
+    return sentence_bleu(reference, candidate, smoothing_function=smoothie)
 
-    return df
+
+
+def jaccard_similarity(extraction, ground_truth) -> float:
+    # Ensure both extraction and ground_truth are strings, and handle None or non-string types
+    extraction = str(extraction)
+    ground_truth = str(ground_truth)
+    
+    # Convert the strings to sets of words
+    extraction_set = set(extraction.split())
+    ground_truth_set = set(ground_truth.split())
+    
+    # Calculate Jaccard similarity: |Intersection| / |Union|
+    intersection = len(extraction_set.intersection(ground_truth_set))
+    union = len(extraction_set.union(ground_truth_set))
+    
+    # If the union is 0 (i.e., both sets are empty), return 0 to avoid division by zero
+    return intersection / union if union != 0 else 0.0
+
+
