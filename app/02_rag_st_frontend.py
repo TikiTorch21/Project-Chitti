@@ -2,6 +2,7 @@ import base64
 
 import pymupdf
 from PIL import Image
+from datetime import datetime
 
 import streamlit as st
 
@@ -79,23 +80,50 @@ with st.sidebar:
 
 # Chatbot Portion
 
-user_input = st.text_input("Ask me anything about the document 🙂!")                       # For now, working on one input message at a time, but will edit when nessacary. 
 
-if user_input:
-    st.write(f"This was your message: {user_input}")
+# Initialize chat history in session state
+if "messages" not in st.session_state:
+    st.session_state.messages = []
 
+# App title
+st.header("Ask Chitti")
 
+# Create main chat container
+chat_container = st.container(height=500)
 
+# Display all chat messages
+with chat_container:
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.write(message["content"])
+            st.caption(f"*{message['timestamp']}*")
 
+# Chat input (always at bottom)
+if prompt := st.chat_input("Type your message here..."):
+    # Add user message to chat history
+    timestamp = datetime.now().strftime("%H:%M:%S")
+    user_message = {
+        "role": "user", 
+        "content": prompt,
+        "timestamp": timestamp
+    }
+    st.session_state.messages.append(user_message)
+    
+    # Display the new user message
+    with chat_container:
+        with st.chat_message("user"):
+            st.write(prompt)
+            st.caption(f"*{timestamp}*")
+    
+    # Rerun to refresh the display
+    st.rerun()
 
+col1, col2 = st.columns([3, 1])
+with col2:
+    if st.button("🗑️ Clear Chat"):
+        st.session_state.messages = []
+        st.rerun()
 
-
-
-
-
-
-
-
-
-                
-
+# Footer info
+if not st.session_state.messages:
+    st.info("👋 Start chatting by typing a message below!")

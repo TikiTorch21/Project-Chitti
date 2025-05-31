@@ -1,0 +1,22 @@
+# Simple Streamlit Configuration File
+# Create a folder called ".streamlit" in your project
+# Put this file inside as "config.toml"
+
+[server]
+# What port your app runs on (the number after localhost:)
+port = 8501
+
+# Maximum file size users can upload (in MB)
+maxUploadSize = 200
+
+[theme]
+# Customize how your app looks
+primaryColor = "#1f77b4"          # Color for buttons, sliders etc.
+backgroundColor = "#121212"        # Main background (white)
+secondaryBackgroundColor = "#263238"  # Sidebar background (light gray)
+textColor = "#FFFFFF"             # Text color (dark gray)
+font = "sans serif"               # Font style
+
+[browser]
+# Whether Streamlit collects usage stats (set to false for privacy)
+gatherUsageStats = false
