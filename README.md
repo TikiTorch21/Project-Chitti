@@ -24,3 +24,18 @@ What are some <u>non-functional features?</u>
 	- User guide: Steps to upload documents and interact with the tool.
 	- Developer guide: Setup, codebase architecture, etc. 
 
+
+## TO DO:
+### For the webapp
+- Preview height - has to be longer
+- change the ‘show pymupdf text’ to something like ‘show extracted text’, etc- something cleaner.
+- Don’t make the default scroll down, because there is nothing in the chat - making you scroll for no reason
+- Improve the default text preset from "Type your message here..." to something else (maybe ‘Ask Chitti’ would be ideal)
+- Add a mock LLM response to the question asked by just repeating the question. (Just to repsresent a placeholder for the actual LLM response)
+- Remove the “Ask Chitti” header(makes window look disorganized)
+- Fix the "clear chat" button alignment under the chat window.
+    - brainstorm how do you want to show citations (ideally under the chat windows)
+- PDF Name: {pdf-name} on the left sidebar before preview, Update the current
+
+### Documentation
+- Finish PDF report
